@@ -1,0 +1,54 @@
+{
+  "file": "src/com/AccountSettings/AccountSettings.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Reusable AccountSettings presentation view driven by external props.",
+  "tags": [
+    "account",
+    "settings"
+  ],
+  "deps": [
+    {
+      "file": "../ui/PageHeader.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../ui/SettingsField.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../ui/Icon.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "./types",
+      "deps": [
+        "AccountSettingsContext"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "AccountSettingsContext",
+        "name": "context"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

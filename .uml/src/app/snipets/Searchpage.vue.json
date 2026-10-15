@@ -1,0 +1,70 @@
+{
+  "file": "src/app/snipets/Searchpage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires Search demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "search",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "ref",
+        "computed",
+        "watch"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/Search/Search.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/Search/types",
+      "deps": [
+        "SearchContext"
+      ]
+    },
+    {
+      "file": "vue-router",
+      "deps": [
+        "useRoute",
+        "useRouter"
+      ],
+      "ext": true
+    },
+    {
+      "file": "vuetify/components",
+      "deps": [
+        "VPagination"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/ui/WorkspacePage.vue",
+      "deps": [
+        "default"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

@@ -1,0 +1,31 @@
+{
+  "file": "src/com/ui/Activities.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Shared UI helper Activities used across the demo pages.",
+  "tags": [
+    "activities",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "../../data/batch03",
+      "deps": [
+        "activities"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

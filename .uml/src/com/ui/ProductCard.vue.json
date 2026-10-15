@@ -1,0 +1,44 @@
+{
+  "file": "src/com/ui/ProductCard.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Shared UI helper ProductCard used across the demo pages.",
+  "tags": [
+    "product",
+    "card"
+  ],
+  "deps": [
+    {
+      "file": "../../composables/useDemoStore",
+      "deps": [
+        "money",
+        "addToCart"
+      ]
+    },
+    {
+      "file": "../../composables/useFeedback",
+      "deps": [
+        "notify"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "any",
+        "name": "product",
+        "opt": true
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

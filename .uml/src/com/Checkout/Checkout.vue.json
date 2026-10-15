@@ -1,0 +1,48 @@
+{
+  "file": "src/com/Checkout/Checkout.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Reusable Checkout presentation view driven by external props.",
+  "tags": [
+    "checkout",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "../ui/WorkspacePage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../ui/Icon.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "./types",
+      "deps": [
+        "CheckoutContext"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "CheckoutContext",
+        "name": "context"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

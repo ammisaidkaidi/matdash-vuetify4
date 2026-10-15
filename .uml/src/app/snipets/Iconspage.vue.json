@@ -1,0 +1,109 @@
+{
+  "file": "src/app/snipets/Iconspage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires Icons demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "icons",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "ref",
+        "computed",
+        "onMounted",
+        "watch"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/Icons/Icons.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/Icons/types",
+      "deps": [
+        "IconsContext"
+      ]
+    },
+    {
+      "file": "vue-router",
+      "deps": [
+        "useRoute"
+      ],
+      "ext": true
+    },
+    {
+      "file": "vuetify/components",
+      "deps": [
+        "VPagination"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/ui/WorkspacePage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../composables/useFeedback",
+      "deps": [
+        "notify"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [
+      {
+        "name": "load",
+        "params": [],
+        "ret": "void",
+        "async": true
+      },
+      {
+        "name": "svg",
+        "params": [
+          {
+            "type": "any",
+            "name": "name"
+          }
+        ],
+        "ret": "any"
+      },
+      {
+        "name": "copy",
+        "params": [],
+        "ret": "void",
+        "async": true
+      },
+      {
+        "name": "download",
+        "params": [],
+        "ret": "void"
+      }
+    ],
+    "classes": []
+  },
+  "rels": [],
+  "calls": [
+    {
+      "from": "copy",
+      "to": "notify"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "file": "src/app/snipets/Menuspage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires Menus demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "menus",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "ref",
+        "mergeProps"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/Menus/Menus.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/Menus/types",
+      "deps": [
+        "MenusContext"
+      ]
+    },
+    {
+      "file": "../../com/ui/UiPage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ui/ExampleCard.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../composables/useFeedback",
+      "deps": [
+        "notify"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

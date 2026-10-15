@@ -1,0 +1,75 @@
+{
+  "file": "src/app/snipets/Sliderspage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires Sliders demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "sliders",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "reactive"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/Sliders/Sliders.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/Sliders/types",
+      "deps": [
+        "SlidersContext"
+      ]
+    },
+    {
+      "file": "vuetify/components",
+      "deps": [
+        "VSlider",
+        "VRangeSlider"
+      ],
+      "ext": true
+    },
+    {
+      "file": "@mdi/js",
+      "deps": [
+        "mdiVolumeHigh",
+        "mdiVolumeLow"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/ui/FormPage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ui/ExampleCard.vue",
+      "deps": [
+        "default"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

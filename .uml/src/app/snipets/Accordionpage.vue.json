@@ -1,0 +1,77 @@
+{
+  "file": "src/app/snipets/Accordionpage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires Accordion demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "accordion",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "reactive"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/Accordion/Accordion.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/Accordion/types",
+      "deps": [
+        "AccordionContext"
+      ]
+    },
+    {
+      "file": "vuetify/components",
+      "deps": [
+        "VExpansionPanels",
+        "VExpansionPanel",
+        "VExpansionPanelTitle",
+        "VExpansionPanelText"
+      ],
+      "ext": true
+    },
+    {
+      "file": "@mdi/js",
+      "deps": [
+        "mdiPlus",
+        "mdiMinus"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/ui/UiPage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ui/ExampleCard.vue",
+      "deps": [
+        "default"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

@@ -1,0 +1,158 @@
+{
+  "file": "src/app/snipets/Editorpage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires Editor demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "editor",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "ref",
+        "computed"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/Editor/Editor.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/Editor/types",
+      "deps": [
+        "EditorContext"
+      ]
+    },
+    {
+      "file": "@tiptap/vue-3",
+      "deps": [
+        "useEditor",
+        "EditorContent"
+      ],
+      "ext": true
+    },
+    {
+      "file": "@tiptap/starter-kit",
+      "deps": [
+        "default"
+      ],
+      "ext": true
+    },
+    {
+      "file": "@tiptap/extension-text-align",
+      "deps": [
+        "default"
+      ],
+      "ext": true
+    },
+    {
+      "file": "@tiptap/extension-image",
+      "deps": [
+        "default"
+      ],
+      "ext": true
+    },
+    {
+      "file": "@lucide/vue",
+      "deps": [
+        "Bold",
+        "Italic",
+        "Underline",
+        "Strikethrough",
+        "Heading1",
+        "Heading2",
+        "Pilcrow",
+        "List",
+        "ListOrdered",
+        "Quote",
+        "Code",
+        "CodeXml",
+        "AlignLeft",
+        "AlignCenter",
+        "AlignRight",
+        "AlignJustify",
+        "Undo2",
+        "Redo2",
+        "RemoveFormatting",
+        "ImagePlus",
+        "Minus"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/ui/FormPage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../composables/useFeedback",
+      "deps": [
+        "notify",
+        "confirmDemo"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [
+      {
+        "name": "run",
+        "params": [
+          {
+            "type": "any",
+            "name": "tool"
+          }
+        ],
+        "ret": "void"
+      },
+      {
+        "name": "reset",
+        "params": [],
+        "ret": "void",
+        "async": true
+      },
+      {
+        "name": "upload",
+        "params": [
+          {
+            "type": "any",
+            "name": "event"
+          }
+        ],
+        "ret": "any"
+      },
+      {
+        "name": "download",
+        "params": [],
+        "ret": "void"
+      }
+    ],
+    "classes": []
+  },
+  "rels": [],
+  "calls": [
+    {
+      "from": "reset",
+      "to": "confirmDemo"
+    },
+    {
+      "from": "upload",
+      "to": "notify"
+    }
+  ]
+}

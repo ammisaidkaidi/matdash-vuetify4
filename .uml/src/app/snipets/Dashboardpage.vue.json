@@ -1,0 +1,60 @@
+{
+  "file": "src/app/snipets/Dashboardpage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires Dashboard demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "dashboard",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "computed",
+        "ref"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/Dashboard/Dashboard.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/Dashboard/types",
+      "deps": [
+        "DashboardContext"
+      ]
+    },
+    {
+      "file": "../../com/ui/DashboardChart.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../data/dashboard",
+      "deps": [
+        "productSets"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

@@ -1,0 +1,48 @@
+{
+  "file": "src/com/Ratings/Ratings.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Reusable Ratings presentation view driven by external props.",
+  "tags": [
+    "ratings",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "../ui/UiPage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../ui/ExampleCard.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "./types",
+      "deps": [
+        "RatingsContext"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "RatingsContext",
+        "name": "context"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

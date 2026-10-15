@@ -1,0 +1,50 @@
+{
+  "file": "src/app/router/batch04.js",
+  "lang": "js",
+  "kind": "config",
+  "summary": "Lazy route definitions for the batch04 page batch.",
+  "tags": [
+    "routing",
+    "batch04"
+  ],
+  "deps": [
+    {
+      "file": "../snipets/PlainTablespage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/Editablepage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/DataTablespage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/Crudtablepage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/Chartspage.vue",
+      "deps": []
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "any",
+        "name": "batch04Loaders"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

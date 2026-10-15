@@ -1,0 +1,64 @@
+{
+  "file": "src/app/snipets/Avatarspage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires Avatars demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "avatars",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/Avatars/Avatars.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/Avatars/types",
+      "deps": [
+        "AvatarsContext"
+      ]
+    },
+    {
+      "file": "../../com/ui/UiPage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ui/ExampleCard.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../data/app-seed",
+      "deps": [
+        "avatar"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

@@ -1,0 +1,42 @@
+{
+  "file": "src/com/Gallery/Gallery.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Reusable Gallery presentation view driven by external props.",
+  "tags": [
+    "gallery",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "../ui/WorkspacePage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "./types",
+      "deps": [
+        "GalleryContext"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "GalleryContext",
+        "name": "context"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

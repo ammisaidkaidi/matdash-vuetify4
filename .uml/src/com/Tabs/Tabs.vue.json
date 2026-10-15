@@ -1,0 +1,42 @@
+{
+  "file": "src/com/Tabs/Tabs.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Reusable Tabs presentation view driven by external props.",
+  "tags": [
+    "tabs",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "../ui/UiPage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "./types",
+      "deps": [
+        "TabsContext"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "TabsContext",
+        "name": "context"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

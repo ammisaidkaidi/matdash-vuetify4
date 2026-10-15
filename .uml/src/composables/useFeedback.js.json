@@ -1,0 +1,98 @@
+{
+  "file": "src/composables/useFeedback.js",
+  "lang": "js",
+  "kind": "composable",
+  "summary": "Composable exposing useFeedback reactive state and actions for the demo.",
+  "tags": [
+    "use",
+    "feedback"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "reactive"
+      ],
+      "ext": true
+    }
+  ],
+  "export": {
+    "fns": [
+      {
+        "name": "notify",
+        "params": [
+          {
+            "type": "any",
+            "name": "text"
+          },
+          {
+            "type": "string",
+            "name": "color",
+            "opt": true
+          }
+        ],
+        "ret": "void"
+      },
+      {
+        "name": "confirmDemo",
+        "params": [
+          {
+            "type": "any",
+            "name": "title"
+          },
+          {
+            "type": "string",
+            "name": "description",
+            "opt": true
+          }
+        ],
+        "ret": "any"
+      },
+      {
+        "name": "answerConfirm",
+        "params": [
+          {
+            "type": "any",
+            "name": "value"
+          }
+        ],
+        "ret": "void"
+      },
+      {
+        "name": "required",
+        "params": [
+          {
+            "type": "any",
+            "name": "v"
+          }
+        ],
+        "ret": "any"
+      },
+      {
+        "name": "validEmail",
+        "params": [
+          {
+            "type": "any",
+            "name": "v"
+          }
+        ],
+        "ret": "any"
+      }
+    ],
+    "props": [
+      {
+        "type": "any",
+        "name": "feedback"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

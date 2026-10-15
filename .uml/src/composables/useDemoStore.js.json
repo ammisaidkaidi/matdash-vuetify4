@@ -1,0 +1,148 @@
+{
+  "file": "src/composables/useDemoStore.js",
+  "lang": "js",
+  "kind": "composable",
+  "summary": "Composable exposing useDemoStore reactive state and actions for the demo.",
+  "tags": [
+    "use",
+    "demo",
+    "store"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "reactive",
+        "ref",
+        "watch",
+        "computed"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../data/app-seed",
+      "deps": [
+        "appSeed"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [
+      {
+        "name": "clone",
+        "params": [
+          {
+            "type": "any",
+            "name": "v"
+          }
+        ],
+        "ret": "any"
+      },
+      {
+        "name": "nextId",
+        "params": [
+          {
+            "type": "any",
+            "name": "items"
+          }
+        ],
+        "ret": "any"
+      },
+      {
+        "name": "money",
+        "params": [
+          {
+            "type": "any",
+            "name": "n"
+          }
+        ],
+        "ret": "any"
+      },
+      {
+        "name": "addToCart",
+        "params": [
+          {
+            "type": "any",
+            "name": "productId"
+          },
+          {
+            "type": "number",
+            "name": "quantity",
+            "opt": true
+          }
+        ],
+        "ret": "void"
+      },
+      {
+        "name": "invoiceSubtotal",
+        "params": [
+          {
+            "type": "any",
+            "name": "invoice"
+          }
+        ],
+        "ret": "any"
+      },
+      {
+        "name": "invoiceTotal",
+        "params": [
+          {
+            "type": "any",
+            "name": "invoice"
+          }
+        ],
+        "ret": "any"
+      },
+      {
+        "name": "downloadText",
+        "params": [
+          {
+            "type": "any",
+            "name": "name"
+          },
+          {
+            "type": "any",
+            "name": "text"
+          },
+          {
+            "type": "string",
+            "name": "type",
+            "opt": true
+          }
+        ],
+        "ret": "void"
+      }
+    ],
+    "props": [
+      {
+        "type": "any",
+        "name": "demo"
+      },
+      {
+        "type": "any",
+        "name": "storageError"
+      },
+      {
+        "type": "any",
+        "name": "cartLines"
+      },
+      {
+        "type": "any",
+        "name": "cartCount"
+      },
+      {
+        "type": "any",
+        "name": "cartTotal"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

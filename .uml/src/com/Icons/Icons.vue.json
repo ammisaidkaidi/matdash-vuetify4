@@ -1,0 +1,49 @@
+{
+  "file": "src/com/Icons/Icons.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Reusable Icons presentation view driven by external props.",
+  "tags": [
+    "icons",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "vuetify/components",
+      "deps": [
+        "VPagination"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../ui/WorkspacePage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "./types",
+      "deps": [
+        "IconsContext"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "IconsContext",
+        "name": "context"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

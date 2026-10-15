@@ -1,0 +1,1564 @@
+{
+  "approval": "Proceed for all",
+  "originalPagesAndRoutesChanged": true,
+  "entries": [
+    {
+      "name": "AccountSettings",
+      "source": "src/pages/AccountSettings.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "askConfirmation",
+        "cancelChanges",
+        "confirmAction",
+        "confirmDialog",
+        "confirmation",
+        "currencies",
+        "defaultAvatar",
+        "deviceDetails",
+        "draft",
+        "email",
+        "finishSetup",
+        "forms",
+        "helpDialog",
+        "leaveDialog",
+        "locations",
+        "message",
+        "messageColor",
+        "openSetup",
+        "passwordRules",
+        "passwords",
+        "passwordsDirty",
+        "paymentDialog",
+        "phone",
+        "planChoice",
+        "planDialog",
+        "plans",
+        "preferences",
+        "readUpload",
+        "required",
+        "respondToLeave",
+        "saveTab",
+        "saving",
+        "sectionDirty",
+        "selectedPlan",
+        "setupDialog",
+        "setupError",
+        "setupMode",
+        "setupTitle",
+        "setupValue",
+        "snackbar",
+        "tab",
+        "tabs",
+        "upload",
+        "uploadError",
+        "zones"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/AccountSettings/AccountSettings.vue",
+        "src/app/snipets/AccountSettingspage.vue",
+        "src/com/AccountSettings/types.ts"
+      ]
+    },
+    {
+      "name": "NotFound",
+      "source": "src/pages/NotFound.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "route"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/NotFound/NotFound.vue",
+        "src/app/snipets/NotFoundpage.vue",
+        "src/com/NotFound/types.ts"
+      ]
+    },
+    {
+      "name": "QueuedPage",
+      "source": "src/pages/QueuedPage.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "related",
+        "route"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/QueuedPage/QueuedPage.vue",
+        "src/app/snipets/QueuedPagepage.vue",
+        "src/com/QueuedPage/types.ts"
+      ]
+    },
+    {
+      "name": "RouteDirectory",
+      "source": "src/pages/RouteDirectory.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "byCategory",
+        "categories",
+        "category",
+        "filtered",
+        "query",
+        "ready",
+        "routeCatalog",
+        "status"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/RouteDirectory/RouteDirectory.vue",
+        "src/app/snipets/RouteDirectorypage.vue",
+        "src/com/RouteDirectory/types.ts"
+      ]
+    },
+    {
+      "name": "Blog",
+      "source": "src/pages/apps/Blog.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "article",
+        "articles",
+        "avatar",
+        "comment",
+        "comments",
+        "demo",
+        "list",
+        "post"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/Blog/Blog.vue",
+        "src/app/snipets/Blogpage.vue",
+        "src/com/Blog/types.ts"
+      ]
+    },
+    {
+      "name": "Calendar",
+      "source": "src/pages/apps/Calendar.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "RecordDialog",
+        "WorkspacePage",
+        "datePick",
+        "days",
+        "demo",
+        "edit",
+        "editor",
+        "fields",
+        "focus",
+        "heading",
+        "mode",
+        "move",
+        "onDay",
+        "props",
+        "record",
+        "remove",
+        "save",
+        "weekdays"
+      ],
+      "injectedRenderers": [
+        "RecordDialog"
+      ],
+      "files": [
+        "src/com/Calendar/Calendar.vue",
+        "src/app/snipets/Calendarpage.vue",
+        "src/com/Calendar/types.ts"
+      ]
+    },
+    {
+      "name": "Chats",
+      "source": "src/pages/apps/Chats.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "asset",
+        "attachment",
+        "avatar",
+        "filtered",
+        "info",
+        "messages",
+        "person",
+        "search",
+        "selected",
+        "send",
+        "text",
+        "upload"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/Chats/Chats.vue",
+        "src/app/snipets/Chatspage.vue",
+        "src/com/Chats/types.ts"
+      ]
+    },
+    {
+      "name": "Checkout",
+      "source": "src/pages/apps/Checkout.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "asset",
+        "billing",
+        "cartLines",
+        "cartTotal",
+        "demo",
+        "form",
+        "method",
+        "money",
+        "next",
+        "order",
+        "place",
+        "required",
+        "step",
+        "validEmail"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/Checkout/Checkout.vue",
+        "src/app/snipets/Checkoutpage.vue",
+        "src/com/Checkout/types.ts"
+      ]
+    },
+    {
+      "name": "Contacts",
+      "source": "src/pages/apps/Contacts.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "RecordDialog",
+        "colors",
+        "demo",
+        "edit",
+        "editor",
+        "fields",
+        "headers",
+        "props",
+        "record",
+        "remove",
+        "save",
+        "search"
+      ],
+      "injectedRenderers": [
+        "RecordDialog"
+      ],
+      "files": [
+        "src/com/Contacts/Contacts.vue",
+        "src/app/snipets/Contactspage.vue",
+        "src/com/Contacts/types.ts"
+      ]
+    },
+    {
+      "name": "Email",
+      "source": "src/pages/apps/Email.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "avatar",
+        "compose",
+        "composer",
+        "demo",
+        "draft",
+        "filtered",
+        "folder",
+        "folders",
+        "form",
+        "labelColors",
+        "mail",
+        "open",
+        "remove",
+        "required",
+        "savedMail",
+        "search",
+        "send",
+        "validEmail"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/Email/Email.vue",
+        "src/app/snipets/Emailpage.vue",
+        "src/com/Email/types.ts"
+      ]
+    },
+    {
+      "name": "Invoices",
+      "source": "src/pages/apps/Invoices.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "colors",
+        "demo",
+        "draft",
+        "existing",
+        "exportInvoice",
+        "filtered",
+        "form",
+        "headers",
+        "invoiceSubtotal",
+        "invoiceTotal",
+        "mode",
+        "money",
+        "remove",
+        "required",
+        "save",
+        "search",
+        "status",
+        "title"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/Invoices/Invoices.vue",
+        "src/app/snipets/Invoicespage.vue",
+        "src/com/Invoices/types.ts"
+      ]
+    },
+    {
+      "name": "Kanban",
+      "source": "src/pages/apps/Kanban.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "RecordDialog",
+        "columns",
+        "demo",
+        "dragged",
+        "drop",
+        "edit",
+        "editor",
+        "fields",
+        "record",
+        "remove",
+        "save"
+      ],
+      "injectedRenderers": [
+        "RecordDialog"
+      ],
+      "files": [
+        "src/com/Kanban/Kanban.vue",
+        "src/app/snipets/Kanbanpage.vue",
+        "src/com/Kanban/types.ts"
+      ]
+    },
+    {
+      "name": "Notes",
+      "source": "src/pages/apps/Notes.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "add",
+        "filtered",
+        "note",
+        "remove",
+        "search",
+        "selected"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/Notes/Notes.vue",
+        "src/app/snipets/Notespage.vue",
+        "src/com/Notes/types.ts"
+      ]
+    },
+    {
+      "name": "ProductDetail",
+      "source": "src/pages/apps/ProductDetail.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "ProductCard",
+        "add",
+        "color",
+        "image",
+        "money",
+        "product",
+        "quantity",
+        "related",
+        "tab"
+      ],
+      "injectedRenderers": [
+        "ProductCard"
+      ],
+      "files": [
+        "src/com/ProductDetail/ProductDetail.vue",
+        "src/app/snipets/ProductDetailpage.vue",
+        "src/com/ProductDetail/types.ts"
+      ]
+    },
+    {
+      "name": "ProductEditor",
+      "source": "src/pages/apps/ProductEditor.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "draft",
+        "editing",
+        "existing",
+        "form",
+        "pick",
+        "required",
+        "save",
+        "tab",
+        "tagText",
+        "upload"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/ProductEditor/ProductEditor.vue",
+        "src/app/snipets/ProductEditorpage.vue",
+        "src/com/ProductEditor/types.ts"
+      ]
+    },
+    {
+      "name": "Products",
+      "source": "src/pages/apps/Products.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "ProductCard",
+        "categories",
+        "filtered",
+        "gender",
+        "headers",
+        "list",
+        "money",
+        "price",
+        "priceOptions",
+        "rating",
+        "remove",
+        "reset",
+        "search",
+        "sort"
+      ],
+      "injectedRenderers": [
+        "ProductCard"
+      ],
+      "files": [
+        "src/com/Products/Products.vue",
+        "src/app/snipets/Productspage.vue",
+        "src/com/Products/types.ts"
+      ]
+    },
+    {
+      "name": "Profile",
+      "source": "src/pages/apps/Profile.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "addComment",
+        "asset",
+        "avatar",
+        "comments",
+        "demo",
+        "image",
+        "photo",
+        "post",
+        "story",
+        "storyText",
+        "text",
+        "upload"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/Profile/Profile.vue",
+        "src/app/snipets/Profilepage.vue",
+        "src/com/Profile/types.ts"
+      ]
+    },
+    {
+      "name": "Tickets",
+      "source": "src/pages/apps/Tickets.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "RecordDialog",
+        "avatar",
+        "colors",
+        "demo",
+        "edit",
+        "editor",
+        "fields",
+        "filtered",
+        "headers",
+        "record",
+        "remove",
+        "save",
+        "search",
+        "status"
+      ],
+      "injectedRenderers": [
+        "RecordDialog"
+      ],
+      "files": [
+        "src/com/Tickets/Tickets.vue",
+        "src/app/snipets/Ticketspage.vue",
+        "src/com/Tickets/types.ts"
+      ]
+    },
+    {
+      "name": "Banners",
+      "source": "src/pages/batch03/Banners.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "acknowledged",
+        "asset",
+        "avatar",
+        "download",
+        "notify",
+        "pageDemos",
+        "retried"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/Banners/Banners.vue",
+        "src/app/snipets/Bannerspage.vue",
+        "src/com/Banners/types.ts"
+      ]
+    },
+    {
+      "name": "CardWidgets",
+      "source": "src/pages/batch03/CardWidgets.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "Activities",
+        "addToCart",
+        "articles",
+        "asset",
+        "avatar",
+        "chat",
+        "demo",
+        "detail",
+        "gateways",
+        "gift",
+        "money",
+        "notify",
+        "pageDemos",
+        "people",
+        "sound",
+        "toggleFollow"
+      ],
+      "injectedRenderers": [
+        "Activities"
+      ],
+      "files": [
+        "src/com/CardWidgets/CardWidgets.vue",
+        "src/app/snipets/CardWidgetspage.vue",
+        "src/com/CardWidgets/types.ts"
+      ]
+    },
+    {
+      "name": "ChartWidgets",
+      "source": "src/pages/batch03/ChartWidgets.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "MiniChart",
+        "income",
+        "month",
+        "trade"
+      ],
+      "injectedRenderers": [
+        "MiniChart"
+      ],
+      "files": [
+        "src/com/ChartWidgets/ChartWidgets.vue",
+        "src/app/snipets/ChartWidgetspage.vue",
+        "src/com/ChartWidgets/types.ts"
+      ]
+    },
+    {
+      "name": "Dashboards",
+      "source": "src/pages/batch03/Dashboards.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "Activities",
+        "Calendar",
+        "MiniChart",
+        "ProductRevenue",
+        "asset",
+        "avatar",
+        "forecast",
+        "selected",
+        "stats",
+        "third"
+      ],
+      "injectedRenderers": [
+        "MiniChart",
+        "ProductRevenue",
+        "Calendar",
+        "Activities"
+      ],
+      "files": [
+        "src/com/Dashboards/Dashboards.vue",
+        "src/app/snipets/Dashboardspage.vue",
+        "src/com/Dashboards/types.ts"
+      ]
+    },
+    {
+      "name": "Faq",
+      "source": "src/pages/batch03/Faq.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "avatar",
+        "faq"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/Faq/Faq.vue",
+        "src/app/snipets/Faqpage.vue",
+        "src/com/Faq/types.ts"
+      ]
+    },
+    {
+      "name": "FrontBlog",
+      "source": "src/pages/batch03/FrontBlog.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "FrontLayout",
+        "article",
+        "filtered",
+        "list",
+        "query"
+      ],
+      "injectedRenderers": [
+        "FrontLayout"
+      ],
+      "files": [
+        "src/com/FrontBlog/FrontBlog.vue",
+        "src/app/snipets/FrontBlogpage.vue",
+        "src/com/FrontBlog/types.ts"
+      ]
+    },
+    {
+      "name": "FrontMarketing",
+      "source": "src/pages/batch03/FrontMarketing.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "FrontLayout",
+        "about",
+        "asset",
+        "avatar",
+        "feature",
+        "frontFaq",
+        "plan",
+        "pricing",
+        "slide",
+        "tab",
+        "team",
+        "testimonials"
+      ],
+      "injectedRenderers": [
+        "FrontLayout"
+      ],
+      "files": [
+        "src/com/FrontMarketing/FrontMarketing.vue",
+        "src/app/snipets/FrontMarketingpage.vue",
+        "src/com/FrontMarketing/types.ts"
+      ]
+    },
+    {
+      "name": "Gallery",
+      "source": "src/pages/batch03/Gallery.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "GalleryGrid",
+        "ProfileHeader",
+        "profile"
+      ],
+      "injectedRenderers": [
+        "ProfileHeader",
+        "GalleryGrid"
+      ],
+      "files": [
+        "src/com/Gallery/Gallery.vue",
+        "src/app/snipets/Gallerypage.vue",
+        "src/com/Gallery/types.ts"
+      ]
+    },
+    {
+      "name": "Icons",
+      "source": "src/pages/batch03/Icons.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "copied",
+        "copy",
+        "data",
+        "download",
+        "error",
+        "load",
+        "names",
+        "page",
+        "query",
+        "selected",
+        "set",
+        "shown",
+        "svg"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/Icons/Icons.vue",
+        "src/app/snipets/Iconspage.vue",
+        "src/com/Icons/types.ts"
+      ]
+    },
+    {
+      "name": "People",
+      "source": "src/pages/batch03/People.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "ProfileHeader",
+        "isFollowers",
+        "isSocial",
+        "notify",
+        "pageDemos",
+        "people",
+        "query",
+        "selected",
+        "title",
+        "toggleFollow"
+      ],
+      "injectedRenderers": [
+        "ProfileHeader"
+      ],
+      "files": [
+        "src/com/People/People.vue",
+        "src/app/snipets/Peoplepage.vue",
+        "src/com/People/types.ts"
+      ]
+    },
+    {
+      "name": "Pricing",
+      "source": "src/pages/batch03/Pricing.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "asset",
+        "choose",
+        "pageDemos",
+        "plans",
+        "yearly"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/Pricing/Pricing.vue",
+        "src/app/snipets/Pricingpage.vue",
+        "src/com/Pricing/types.ts"
+      ]
+    },
+    {
+      "name": "Search",
+      "source": "src/pages/batch03/Search.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "page",
+        "query",
+        "results",
+        "shown"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/Search/Search.vue",
+        "src/app/snipets/Searchpage.vue",
+        "src/com/Search/types.ts"
+      ]
+    },
+    {
+      "name": "Treeview",
+      "source": "src/pages/batch03/Treeview.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "active",
+        "find",
+        "items"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/Treeview/Treeview.vue",
+        "src/app/snipets/Treeviewpage.vue",
+        "src/com/Treeview/types.ts"
+      ]
+    },
+    {
+      "name": "Charts",
+      "source": "src/pages/batch04/Charts.vue",
+      "pattern": "specialized",
+      "status": "extracted",
+      "files": [
+        "src/com/Charts/Charts.vue",
+        "src/app/snipets/Chartspage.vue",
+        "src/com/Charts/types.ts"
+      ]
+    },
+    {
+      "name": "CrudTable",
+      "source": "src/pages/batch04/CrudTable.vue",
+      "pattern": "specialized",
+      "status": "provided",
+      "files": [
+        "src/com/CrudTable/Crudtable.vue",
+        "src/app/snipets/Crudtablepage.vue",
+        "src/com/CrudTable/types.ts"
+      ]
+    },
+    {
+      "name": "DataTables",
+      "source": "src/pages/batch04/DataTables.vue",
+      "pattern": "specialized",
+      "status": "extracted",
+      "files": [
+        "src/com/DataTables/DataTables.vue",
+        "src/app/snipets/DataTablespage.vue",
+        "src/com/DataTables/types.ts"
+      ]
+    },
+    {
+      "name": "Editable",
+      "source": "src/pages/batch04/Editable.vue",
+      "pattern": "crud-adapter",
+      "status": "extracted",
+      "files": [
+        "src/com/Editable/Editable.vue",
+        "src/app/snipets/Editablepage.vue",
+        "src/com/Editable/types.ts"
+      ]
+    },
+    {
+      "name": "PlainTables",
+      "source": "src/pages/batch04/PlainTables.vue",
+      "pattern": "specialized",
+      "status": "extracted",
+      "files": [
+        "src/com/PlainTables/PlainTables.vue",
+        "src/app/snipets/PlainTablespage.vue",
+        "src/com/PlainTables/types.ts"
+      ]
+    },
+    {
+      "name": "Accordion",
+      "source": "src/pages/batch05/Accordion.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "mdiMinus",
+        "mdiPlus",
+        "state",
+        "text"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/Accordion/Accordion.vue",
+        "src/app/snipets/Accordionpage.vue",
+        "src/com/Accordion/types.ts"
+      ]
+    },
+    {
+      "name": "Alerts",
+      "source": "src/pages/batch05/Alerts.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "info",
+        "notify",
+        "types",
+        "visible",
+        "warning"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/Alerts/Alerts.vue",
+        "src/app/snipets/Alertspage.vue",
+        "src/com/Alerts/types.ts"
+      ]
+    },
+    {
+      "name": "Auth",
+      "source": "src/pages/batch05/Auth.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "asset",
+        "boxed",
+        "error",
+        "form",
+        "loginPath",
+        "mode",
+        "notify",
+        "passwordRule",
+        "remember",
+        "required",
+        "reveal",
+        "slide",
+        "slides",
+        "submit",
+        "success",
+        "suffix",
+        "title",
+        "validEmail",
+        "values"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/Auth/Auth.vue",
+        "src/app/snipets/Authpage.vue",
+        "src/com/Auth/types.ts"
+      ]
+    },
+    {
+      "name": "Avatars",
+      "source": "src/pages/batch05/Avatars.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "avatar",
+        "colors"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/Avatars/Avatars.vue",
+        "src/app/snipets/Avatarspage.vue",
+        "src/com/Avatars/types.ts"
+      ]
+    },
+    {
+      "name": "Chips",
+      "source": "src/pages/batch05/Chips.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "avatar",
+        "colors",
+        "hidden",
+        "mdiCheck",
+        "remove",
+        "rows"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/Chips/Chips.vue",
+        "src/app/snipets/Chipspage.vue",
+        "src/com/Chips/types.ts"
+      ]
+    },
+    {
+      "name": "CircularCharts",
+      "source": "src/pages/batch05/CircularCharts.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "charts",
+        "configs",
+        "download",
+        "radial",
+        "show",
+        "values"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/CircularCharts/CircularCharts.vue",
+        "src/app/snipets/CircularChartspage.vue",
+        "src/com/CircularCharts/types.ts"
+      ]
+    },
+    {
+      "name": "Dialogs",
+      "source": "src/pages/batch05/Dialogs.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "active",
+        "choice",
+        "close",
+        "demos",
+        "form",
+        "nested",
+        "profile",
+        "required",
+        "save",
+        "settings",
+        "validEmail"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/Dialogs/Dialogs.vue",
+        "src/app/snipets/Dialogspage.vue",
+        "src/com/Dialogs/types.ts"
+      ]
+    },
+    {
+      "name": "ErrorPage",
+      "source": "src/pages/batch05/ErrorPage.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "asset"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/ErrorPage/ErrorPage.vue",
+        "src/app/snipets/ErrorPagepage.vue",
+        "src/com/ErrorPage/types.ts"
+      ]
+    },
+    {
+      "name": "Lists",
+      "source": "src/pages/batch05/Lists.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "bluetooth",
+        "folder",
+        "items",
+        "nested",
+        "rounded",
+        "scrollItem",
+        "selected",
+        "wifi"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/Lists/Lists.vue",
+        "src/app/snipets/Listspage.vue",
+        "src/com/Lists/types.ts"
+      ]
+    },
+    {
+      "name": "Menus",
+      "source": "src/pages/batch05/Menus.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "choose",
+        "location",
+        "mergeProps",
+        "popover"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/Menus/Menus.vue",
+        "src/app/snipets/Menuspage.vue",
+        "src/com/Menus/types.ts"
+      ]
+    },
+    {
+      "name": "Ratings",
+      "source": "src/pages/batch05/Ratings.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "mdiCircle",
+        "mdiCircleHalfFull",
+        "mdiCircleOutline",
+        "mdiHeart",
+        "mdiHeartHalfFull",
+        "mdiHeartOutline",
+        "ratings"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/Ratings/Ratings.vue",
+        "src/app/snipets/Ratingspage.vue",
+        "src/com/Ratings/types.ts"
+      ]
+    },
+    {
+      "name": "Tabs",
+      "source": "src/pages/batch05/Tabs.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "TabExample"
+      ],
+      "injectedRenderers": [
+        "TabExample"
+      ],
+      "files": [
+        "src/com/Tabs/Tabs.vue",
+        "src/app/snipets/Tabspage.vue",
+        "src/com/Tabs/types.ts"
+      ]
+    },
+    {
+      "name": "Tooltips",
+      "source": "src/pages/batch05/Tooltips.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "visible"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/Tooltips/Tooltips.vue",
+        "src/app/snipets/Tooltipspage.vue",
+        "src/com/Tooltips/types.ts"
+      ]
+    },
+    {
+      "name": "Typography",
+      "source": "src/pages/batch05/Typography.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "bodyStyles",
+        "headingSizes",
+        "text"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/Typography/Typography.vue",
+        "src/app/snipets/Typographypage.vue",
+        "src/com/Typography/types.ts"
+      ]
+    },
+    {
+      "name": "Autocomplete",
+      "source": "src/pages/forms/Autocomplete.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "addresses",
+        "caption",
+        "film",
+        "films",
+        "iconEmail",
+        "multi"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/Autocomplete/Autocomplete.vue",
+        "src/app/snipets/Autocompletepage.vue",
+        "src/com/Autocomplete/types.ts"
+      ]
+    },
+    {
+      "name": "Buttons",
+      "source": "src/pages/forms/Buttons.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "clicked",
+        "colors",
+        "groups",
+        "iconNames",
+        "sizes"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/Buttons/Buttons.vue",
+        "src/app/snipets/Buttonspage.vue",
+        "src/com/Buttons/types.ts"
+      ]
+    },
+    {
+      "name": "Choices",
+      "source": "src/pages/forms/Choices.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "colors",
+        "kind",
+        "state"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/Choices/Choices.vue",
+        "src/app/snipets/Choicespage.vue",
+        "src/com/Choices/types.ts"
+      ]
+    },
+    {
+      "name": "Combobox",
+      "source": "src/pages/forms/Combobox.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "activities",
+        "initial",
+        "model"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/Combobox/Combobox.vue",
+        "src/app/snipets/Comboboxpage.vue",
+        "src/com/Combobox/types.ts"
+      ]
+    },
+    {
+      "name": "CustomForm",
+      "source": "src/pages/forms/CustomForm.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "add",
+        "entries",
+        "form",
+        "model",
+        "newName",
+        "open",
+        "required"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/CustomForm/CustomForm.vue",
+        "src/app/snipets/CustomFormpage.vue",
+        "src/com/CustomForm/types.ts"
+      ]
+    },
+    {
+      "name": "CustomInputs",
+      "source": "src/pages/forms/CustomInputs.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "model",
+        "required",
+        "validEmail"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/CustomInputs/CustomInputs.vue",
+        "src/app/snipets/CustomInputspage.vue",
+        "src/com/CustomInputs/types.ts"
+      ]
+    },
+    {
+      "name": "DateTime",
+      "source": "src/pages/forms/DateTime.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "date",
+        "time"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/DateTime/DateTime.vue",
+        "src/app/snipets/DateTimepage.vue",
+        "src/com/DateTime/types.ts"
+      ]
+    },
+    {
+      "name": "DirectionalForms",
+      "source": "src/pages/forms/DirectionalForms.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "DemoForm",
+        "FormExtras",
+        "accountFields",
+        "basicFields",
+        "horizontal",
+        "multi"
+      ],
+      "injectedRenderers": [
+        "DemoForm",
+        "FormExtras"
+      ],
+      "files": [
+        "src/com/DirectionalForms/DirectionalForms.vue",
+        "src/app/snipets/DirectionalFormspage.vue",
+        "src/com/DirectionalForms/types.ts"
+      ]
+    },
+    {
+      "name": "Editor",
+      "source": "src/pages/forms/Editor.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "download",
+        "editor",
+        "imageInput",
+        "reset",
+        "run",
+        "tools",
+        "upload",
+        "wordCount"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/Editor/Editor.vue",
+        "src/app/snipets/Editorpage.vue",
+        "src/com/Editor/types.ts"
+      ]
+    },
+    {
+      "name": "FileInputs",
+      "source": "src/pages/forms/FileInputs.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "avatarRules",
+        "files",
+        "mdiCamera",
+        "selectedCount"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/FileInputs/FileInputs.vue",
+        "src/app/snipets/FileInputspage.vue",
+        "src/com/FileInputs/types.ts"
+      ]
+    },
+    {
+      "name": "FormLayouts",
+      "source": "src/pages/forms/FormLayouts.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "DemoForm",
+        "defaultFields",
+        "error",
+        "errorText",
+        "header",
+        "iconFields",
+        "ordinary",
+        "success"
+      ],
+      "injectedRenderers": [
+        "DemoForm"
+      ],
+      "files": [
+        "src/com/FormLayouts/FormLayouts.vue",
+        "src/app/snipets/FormLayoutspage.vue",
+        "src/com/FormLayouts/types.ts"
+      ]
+    },
+    {
+      "name": "Select",
+      "source": "src/pages/forms/Select.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "items",
+        "model"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/Select/Select.vue",
+        "src/app/snipets/Selectpage.vue",
+        "src/com/Select/types.ts"
+      ]
+    },
+    {
+      "name": "Sliders",
+      "source": "src/pages/forms/Sliders.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "fruitTicks",
+        "mdiVolumeHigh",
+        "mdiVolumeLow",
+        "model"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/Sliders/Sliders.vue",
+        "src/app/snipets/Sliderspage.vue",
+        "src/com/Sliders/types.ts"
+      ]
+    },
+    {
+      "name": "Steppers",
+      "source": "src/pages/forms/Steppers.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "active",
+        "completed",
+        "next",
+        "steps",
+        "titles",
+        "values"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/Steppers/Steppers.vue",
+        "src/app/snipets/Stepperspage.vue",
+        "src/com/Steppers/types.ts"
+      ]
+    },
+    {
+      "name": "TimePickers",
+      "source": "src/pages/forms/TimePickers.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "times"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/TimePickers/TimePickers.vue",
+        "src/app/snipets/TimePickerspage.vue",
+        "src/com/TimePickers/types.ts"
+      ]
+    },
+    {
+      "name": "Validation",
+      "source": "src/pages/forms/Validation.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "age",
+        "ageForm",
+        "checkError",
+        "checks",
+        "drink",
+        "leave",
+        "leaveForm",
+        "login",
+        "loginForm",
+        "passwordRule",
+        "radioError",
+        "required",
+        "signup",
+        "signupForm",
+        "submit",
+        "submitChoices",
+        "validEmail"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/Validation/Validation.vue",
+        "src/app/snipets/Validationpage.vue",
+        "src/com/Validation/types.ts"
+      ]
+    },
+    {
+      "name": "ContactUs",
+      "source": "src/pages/front/ContactUs.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "form",
+        "links",
+        "menu",
+        "required",
+        "submit",
+        "submitted",
+        "validEmail",
+        "values"
+      ],
+      "injectedRenderers": [],
+      "files": [
+        "src/com/ContactUs/ContactUs.vue",
+        "src/app/snipets/ContactUspage.vue",
+        "src/com/ContactUs/types.ts"
+      ]
+    },
+    {
+      "name": "Dashboard",
+      "source": "src/components/Dashboard.vue",
+      "pattern": "view-context",
+      "status": "extracted",
+      "bindings": [
+        "DashboardChart",
+        "budget",
+        "orders",
+        "period",
+        "periods",
+        "products",
+        "selected",
+        "tab",
+        "tabs"
+      ],
+      "injectedRenderers": [
+        "DashboardChart"
+      ],
+      "files": [
+        "src/com/Dashboard/Dashboard.vue",
+        "src/app/snipets/Dashboardpage.vue",
+        "src/com/Dashboard/types.ts"
+      ]
+    }
+  ],
+  "validation": {
+    "vueFilesCompiled": 136,
+    "uniqueRoutesExercised": 105,
+    "wrapperFamiliesExercised": 68,
+    "editorIconImportsCorrectedAndRechecked": true,
+    "interactionGroupsPassed": 7,
+    "runtimeErrorsInInteractionChecks": 0,
+    "unresolvedComponentOrWriteWarningsInInteractionChecks": 0,
+    "existingRoutesChanged": true,
+    "note": "Browser-only module substitutions exercised the new wrappers without changing the live router. This is not an exhaustive interaction audit or a vue-tsc type check.",
+    "originalSourceFilesUnchangedBeforeIntegration": 68
+  },
+  "routingIntegration": {
+    "referencesRedirectedToPageWrappers": true,
+    "originalFilesRetained": true,
+    "routeUrlsChanged": false,
+    "mappingRecordsChanged": false,
+    "replacementCount": 108,
+    "changedFileCount": 9,
+    "report": "/home/user/builtin/assets/Component_Replacement_Report.json",
+    "postReplacementBuild": "passed"
+  },
+  "pageWrapperDirectory": "src/app/snipets",
+  "pageWrapperRelocation": {
+    "count": 68,
+    "directory": "src/app/snipets",
+    "referenceFilesUpdated": 74,
+    "referenceReplacements": 242,
+    "productionBuild": "passed",
+    "referenceCheck": {
+      "stalePageImports": 0,
+      "missingLocalImports": 0
+    }
+  },
+  "sharedUiRelocation": {
+    "previousDirectory": "src/components",
+    "directory": "src/com/ui",
+    "movedVueFiles": 25,
+    "sourceReferencesUpdated": 248,
+    "filesUpdated": 137,
+    "files": [
+      "src/com/ui/DashboardChart.vue",
+      "src/com/ui/Icon.vue",
+      "src/com/ui/NavigationItem.vue",
+      "src/com/ui/PageHeader.vue",
+      "src/com/ui/SettingsField.vue",
+      "src/com/ui/AppFeedback.vue",
+      "src/com/ui/ProductCard.vue",
+      "src/com/ui/RecordDialog.vue",
+      "src/com/ui/WorkspacePage.vue",
+      "src/com/ui/Activities.vue",
+      "src/com/ui/FaqList.vue",
+      "src/com/ui/FrontLayout.vue",
+      "src/com/ui/GalleryGrid.vue",
+      "src/com/ui/MiniChart.vue",
+      "src/com/ui/ProductRevenue.vue",
+      "src/com/ui/ProfileHeader.vue",
+      "src/com/ui/DemoForm.vue",
+      "src/com/ui/ExampleCard.vue",
+      "src/com/ui/FormExtras.vue",
+      "src/com/ui/FormPage.vue",
+      "src/com/ui/DataExample.vue",
+      "src/com/ui/SampleTable.vue",
+      "src/com/ui/TableCard.vue",
+      "src/com/ui/TabExample.vue",
+      "src/com/ui/UiPage.vue"
+    ],
+    "verification": {
+      "missingDestinations": 0,
+      "remainingOriginalFiles": 0,
+      "staleActiveComponentReferences": 0,
+      "vueSfcCompilation": "25/25 passed",
+      "productionBuild": "passed",
+      "httpRequests": "28/28 passed"
+    }
+  }
+}

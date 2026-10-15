@@ -1,0 +1,64 @@
+{
+  "file": "src/com/Editor/Editor.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Reusable Editor presentation view driven by external props.",
+  "tags": [
+    "editor",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "@tiptap/vue-3",
+      "deps": [
+        "EditorContent"
+      ],
+      "ext": true
+    },
+    {
+      "file": "@lucide/vue",
+      "deps": [
+        "ImagePlus",
+        "Undo2",
+        "Redo2"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../ui/FormPage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../ui/Icon.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "./types",
+      "deps": [
+        "EditorContext"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "EditorContext",
+        "name": "context"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

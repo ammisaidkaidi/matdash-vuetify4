@@ -1,0 +1,71 @@
+{
+  "file": "src/app/snipets/FormLayoutspage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires FormLayouts demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "form",
+    "layouts"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "ref"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/FormLayouts/FormLayouts.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/FormLayouts/types",
+      "deps": [
+        "FormLayoutsContext"
+      ]
+    },
+    {
+      "file": "../../com/ui/FormPage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ui/ExampleCard.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ui/DemoForm.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../data/form-fields",
+      "deps": [
+        "countries"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

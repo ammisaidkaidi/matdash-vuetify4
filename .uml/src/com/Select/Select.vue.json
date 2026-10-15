@@ -1,0 +1,48 @@
+{
+  "file": "src/com/Select/Select.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Reusable Select presentation view driven by external props.",
+  "tags": [
+    "select",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "../ui/FormPage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../ui/ExampleCard.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "./types",
+      "deps": [
+        "SelectContext"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "SelectContext",
+        "name": "context"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

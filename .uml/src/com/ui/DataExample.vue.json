@@ -1,0 +1,137 @@
+{
+  "file": "src/com/ui/DataExample.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Shared UI helper DataExample used across the demo pages.",
+  "tags": [
+    "data",
+    "example"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "ref",
+        "computed",
+        "watch"
+      ],
+      "ext": true
+    },
+    {
+      "file": "vuetify/components",
+      "deps": [
+        "VPagination"
+      ],
+      "ext": true
+    },
+    {
+      "file": "./TableCard.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../data/table-seed",
+      "deps": [
+        "projectRows",
+        "projectHeaders",
+        "budgetLabel",
+        "statusColor"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "string",
+        "name": "title",
+        "opt": true
+      },
+      {
+        "type": "boolean",
+        "name": "selection",
+        "opt": true
+      },
+      {
+        "type": "boolean",
+        "name": "showValues",
+        "opt": true
+      },
+      {
+        "type": "boolean",
+        "name": "selectable",
+        "opt": true
+      },
+      {
+        "type": "boolean",
+        "name": "strategy",
+        "opt": true
+      },
+      {
+        "type": "unknown[]",
+        "name": "sort",
+        "opt": true
+      },
+      {
+        "type": "boolean",
+        "name": "multi",
+        "opt": true
+      },
+      {
+        "type": "boolean",
+        "name": "dense",
+        "opt": true
+      },
+      {
+        "type": "boolean",
+        "name": "chips",
+        "opt": true
+      },
+      {
+        "type": "boolean",
+        "name": "expand",
+        "opt": true
+      },
+      {
+        "type": "boolean",
+        "name": "customHeaders",
+        "opt": true
+      },
+      {
+        "type": "boolean",
+        "name": "slotRow",
+        "opt": true
+      },
+      {
+        "type": "boolean",
+        "name": "external",
+        "opt": true
+      },
+      {
+        "type": "string",
+        "name": "filter",
+        "opt": true
+      },
+      {
+        "type": "boolean",
+        "name": "group",
+        "opt": true
+      },
+      {
+        "type": "number",
+        "name": "pageSize",
+        "opt": true
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

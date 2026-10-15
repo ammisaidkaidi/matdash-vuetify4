@@ -1,0 +1,120 @@
+{
+  "file": "src/com/ui/DemoForm.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Shared UI helper DemoForm used across the demo pages.",
+  "tags": [
+    "demo",
+    "form"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "reactive",
+        "ref",
+        "useId",
+        "onBeforeUnmount"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../composables/useFeedback",
+      "deps": [
+        "required",
+        "validEmail"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "unknown[]",
+        "name": "fields",
+        "opt": true
+      },
+      {
+        "type": "boolean",
+        "name": "horizontal",
+        "opt": true
+      },
+      {
+        "type": "number",
+        "name": "columns",
+        "opt": true
+      },
+      {
+        "type": "boolean",
+        "name": "icons",
+        "opt": true
+      },
+      {
+        "type": "boolean",
+        "name": "rightIcons",
+        "opt": true
+      },
+      {
+        "type": "boolean",
+        "name": "alignRight",
+        "opt": true
+      },
+      {
+        "type": "boolean",
+        "name": "disabled",
+        "opt": true
+      },
+      {
+        "type": "string",
+        "name": "submitLabel",
+        "opt": true
+      },
+      {
+        "type": "boolean",
+        "name": "cancel",
+        "opt": true
+      },
+      {
+        "type": "boolean",
+        "name": "remember",
+        "opt": true
+      },
+      {
+        "type": "string",
+        "name": "formName",
+        "opt": true
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [
+      {
+        "name": "rules",
+        "params": [
+          {
+            "type": "any",
+            "name": "field"
+          }
+        ],
+        "ret": "any"
+      },
+      {
+        "name": "submit",
+        "params": [],
+        "ret": "void",
+        "async": true
+      },
+      {
+        "name": "reset",
+        "params": [],
+        "ret": "void"
+      }
+    ],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

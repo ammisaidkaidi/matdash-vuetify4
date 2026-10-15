@@ -1,0 +1,42 @@
+{
+  "file": "src/com/Banners/Banners.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Reusable Banners presentation view driven by external props.",
+  "tags": [
+    "banners",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "../ui/WorkspacePage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "./types",
+      "deps": [
+        "BannersContext"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "BannersContext",
+        "name": "context"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

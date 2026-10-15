@@ -1,0 +1,69 @@
+{
+  "file": "src/app/snipets/FrontBlogpage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires FrontBlog demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "front",
+    "blog"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "ref",
+        "computed"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/FrontBlog/FrontBlog.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/FrontBlog/types",
+      "deps": [
+        "FrontBlogContext"
+      ]
+    },
+    {
+      "file": "vue-router",
+      "deps": [
+        "useRoute"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/ui/FrontLayout.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../data/app-seed",
+      "deps": [
+        "articles",
+        "asset",
+        "avatar"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

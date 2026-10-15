@@ -1,0 +1,42 @@
+{
+  "file": "src/com/FrontBlog/FrontBlog.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Reusable FrontBlog presentation view driven by external props.",
+  "tags": [
+    "front",
+    "blog"
+  ],
+  "deps": [
+    {
+      "file": "../ui/Icon.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "./types",
+      "deps": [
+        "FrontBlogContext"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "FrontBlogContext",
+        "name": "context"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

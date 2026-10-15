@@ -1,0 +1,43 @@
+{
+  "name": "matdash-vuetify4",
+  "version": "1.6.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test:smoke": "node tests/smoke.mjs",
+    "test:account": "node tests/account-settings.mjs",
+    "test:routes": "node tests/routes.mjs",
+    "test:batch01": "node tests/batch01.mjs",
+    "test:batch02": "node tests/batch02.mjs",
+    "test:batch03": "node tests/batch03.mjs",
+    "test:batch04": "node tests/batch04.mjs",
+    "test:batch05": "node tests/batch05.mjs"
+  },
+  "dependencies": {
+    "@fontsource/manrope": "^5.2.8",
+    "@lucide/vue": "^1.57.0",
+    "@mdi/js": "^7.4.47",
+    "@tiptap/extension-image": "^3.32.0",
+    "@tiptap/extension-text-align": "^3.32.0",
+    "@tiptap/starter-kit": "^3.32.0",
+    "@tiptap/vue-3": "^3.32.0",
+    "@vitejs/devtools": "^0.8.0",
+    "apexcharts": "^5.10.0",
+    "vue": "^3.5.22",
+    "vue-router": "^4.6.4",
+    "vue3-apexcharts": "^1.8.0",
+    "vuetify": "4.2.5"
+  },
+  "devDependencies": {
+    "@iconify-json/solar": "^1.2.13",
+    "@iconify-json/tabler": "^1.2.42",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "playwright": "^1.51.0",
+    "prettier": "^3.9.10",
+    "vite": "^6.1.0",
+    "vite-plugin-vue-devtools": "^8.2.1"
+  }
+}

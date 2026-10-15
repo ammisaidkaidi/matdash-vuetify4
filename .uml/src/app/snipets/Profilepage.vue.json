@@ -1,0 +1,116 @@
+{
+  "file": "src/app/snipets/Profilepage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires Profile demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "profile",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "ref"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/Profile/Profile.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/Profile/types",
+      "deps": [
+        "ProfileContext"
+      ]
+    },
+    {
+      "file": "../../com/ui/WorkspacePage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../composables/useDemoStore",
+      "deps": [
+        "demo",
+        "nextId"
+      ]
+    },
+    {
+      "file": "../../data/app-seed",
+      "deps": [
+        "avatar",
+        "asset"
+      ]
+    },
+    {
+      "file": "../../composables/useFeedback",
+      "deps": [
+        "notify"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [
+      {
+        "name": "post",
+        "params": [],
+        "ret": "any"
+      },
+      {
+        "name": "addComment",
+        "params": [
+          {
+            "type": "any",
+            "name": "p"
+          }
+        ],
+        "ret": "any"
+      },
+      {
+        "name": "photo",
+        "params": [
+          {
+            "type": "any",
+            "name": "e"
+          }
+        ],
+        "ret": "any"
+      }
+    ],
+    "classes": []
+  },
+  "rels": [],
+  "calls": [
+    {
+      "from": "post",
+      "to": "nextId"
+    },
+    {
+      "from": "post",
+      "to": "avatar"
+    },
+    {
+      "from": "post",
+      "to": "notify"
+    },
+    {
+      "from": "photo",
+      "to": "notify"
+    }
+  ]
+}

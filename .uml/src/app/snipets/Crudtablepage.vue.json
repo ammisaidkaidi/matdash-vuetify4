@@ -1,0 +1,51 @@
+{
+  "file": "src/app/snipets/Crudtablepage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires Crudtable demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "crudtable",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "../../com/ui/WorkspacePage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/CrudTable/Crudtable.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/CrudTable/types",
+      "deps": [
+        "CrudField",
+        "CrudLabels"
+      ]
+    },
+    {
+      "file": "../../composables/useTableDemos",
+      "deps": [
+        "tableDemos",
+        "tableStorageError"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

@@ -1,0 +1,134 @@
+{
+  "file": "src/app/snipets/Invoicespage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires Invoices demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "invoices",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "ref",
+        "computed"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/Invoices/Invoices.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/Invoices/types",
+      "deps": [
+        "InvoicesContext"
+      ]
+    },
+    {
+      "file": "vue-router",
+      "deps": [
+        "useRoute",
+        "useRouter"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/ui/WorkspacePage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../composables/useDemoStore",
+      "deps": [
+        "demo",
+        "nextId",
+        "clone",
+        "money",
+        "invoiceSubtotal",
+        "invoiceTotal",
+        "downloadText"
+      ]
+    },
+    {
+      "file": "../../composables/useFeedback",
+      "deps": [
+        "notify",
+        "confirmDemo",
+        "required"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [
+      {
+        "name": "save",
+        "params": [],
+        "ret": "any",
+        "async": true
+      },
+      {
+        "name": "remove",
+        "params": [
+          {
+            "type": "any",
+            "name": "i"
+          }
+        ],
+        "ret": "void",
+        "async": true
+      },
+      {
+        "name": "exportInvoice",
+        "params": [],
+        "ret": "void"
+      }
+    ],
+    "classes": []
+  },
+  "rels": [],
+  "calls": [
+    {
+      "from": "save",
+      "to": "notify"
+    },
+    {
+      "from": "save",
+      "to": "clone"
+    },
+    {
+      "from": "remove",
+      "to": "confirmDemo"
+    },
+    {
+      "from": "exportInvoice",
+      "to": "downloadText"
+    },
+    {
+      "from": "exportInvoice",
+      "to": "money"
+    },
+    {
+      "from": "exportInvoice",
+      "to": "invoiceSubtotal"
+    },
+    {
+      "from": "exportInvoice",
+      "to": "invoiceTotal"
+    }
+  ]
+}

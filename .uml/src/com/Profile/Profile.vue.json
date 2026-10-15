@@ -1,0 +1,48 @@
+{
+  "file": "src/com/Profile/Profile.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Reusable Profile presentation view driven by external props.",
+  "tags": [
+    "profile",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "../ui/WorkspacePage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../ui/Icon.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "./types",
+      "deps": [
+        "ProfileContext"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "ProfileContext",
+        "name": "context"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

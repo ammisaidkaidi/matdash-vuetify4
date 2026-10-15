@@ -1,0 +1,94 @@
+{
+  "file": "src/app/snipets/Notespage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires Notes demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "notes",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "ref",
+        "computed"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/Notes/Notes.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/Notes/types",
+      "deps": [
+        "NotesContext"
+      ]
+    },
+    {
+      "file": "../../com/ui/WorkspacePage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../composables/useDemoStore",
+      "deps": [
+        "demo",
+        "nextId"
+      ]
+    },
+    {
+      "file": "../../composables/useFeedback",
+      "deps": [
+        "confirmDemo",
+        "notify"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [
+      {
+        "name": "add",
+        "params": [],
+        "ret": "void"
+      },
+      {
+        "name": "remove",
+        "params": [
+          {
+            "type": "any",
+            "name": "n"
+          }
+        ],
+        "ret": "void",
+        "async": true
+      }
+    ],
+    "classes": []
+  },
+  "rels": [],
+  "calls": [
+    {
+      "from": "add",
+      "to": "nextId"
+    },
+    {
+      "from": "remove",
+      "to": "confirmDemo"
+    }
+  ]
+}

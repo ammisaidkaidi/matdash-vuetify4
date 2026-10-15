@@ -1,0 +1,85 @@
+{
+  "file": "src/app/snipets/Dialogspage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires Dialogs demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "dialogs",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "ref",
+        "reactive"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/Dialogs/Dialogs.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/Dialogs/types",
+      "deps": [
+        "DialogsContext"
+      ]
+    },
+    {
+      "file": "../../com/ui/UiPage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ui/ExampleCard.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../composables/useFeedback",
+      "deps": [
+        "required",
+        "validEmail",
+        "notify"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [
+      {
+        "name": "close",
+        "params": [],
+        "ret": "void"
+      },
+      {
+        "name": "save",
+        "params": [],
+        "ret": "any",
+        "async": true
+      }
+    ],
+    "classes": []
+  },
+  "rels": [],
+  "calls": [
+    {
+      "from": "save",
+      "to": "notify"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "file": "src/com/Tickets/Tickets.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Reusable Tickets presentation view driven by external props.",
+  "tags": [
+    "tickets",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "../ui/WorkspacePage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../ui/Icon.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "./types",
+      "deps": [
+        "TicketsContext"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "TicketsContext",
+        "name": "context"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

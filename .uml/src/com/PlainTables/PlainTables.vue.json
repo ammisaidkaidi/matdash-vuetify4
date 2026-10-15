@@ -1,0 +1,240 @@
+{
+  "file": "src/com/PlainTables/PlainTables.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Reusable PlainTables presentation view driven by external props.",
+  "tags": [
+    "plain",
+    "tables"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "computed",
+        "useSlots"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../ui/Icon.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "./types",
+      "deps": [
+        "PlainTableAction",
+        "PlainTableColumn",
+        "PlainTableDensity",
+        "PlainTableItemKey",
+        "PlainTableKey",
+        "PlainTableLabels"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "T[]",
+        "name": "items"
+      },
+      {
+        "type": "PlainTableColumn<T>[]",
+        "name": "columns"
+      },
+      {
+        "type": "PlainTableItemKey<T>",
+        "name": "itemKey",
+        "opt": true
+      },
+      {
+        "type": "PlainTableDensity",
+        "name": "density",
+        "opt": true
+      },
+      {
+        "type": "boolean",
+        "name": "dark",
+        "opt": true
+      },
+      {
+        "type": "string",
+        "name": "theme",
+        "opt": true
+      },
+      {
+        "type": "string | number",
+        "name": "height",
+        "opt": true
+      },
+      {
+        "type": "boolean",
+        "name": "fixedHeader",
+        "opt": true
+      },
+      {
+        "type": "string | number",
+        "name": "minWidth",
+        "opt": true
+      },
+      {
+        "type": "PlainTableAction<T>[]",
+        "name": "actions",
+        "opt": true
+      },
+      {
+        "type": "Partial<PlainTableLabels>",
+        "name": "labels",
+        "opt": true
+      },
+      {
+        "type": "(item: T, index: number) => Record<string, unknown>",
+        "name": "rowProps",
+        "opt": true
+      },
+      {
+        "type": "Record<string, unknown>",
+        "name": "tableProps",
+        "opt": true
+      }
+    ],
+    "emits": [
+      {
+        "name": "action",
+        "payload": ""
+      },
+      {
+        "name": "row-click",
+        "payload": ""
+      }
+    ],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [
+      {
+        "name": "cssSize",
+        "params": [
+          {
+            "type": "string | number | undefined",
+            "name": "value"
+          }
+        ],
+        "ret": "any"
+      },
+      {
+        "name": "keyOf",
+        "params": [
+          {
+            "type": "T",
+            "name": "item"
+          },
+          {
+            "type": "number",
+            "name": "index"
+          }
+        ],
+        "ret": "PlainTableKey"
+      },
+      {
+        "name": "valueOf",
+        "params": [
+          {
+            "type": "PlainTableColumn<T>",
+            "name": "column"
+          },
+          {
+            "type": "T",
+            "name": "item"
+          },
+          {
+            "type": "number",
+            "name": "index"
+          }
+        ],
+        "ret": "unknown"
+      },
+      {
+        "name": "displayValue",
+        "params": [
+          {
+            "type": "PlainTableColumn<T>",
+            "name": "column"
+          },
+          {
+            "type": "T",
+            "name": "item"
+          },
+          {
+            "type": "number",
+            "name": "index"
+          }
+        ],
+        "ret": "any"
+      },
+      {
+        "name": "cellProps",
+        "params": [
+          {
+            "type": "PlainTableColumn<T>",
+            "name": "column"
+          },
+          {
+            "type": "T",
+            "name": "item"
+          },
+          {
+            "type": "number",
+            "name": "index"
+          }
+        ],
+        "ret": "any"
+      },
+      {
+        "name": "availableActions",
+        "params": [
+          {
+            "type": "T",
+            "name": "item"
+          }
+        ],
+        "ret": "any"
+      },
+      {
+        "name": "actionLabel",
+        "params": [
+          {
+            "type": "PlainTableAction<T>",
+            "name": "action"
+          },
+          {
+            "type": "T",
+            "name": "item"
+          }
+        ],
+        "ret": "any"
+      },
+      {
+        "name": "actionDisabled",
+        "params": [
+          {
+            "type": "PlainTableAction<T>",
+            "name": "action"
+          },
+          {
+            "type": "T",
+            "name": "item"
+          }
+        ],
+        "ret": "any"
+      }
+    ],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

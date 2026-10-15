@@ -1,0 +1,65 @@
+{
+  "file": "src/app/snipets/Alertspage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires Alerts demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "alerts",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "ref"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/Alerts/Alerts.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/Alerts/types",
+      "deps": [
+        "AlertsContext"
+      ]
+    },
+    {
+      "file": "../../com/ui/UiPage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ui/ExampleCard.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../composables/useFeedback",
+      "deps": [
+        "notify"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

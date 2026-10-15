@@ -1,0 +1,132 @@
+{
+  "file": "src/app/snipets/PlainTablespage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires PlainTables demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "plain",
+    "tables"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "computed",
+        "ref"
+      ],
+      "ext": true
+    },
+    {
+      "file": "vue-router",
+      "deps": [
+        "useRoute"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/ui/Icon.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ui/WorkspacePage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ui/TableCard.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/PlainTables/PlainTables.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/PlainTables/types",
+      "deps": [
+        "PlainTableAction",
+        "PlainTableColumn",
+        "PlainTableDensity"
+      ]
+    },
+    {
+      "file": "../../data/table-seed",
+      "deps": [
+        "projectRows",
+        "customerRows",
+        "authors",
+        "budgetLabel",
+        "statusColor"
+      ]
+    },
+    {
+      "file": "../../data/app-seed",
+      "deps": [
+        "avatar"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [
+      {
+        "name": "example",
+        "params": [
+          {
+            "type": "ExampleKind",
+            "name": "exampleKind"
+          },
+          {
+            "type": "{ full?: boolean; actions?: boolean; dark?: boolean; height?: number; fixedHeader?: boolean; density?: PlainTableDensity; }",
+            "name": "options",
+            "opt": true
+          }
+        ],
+        "ret": "TableExample"
+      },
+      {
+        "name": "subtitleFor",
+        "params": [
+          {
+            "type": "ExampleKind",
+            "name": "exampleKind"
+          },
+          {
+            "type": "DemoRecord",
+            "name": "item"
+          }
+        ],
+        "ret": "any"
+      },
+      {
+        "name": "handleAction",
+        "params": [
+          {
+            "type": "string",
+            "name": "action"
+          },
+          {
+            "type": "DemoRecord",
+            "name": "item"
+          }
+        ],
+        "ret": "void"
+      }
+    ],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

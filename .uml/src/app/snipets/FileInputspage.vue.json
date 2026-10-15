@@ -1,0 +1,74 @@
+{
+  "file": "src/app/snipets/FileInputspage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires FileInputs demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "file",
+    "inputs"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "reactive",
+        "computed"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/FileInputs/FileInputs.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/FileInputs/types",
+      "deps": [
+        "FileInputsContext"
+      ]
+    },
+    {
+      "file": "vuetify/components",
+      "deps": [
+        "VFileInput"
+      ],
+      "ext": true
+    },
+    {
+      "file": "@mdi/js",
+      "deps": [
+        "mdiCamera"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/ui/FormPage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ui/ExampleCard.vue",
+      "deps": [
+        "default"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

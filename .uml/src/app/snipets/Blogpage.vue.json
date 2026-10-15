@@ -1,0 +1,91 @@
+{
+  "file": "src/app/snipets/Blogpage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires Blog demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "blog",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "ref",
+        "computed"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/Blog/Blog.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/Blog/types",
+      "deps": [
+        "BlogContext"
+      ]
+    },
+    {
+      "file": "vue-router",
+      "deps": [
+        "useRoute"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/ui/WorkspacePage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../data/app-seed",
+      "deps": [
+        "articles",
+        "avatar"
+      ]
+    },
+    {
+      "file": "../../composables/useDemoStore",
+      "deps": [
+        "demo"
+      ]
+    },
+    {
+      "file": "../../composables/useFeedback",
+      "deps": [
+        "notify"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [
+      {
+        "name": "post",
+        "params": [],
+        "ret": "any"
+      }
+    ],
+    "classes": []
+  },
+  "rels": [],
+  "calls": [
+    {
+      "from": "post",
+      "to": "notify"
+    }
+  ]
+}

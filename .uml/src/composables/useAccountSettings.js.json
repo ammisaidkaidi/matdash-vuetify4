@@ -1,0 +1,50 @@
+{
+  "file": "src/composables/useAccountSettings.js",
+  "lang": "js",
+  "kind": "composable",
+  "summary": "Composable exposing useAccountSettings reactive state and actions for the demo.",
+  "tags": [
+    "use",
+    "account",
+    "settings"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "computed",
+        "reactive",
+        "ref"
+      ],
+      "ext": true
+    }
+  ],
+  "export": {
+    "fns": [
+      {
+        "name": "useAccountSettings",
+        "params": [],
+        "ret": "any"
+      }
+    ],
+    "props": [
+      {
+        "type": "string",
+        "name": "defaultAvatar"
+      },
+      {
+        "type": "any",
+        "name": "defaultSettings"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

@@ -1,0 +1,1487 @@
+{
+  "method": "Single text-only mapping-driven batch; imports resolved relative to each source file.",
+  "mapping": "/home/user/builtin/assets/Component_Translations.json",
+  "allReplacementsWritten": true,
+  "changedFileCount": 9,
+  "replacementCount": 108,
+  "components": [
+    {
+      "id": 1,
+      "name": "AccountSettings",
+      "original": "/home/user/src/pages/AccountSettings.vue",
+      "compPage": "/home/user/src/com/AccountSettings/AccountSettingspage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 1,
+          "componentName": "AccountSettings",
+          "file": "/home/user/src/router/index.js",
+          "line": 16,
+          "from": "../pages/AccountSettings.vue",
+          "to": "../com/AccountSettings/AccountSettingspage.vue"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "NotFound",
+      "original": "/home/user/src/pages/NotFound.vue",
+      "compPage": "/home/user/src/com/NotFound/NotFoundpage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 2,
+          "componentName": "NotFound",
+          "file": "/home/user/src/router/index.js",
+          "line": 34,
+          "from": "../pages/NotFound.vue",
+          "to": "../com/NotFound/NotFoundpage.vue"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "QueuedPage",
+      "original": "/home/user/src/pages/QueuedPage.vue",
+      "compPage": "/home/user/src/com/QueuedPage/QueuedPagepage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 3,
+          "componentName": "QueuedPage",
+          "file": "/home/user/src/router/index.js",
+          "line": 28,
+          "from": "../pages/QueuedPage.vue",
+          "to": "../com/QueuedPage/QueuedPagepage.vue"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "RouteDirectory",
+      "original": "/home/user/src/pages/RouteDirectory.vue",
+      "compPage": "/home/user/src/com/RouteDirectory/RouteDirectorypage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 4,
+          "componentName": "RouteDirectory",
+          "file": "/home/user/src/router/index.js",
+          "line": 17,
+          "from": "../pages/RouteDirectory.vue",
+          "to": "../com/RouteDirectory/RouteDirectorypage.vue"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Blog",
+      "original": "/home/user/src/pages/apps/Blog.vue",
+      "compPage": "/home/user/src/com/Blog/Blogpage.vue",
+      "replacementCount": 2,
+      "locations": [
+        {
+          "componentId": 5,
+          "componentName": "Blog",
+          "file": "/home/user/src/router/batch01.js",
+          "line": 21,
+          "from": "../pages/apps/Blog.vue",
+          "to": "../com/Blog/Blogpage.vue"
+        },
+        {
+          "componentId": 5,
+          "componentName": "Blog",
+          "file": "/home/user/src/router/batch01.js",
+          "line": 23,
+          "from": "../pages/apps/Blog.vue",
+          "to": "../com/Blog/Blogpage.vue"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Calendar",
+      "original": "/home/user/src/pages/apps/Calendar.vue",
+      "compPage": "/home/user/src/com/Calendar/Calendarpage.vue",
+      "replacementCount": 3,
+      "locations": [
+        {
+          "componentId": 6,
+          "componentName": "Calendar",
+          "file": "/home/user/src/com/Dashboards/Dashboardspage.vue",
+          "line": 14,
+          "from": "../../pages/apps/Calendar.vue",
+          "to": "../Calendar/Calendarpage.vue"
+        },
+        {
+          "componentId": 6,
+          "componentName": "Calendar",
+          "file": "/home/user/src/pages/batch03/Dashboards.vue",
+          "line": 7,
+          "from": "../apps/Calendar.vue",
+          "to": "../../com/Calendar/Calendarpage.vue"
+        },
+        {
+          "componentId": 6,
+          "componentName": "Calendar",
+          "file": "/home/user/src/router/batch01.js",
+          "line": 14,
+          "from": "../pages/apps/Calendar.vue",
+          "to": "../com/Calendar/Calendarpage.vue"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Chats",
+      "original": "/home/user/src/pages/apps/Chats.vue",
+      "compPage": "/home/user/src/com/Chats/Chatspage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 7,
+          "componentName": "Chats",
+          "file": "/home/user/src/router/batch01.js",
+          "line": 16,
+          "from": "../pages/apps/Chats.vue",
+          "to": "../com/Chats/Chatspage.vue"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Checkout",
+      "original": "/home/user/src/pages/apps/Checkout.vue",
+      "compPage": "/home/user/src/com/Checkout/Checkoutpage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 8,
+          "componentName": "Checkout",
+          "file": "/home/user/src/router/batch01.js",
+          "line": 9,
+          "from": "../pages/apps/Checkout.vue",
+          "to": "../com/Checkout/Checkoutpage.vue"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Contacts",
+      "original": "/home/user/src/pages/apps/Contacts.vue",
+      "compPage": "/home/user/src/com/Contacts/Contactspage.vue",
+      "replacementCount": 2,
+      "locations": [
+        {
+          "componentId": 9,
+          "componentName": "Contacts",
+          "file": "/home/user/src/pages/batch04/Editable.vue",
+          "line": 2,
+          "from": "../apps/Contacts.vue",
+          "to": "../../com/Contacts/Contactspage.vue"
+        },
+        {
+          "componentId": 9,
+          "componentName": "Contacts",
+          "file": "/home/user/src/router/batch01.js",
+          "line": 19,
+          "from": "../pages/apps/Contacts.vue",
+          "to": "../com/Contacts/Contactspage.vue"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Email",
+      "original": "/home/user/src/pages/apps/Email.vue",
+      "compPage": "/home/user/src/com/Email/Emailpage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 10,
+          "componentName": "Email",
+          "file": "/home/user/src/router/batch01.js",
+          "line": 15,
+          "from": "../pages/apps/Email.vue",
+          "to": "../com/Email/Emailpage.vue"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Invoices",
+      "original": "/home/user/src/pages/apps/Invoices.vue",
+      "compPage": "/home/user/src/com/Invoices/Invoicespage.vue",
+      "replacementCount": 4,
+      "locations": [
+        {
+          "componentId": 11,
+          "componentName": "Invoices",
+          "file": "/home/user/src/router/batch01.js",
+          "line": 10,
+          "from": "../pages/apps/Invoices.vue",
+          "to": "../com/Invoices/Invoicespage.vue"
+        },
+        {
+          "componentId": 11,
+          "componentName": "Invoices",
+          "file": "/home/user/src/router/batch01.js",
+          "line": 11,
+          "from": "../pages/apps/Invoices.vue",
+          "to": "../com/Invoices/Invoicespage.vue"
+        },
+        {
+          "componentId": 11,
+          "componentName": "Invoices",
+          "file": "/home/user/src/router/batch01.js",
+          "line": 12,
+          "from": "../pages/apps/Invoices.vue",
+          "to": "../com/Invoices/Invoicespage.vue"
+        },
+        {
+          "componentId": 11,
+          "componentName": "Invoices",
+          "file": "/home/user/src/router/batch01.js",
+          "line": 13,
+          "from": "../pages/apps/Invoices.vue",
+          "to": "../com/Invoices/Invoicespage.vue"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Kanban",
+      "original": "/home/user/src/pages/apps/Kanban.vue",
+      "compPage": "/home/user/src/com/Kanban/Kanbanpage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 12,
+          "componentName": "Kanban",
+          "file": "/home/user/src/router/batch01.js",
+          "line": 18,
+          "from": "../pages/apps/Kanban.vue",
+          "to": "../com/Kanban/Kanbanpage.vue"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Notes",
+      "original": "/home/user/src/pages/apps/Notes.vue",
+      "compPage": "/home/user/src/com/Notes/Notespage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 13,
+          "componentName": "Notes",
+          "file": "/home/user/src/router/batch01.js",
+          "line": 17,
+          "from": "../pages/apps/Notes.vue",
+          "to": "../com/Notes/Notespage.vue"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "ProductDetail",
+      "original": "/home/user/src/pages/apps/ProductDetail.vue",
+      "compPage": "/home/user/src/com/ProductDetail/ProductDetailpage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 14,
+          "componentName": "ProductDetail",
+          "file": "/home/user/src/router/batch01.js",
+          "line": 6,
+          "from": "../pages/apps/ProductDetail.vue",
+          "to": "../com/ProductDetail/ProductDetailpage.vue"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "ProductEditor",
+      "original": "/home/user/src/pages/apps/ProductEditor.vue",
+      "compPage": "/home/user/src/com/ProductEditor/ProductEditorpage.vue",
+      "replacementCount": 2,
+      "locations": [
+        {
+          "componentId": 15,
+          "componentName": "ProductEditor",
+          "file": "/home/user/src/router/batch01.js",
+          "line": 7,
+          "from": "../pages/apps/ProductEditor.vue",
+          "to": "../com/ProductEditor/ProductEditorpage.vue"
+        },
+        {
+          "componentId": 15,
+          "componentName": "ProductEditor",
+          "file": "/home/user/src/router/batch01.js",
+          "line": 8,
+          "from": "../pages/apps/ProductEditor.vue",
+          "to": "../com/ProductEditor/ProductEditorpage.vue"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Products",
+      "original": "/home/user/src/pages/apps/Products.vue",
+      "compPage": "/home/user/src/com/Products/Productspage.vue",
+      "replacementCount": 2,
+      "locations": [
+        {
+          "componentId": 16,
+          "componentName": "Products",
+          "file": "/home/user/src/router/batch01.js",
+          "line": 3,
+          "from": "../pages/apps/Products.vue",
+          "to": "../com/Products/Productspage.vue"
+        },
+        {
+          "componentId": 16,
+          "componentName": "Products",
+          "file": "/home/user/src/router/batch01.js",
+          "line": 4,
+          "from": "../pages/apps/Products.vue",
+          "to": "../com/Products/Productspage.vue"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Profile",
+      "original": "/home/user/src/pages/apps/Profile.vue",
+      "compPage": "/home/user/src/com/Profile/Profilepage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 17,
+          "componentName": "Profile",
+          "file": "/home/user/src/router/batch01.js",
+          "line": 24,
+          "from": "../pages/apps/Profile.vue",
+          "to": "../com/Profile/Profilepage.vue"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Tickets",
+      "original": "/home/user/src/pages/apps/Tickets.vue",
+      "compPage": "/home/user/src/com/Tickets/Ticketspage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 18,
+          "componentName": "Tickets",
+          "file": "/home/user/src/router/batch01.js",
+          "line": 20,
+          "from": "../pages/apps/Tickets.vue",
+          "to": "../com/Tickets/Ticketspage.vue"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Banners",
+      "original": "/home/user/src/pages/batch03/Banners.vue",
+      "compPage": "/home/user/src/com/Banners/Bannerspage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 19,
+          "componentName": "Banners",
+          "file": "/home/user/src/router/batch03.js",
+          "line": 7,
+          "from": "../pages/batch03/Banners.vue",
+          "to": "../com/Banners/Bannerspage.vue"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "CardWidgets",
+      "original": "/home/user/src/pages/batch03/CardWidgets.vue",
+      "compPage": "/home/user/src/com/CardWidgets/CardWidgetspage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 20,
+          "componentName": "CardWidgets",
+          "file": "/home/user/src/router/batch03.js",
+          "line": 8,
+          "from": "../pages/batch03/CardWidgets.vue",
+          "to": "../com/CardWidgets/CardWidgetspage.vue"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "ChartWidgets",
+      "original": "/home/user/src/pages/batch03/ChartWidgets.vue",
+      "compPage": "/home/user/src/com/ChartWidgets/ChartWidgetspage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 21,
+          "componentName": "ChartWidgets",
+          "file": "/home/user/src/router/batch03.js",
+          "line": 9,
+          "from": "../pages/batch03/ChartWidgets.vue",
+          "to": "../com/ChartWidgets/ChartWidgetspage.vue"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Dashboards",
+      "original": "/home/user/src/pages/batch03/Dashboards.vue",
+      "compPage": "/home/user/src/com/Dashboards/Dashboardspage.vue",
+      "replacementCount": 2,
+      "locations": [
+        {
+          "componentId": 22,
+          "componentName": "Dashboards",
+          "file": "/home/user/src/router/batch03.js",
+          "line": 2,
+          "from": "../pages/batch03/Dashboards.vue",
+          "to": "../com/Dashboards/Dashboardspage.vue"
+        },
+        {
+          "componentId": 22,
+          "componentName": "Dashboards",
+          "file": "/home/user/src/router/batch03.js",
+          "line": 3,
+          "from": "../pages/batch03/Dashboards.vue",
+          "to": "../com/Dashboards/Dashboardspage.vue"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Faq",
+      "original": "/home/user/src/pages/batch03/Faq.vue",
+      "compPage": "/home/user/src/com/Faq/Faqpage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 23,
+          "componentName": "Faq",
+          "file": "/home/user/src/router/batch03.js",
+          "line": 10,
+          "from": "../pages/batch03/Faq.vue",
+          "to": "../com/Faq/Faqpage.vue"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "FrontBlog",
+      "original": "/home/user/src/pages/batch03/FrontBlog.vue",
+      "compPage": "/home/user/src/com/FrontBlog/FrontBlogpage.vue",
+      "replacementCount": 2,
+      "locations": [
+        {
+          "componentId": 24,
+          "componentName": "FrontBlog",
+          "file": "/home/user/src/router/batch03.js",
+          "line": 20,
+          "from": "../pages/batch03/FrontBlog.vue",
+          "to": "../com/FrontBlog/FrontBlogpage.vue"
+        },
+        {
+          "componentId": 24,
+          "componentName": "FrontBlog",
+          "file": "/home/user/src/router/batch03.js",
+          "line": 22,
+          "from": "../pages/batch03/FrontBlog.vue",
+          "to": "../com/FrontBlog/FrontBlogpage.vue"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "FrontMarketing",
+      "original": "/home/user/src/pages/batch03/FrontMarketing.vue",
+      "compPage": "/home/user/src/com/FrontMarketing/FrontMarketingpage.vue",
+      "replacementCount": 2,
+      "locations": [
+        {
+          "componentId": 25,
+          "componentName": "FrontMarketing",
+          "file": "/home/user/src/router/batch03.js",
+          "line": 18,
+          "from": "../pages/batch03/FrontMarketing.vue",
+          "to": "../com/FrontMarketing/FrontMarketingpage.vue"
+        },
+        {
+          "componentId": 25,
+          "componentName": "FrontMarketing",
+          "file": "/home/user/src/router/batch03.js",
+          "line": 19,
+          "from": "../pages/batch03/FrontMarketing.vue",
+          "to": "../com/FrontMarketing/FrontMarketingpage.vue"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Gallery",
+      "original": "/home/user/src/pages/batch03/Gallery.vue",
+      "compPage": "/home/user/src/com/Gallery/Gallerypage.vue",
+      "replacementCount": 2,
+      "locations": [
+        {
+          "componentId": 26,
+          "componentName": "Gallery",
+          "file": "/home/user/src/router/batch03.js",
+          "line": 6,
+          "from": "../pages/batch03/Gallery.vue",
+          "to": "../com/Gallery/Gallerypage.vue"
+        },
+        {
+          "componentId": 26,
+          "componentName": "Gallery",
+          "file": "/home/user/src/router/batch03.js",
+          "line": 11,
+          "from": "../pages/batch03/Gallery.vue",
+          "to": "../com/Gallery/Gallerypage.vue"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Icons",
+      "original": "/home/user/src/pages/batch03/Icons.vue",
+      "compPage": "/home/user/src/com/Icons/Iconspage.vue",
+      "replacementCount": 2,
+      "locations": [
+        {
+          "componentId": 27,
+          "componentName": "Icons",
+          "file": "/home/user/src/router/batch03.js",
+          "line": 16,
+          "from": "../pages/batch03/Icons.vue",
+          "to": "../com/Icons/Iconspage.vue"
+        },
+        {
+          "componentId": 27,
+          "componentName": "Icons",
+          "file": "/home/user/src/router/batch03.js",
+          "line": 17,
+          "from": "../pages/batch03/Icons.vue",
+          "to": "../com/Icons/Iconspage.vue"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "name": "People",
+      "original": "/home/user/src/pages/batch03/People.vue",
+      "compPage": "/home/user/src/com/People/Peoplepage.vue",
+      "replacementCount": 3,
+      "locations": [
+        {
+          "componentId": 28,
+          "componentName": "People",
+          "file": "/home/user/src/router/batch03.js",
+          "line": 4,
+          "from": "../pages/batch03/People.vue",
+          "to": "../com/People/Peoplepage.vue"
+        },
+        {
+          "componentId": 28,
+          "componentName": "People",
+          "file": "/home/user/src/router/batch03.js",
+          "line": 5,
+          "from": "../pages/batch03/People.vue",
+          "to": "../com/People/Peoplepage.vue"
+        },
+        {
+          "componentId": 28,
+          "componentName": "People",
+          "file": "/home/user/src/router/batch03.js",
+          "line": 14,
+          "from": "../pages/batch03/People.vue",
+          "to": "../com/People/Peoplepage.vue"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Pricing",
+      "original": "/home/user/src/pages/batch03/Pricing.vue",
+      "compPage": "/home/user/src/com/Pricing/Pricingpage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 29,
+          "componentName": "Pricing",
+          "file": "/home/user/src/router/batch03.js",
+          "line": 12,
+          "from": "../pages/batch03/Pricing.vue",
+          "to": "../com/Pricing/Pricingpage.vue"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Search",
+      "original": "/home/user/src/pages/batch03/Search.vue",
+      "compPage": "/home/user/src/com/Search/Searchpage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 30,
+          "componentName": "Search",
+          "file": "/home/user/src/router/batch03.js",
+          "line": 13,
+          "from": "../pages/batch03/Search.vue",
+          "to": "../com/Search/Searchpage.vue"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Treeview",
+      "original": "/home/user/src/pages/batch03/Treeview.vue",
+      "compPage": "/home/user/src/com/Treeview/Treeviewpage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 31,
+          "componentName": "Treeview",
+          "file": "/home/user/src/router/batch03.js",
+          "line": 15,
+          "from": "../pages/batch03/Treeview.vue",
+          "to": "../com/Treeview/Treeviewpage.vue"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Charts",
+      "original": "/home/user/src/pages/batch04/Charts.vue",
+      "compPage": "/home/user/src/com/Charts/Chartspage.vue",
+      "replacementCount": 5,
+      "locations": [
+        {
+          "componentId": 32,
+          "componentName": "Charts",
+          "file": "/home/user/src/router/batch04.js",
+          "line": 22,
+          "from": "../pages/batch04/Charts.vue",
+          "to": "../com/Charts/Chartspage.vue"
+        },
+        {
+          "componentId": 32,
+          "componentName": "Charts",
+          "file": "/home/user/src/router/batch04.js",
+          "line": 23,
+          "from": "../pages/batch04/Charts.vue",
+          "to": "../com/Charts/Chartspage.vue"
+        },
+        {
+          "componentId": 32,
+          "componentName": "Charts",
+          "file": "/home/user/src/router/batch04.js",
+          "line": 24,
+          "from": "../pages/batch04/Charts.vue",
+          "to": "../com/Charts/Chartspage.vue"
+        },
+        {
+          "componentId": 32,
+          "componentName": "Charts",
+          "file": "/home/user/src/router/batch04.js",
+          "line": 25,
+          "from": "../pages/batch04/Charts.vue",
+          "to": "../com/Charts/Chartspage.vue"
+        },
+        {
+          "componentId": 32,
+          "componentName": "Charts",
+          "file": "/home/user/src/router/batch04.js",
+          "line": 26,
+          "from": "../pages/batch04/Charts.vue",
+          "to": "../com/Charts/Chartspage.vue"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "name": "CrudTable",
+      "original": "/home/user/src/pages/batch04/CrudTable.vue",
+      "compPage": "/home/user/src/com/CrudTable/Crudtablepage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 33,
+          "componentName": "CrudTable",
+          "file": "/home/user/src/router/batch04.js",
+          "line": 21,
+          "from": "../pages/batch04/CrudTable.vue",
+          "to": "../com/CrudTable/Crudtablepage.vue"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "name": "DataTables",
+      "original": "/home/user/src/pages/batch04/DataTables.vue",
+      "compPage": "/home/user/src/com/DataTables/DataTablespage.vue",
+      "replacementCount": 8,
+      "locations": [
+        {
+          "componentId": 34,
+          "componentName": "DataTables",
+          "file": "/home/user/src/router/batch04.js",
+          "line": 8,
+          "from": "../pages/batch04/DataTables.vue",
+          "to": "../com/DataTables/DataTablespage.vue"
+        },
+        {
+          "componentId": 34,
+          "componentName": "DataTables",
+          "file": "/home/user/src/router/batch04.js",
+          "line": 9,
+          "from": "../pages/batch04/DataTables.vue",
+          "to": "../com/DataTables/DataTablespage.vue"
+        },
+        {
+          "componentId": 34,
+          "componentName": "DataTables",
+          "file": "/home/user/src/router/batch04.js",
+          "line": 11,
+          "from": "../pages/batch04/DataTables.vue",
+          "to": "../com/DataTables/DataTablespage.vue"
+        },
+        {
+          "componentId": 34,
+          "componentName": "DataTables",
+          "file": "/home/user/src/router/batch04.js",
+          "line": 12,
+          "from": "../pages/batch04/DataTables.vue",
+          "to": "../com/DataTables/DataTablespage.vue"
+        },
+        {
+          "componentId": 34,
+          "componentName": "DataTables",
+          "file": "/home/user/src/router/batch04.js",
+          "line": 14,
+          "from": "../pages/batch04/DataTables.vue",
+          "to": "../com/DataTables/DataTablespage.vue"
+        },
+        {
+          "componentId": 34,
+          "componentName": "DataTables",
+          "file": "/home/user/src/router/batch04.js",
+          "line": 16,
+          "from": "../pages/batch04/DataTables.vue",
+          "to": "../com/DataTables/DataTablespage.vue"
+        },
+        {
+          "componentId": 34,
+          "componentName": "DataTables",
+          "file": "/home/user/src/router/batch04.js",
+          "line": 18,
+          "from": "../pages/batch04/DataTables.vue",
+          "to": "../com/DataTables/DataTablespage.vue"
+        },
+        {
+          "componentId": 34,
+          "componentName": "DataTables",
+          "file": "/home/user/src/router/batch04.js",
+          "line": 19,
+          "from": "../pages/batch04/DataTables.vue",
+          "to": "../com/DataTables/DataTablespage.vue"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "name": "Editable",
+      "original": "/home/user/src/pages/batch04/Editable.vue",
+      "compPage": "/home/user/src/com/Editable/Editablepage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 35,
+          "componentName": "Editable",
+          "file": "/home/user/src/router/batch04.js",
+          "line": 7,
+          "from": "../pages/batch04/Editable.vue",
+          "to": "../com/Editable/Editablepage.vue"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "name": "PlainTables",
+      "original": "/home/user/src/pages/batch04/PlainTables.vue",
+      "compPage": "/home/user/src/com/PlainTables/PlainTablespage.vue",
+      "replacementCount": 5,
+      "locations": [
+        {
+          "componentId": 36,
+          "componentName": "PlainTables",
+          "file": "/home/user/src/router/batch04.js",
+          "line": 2,
+          "from": "../pages/batch04/PlainTables.vue",
+          "to": "../com/PlainTables/PlainTablespage.vue"
+        },
+        {
+          "componentId": 36,
+          "componentName": "PlainTables",
+          "file": "/home/user/src/router/batch04.js",
+          "line": 3,
+          "from": "../pages/batch04/PlainTables.vue",
+          "to": "../com/PlainTables/PlainTablespage.vue"
+        },
+        {
+          "componentId": 36,
+          "componentName": "PlainTables",
+          "file": "/home/user/src/router/batch04.js",
+          "line": 4,
+          "from": "../pages/batch04/PlainTables.vue",
+          "to": "../com/PlainTables/PlainTablespage.vue"
+        },
+        {
+          "componentId": 36,
+          "componentName": "PlainTables",
+          "file": "/home/user/src/router/batch04.js",
+          "line": 5,
+          "from": "../pages/batch04/PlainTables.vue",
+          "to": "../com/PlainTables/PlainTablespage.vue"
+        },
+        {
+          "componentId": 36,
+          "componentName": "PlainTables",
+          "file": "/home/user/src/router/batch04.js",
+          "line": 6,
+          "from": "../pages/batch04/PlainTables.vue",
+          "to": "../com/PlainTables/PlainTablespage.vue"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Accordion",
+      "original": "/home/user/src/pages/batch05/Accordion.vue",
+      "compPage": "/home/user/src/com/Accordion/Accordionpage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 37,
+          "componentName": "Accordion",
+          "file": "/home/user/src/router/batch05.js",
+          "line": 7,
+          "from": "../pages/batch05/Accordion.vue",
+          "to": "../com/Accordion/Accordionpage.vue"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "name": "Alerts",
+      "original": "/home/user/src/pages/batch05/Alerts.vue",
+      "compPage": "/home/user/src/com/Alerts/Alertspage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 38,
+          "componentName": "Alerts",
+          "file": "/home/user/src/router/batch05.js",
+          "line": 6,
+          "from": "../pages/batch05/Alerts.vue",
+          "to": "../com/Alerts/Alertspage.vue"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "name": "Auth",
+      "original": "/home/user/src/pages/batch05/Auth.vue",
+      "compPage": "/home/user/src/com/Auth/Authpage.vue",
+      "replacementCount": 6,
+      "locations": [
+        {
+          "componentId": 39,
+          "componentName": "Auth",
+          "file": "/home/user/src/router/batch05.js",
+          "line": 18,
+          "from": "../pages/batch05/Auth.vue",
+          "to": "../com/Auth/Authpage.vue"
+        },
+        {
+          "componentId": 39,
+          "componentName": "Auth",
+          "file": "/home/user/src/router/batch05.js",
+          "line": 19,
+          "from": "../pages/batch05/Auth.vue",
+          "to": "../com/Auth/Authpage.vue"
+        },
+        {
+          "componentId": 39,
+          "componentName": "Auth",
+          "file": "/home/user/src/router/batch05.js",
+          "line": 20,
+          "from": "../pages/batch05/Auth.vue",
+          "to": "../com/Auth/Authpage.vue"
+        },
+        {
+          "componentId": 39,
+          "componentName": "Auth",
+          "file": "/home/user/src/router/batch05.js",
+          "line": 21,
+          "from": "../pages/batch05/Auth.vue",
+          "to": "../com/Auth/Authpage.vue"
+        },
+        {
+          "componentId": 39,
+          "componentName": "Auth",
+          "file": "/home/user/src/router/batch05.js",
+          "line": 22,
+          "from": "../pages/batch05/Auth.vue",
+          "to": "../com/Auth/Authpage.vue"
+        },
+        {
+          "componentId": 39,
+          "componentName": "Auth",
+          "file": "/home/user/src/router/batch05.js",
+          "line": 23,
+          "from": "../pages/batch05/Auth.vue",
+          "to": "../com/Auth/Authpage.vue"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "name": "Avatars",
+      "original": "/home/user/src/pages/batch05/Avatars.vue",
+      "compPage": "/home/user/src/com/Avatars/Avatarspage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 40,
+          "componentName": "Avatars",
+          "file": "/home/user/src/router/batch05.js",
+          "line": 8,
+          "from": "../pages/batch05/Avatars.vue",
+          "to": "../com/Avatars/Avatarspage.vue"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "name": "Chips",
+      "original": "/home/user/src/pages/batch05/Chips.vue",
+      "compPage": "/home/user/src/com/Chips/Chipspage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 41,
+          "componentName": "Chips",
+          "file": "/home/user/src/router/batch05.js",
+          "line": 9,
+          "from": "../pages/batch05/Chips.vue",
+          "to": "../com/Chips/Chipspage.vue"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "name": "CircularCharts",
+      "original": "/home/user/src/pages/batch05/CircularCharts.vue",
+      "compPage": "/home/user/src/com/CircularCharts/CircularChartspage.vue",
+      "replacementCount": 2,
+      "locations": [
+        {
+          "componentId": 42,
+          "componentName": "CircularCharts",
+          "file": "/home/user/src/router/batch05.js",
+          "line": 3,
+          "from": "../pages/batch05/CircularCharts.vue",
+          "to": "../com/CircularCharts/CircularChartspage.vue"
+        },
+        {
+          "componentId": 42,
+          "componentName": "CircularCharts",
+          "file": "/home/user/src/router/batch05.js",
+          "line": 5,
+          "from": "../pages/batch05/CircularCharts.vue",
+          "to": "../com/CircularCharts/CircularChartspage.vue"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "name": "Dialogs",
+      "original": "/home/user/src/pages/batch05/Dialogs.vue",
+      "compPage": "/home/user/src/com/Dialogs/Dialogspage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 43,
+          "componentName": "Dialogs",
+          "file": "/home/user/src/router/batch05.js",
+          "line": 10,
+          "from": "../pages/batch05/Dialogs.vue",
+          "to": "../com/Dialogs/Dialogspage.vue"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "name": "ErrorPage",
+      "original": "/home/user/src/pages/batch05/ErrorPage.vue",
+      "compPage": "/home/user/src/com/ErrorPage/ErrorPagepage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 44,
+          "componentName": "ErrorPage",
+          "file": "/home/user/src/router/batch05.js",
+          "line": 17,
+          "from": "../pages/batch05/ErrorPage.vue",
+          "to": "../com/ErrorPage/ErrorPagepage.vue"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "name": "Lists",
+      "original": "/home/user/src/pages/batch05/Lists.vue",
+      "compPage": "/home/user/src/com/Lists/Listspage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 45,
+          "componentName": "Lists",
+          "file": "/home/user/src/router/batch05.js",
+          "line": 11,
+          "from": "../pages/batch05/Lists.vue",
+          "to": "../com/Lists/Listspage.vue"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "name": "Menus",
+      "original": "/home/user/src/pages/batch05/Menus.vue",
+      "compPage": "/home/user/src/com/Menus/Menuspage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 46,
+          "componentName": "Menus",
+          "file": "/home/user/src/router/batch05.js",
+          "line": 12,
+          "from": "../pages/batch05/Menus.vue",
+          "to": "../com/Menus/Menuspage.vue"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "name": "Ratings",
+      "original": "/home/user/src/pages/batch05/Ratings.vue",
+      "compPage": "/home/user/src/com/Ratings/Ratingspage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 47,
+          "componentName": "Ratings",
+          "file": "/home/user/src/router/batch05.js",
+          "line": 13,
+          "from": "../pages/batch05/Ratings.vue",
+          "to": "../com/Ratings/Ratingspage.vue"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "name": "Tabs",
+      "original": "/home/user/src/pages/batch05/Tabs.vue",
+      "compPage": "/home/user/src/com/Tabs/Tabspage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 48,
+          "componentName": "Tabs",
+          "file": "/home/user/src/router/batch05.js",
+          "line": 14,
+          "from": "../pages/batch05/Tabs.vue",
+          "to": "../com/Tabs/Tabspage.vue"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "name": "Tooltips",
+      "original": "/home/user/src/pages/batch05/Tooltips.vue",
+      "compPage": "/home/user/src/com/Tooltips/Tooltipspage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 49,
+          "componentName": "Tooltips",
+          "file": "/home/user/src/router/batch05.js",
+          "line": 15,
+          "from": "../pages/batch05/Tooltips.vue",
+          "to": "../com/Tooltips/Tooltipspage.vue"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "name": "Typography",
+      "original": "/home/user/src/pages/batch05/Typography.vue",
+      "compPage": "/home/user/src/com/Typography/Typographypage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 50,
+          "componentName": "Typography",
+          "file": "/home/user/src/router/batch05.js",
+          "line": 16,
+          "from": "../pages/batch05/Typography.vue",
+          "to": "../com/Typography/Typographypage.vue"
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "name": "Autocomplete",
+      "original": "/home/user/src/pages/forms/Autocomplete.vue",
+      "compPage": "/home/user/src/com/Autocomplete/Autocompletepage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 51,
+          "componentName": "Autocomplete",
+          "file": "/home/user/src/router/batch02.js",
+          "line": 5,
+          "from": "../pages/forms/Autocomplete.vue",
+          "to": "../com/Autocomplete/Autocompletepage.vue"
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "name": "Buttons",
+      "original": "/home/user/src/pages/forms/Buttons.vue",
+      "compPage": "/home/user/src/com/Buttons/Buttonspage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 52,
+          "componentName": "Buttons",
+          "file": "/home/user/src/router/batch02.js",
+          "line": 6,
+          "from": "../pages/forms/Buttons.vue",
+          "to": "../com/Buttons/Buttonspage.vue"
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "name": "Choices",
+      "original": "/home/user/src/pages/forms/Choices.vue",
+      "compPage": "/home/user/src/com/Choices/Choicespage.vue",
+      "replacementCount": 3,
+      "locations": [
+        {
+          "componentId": 53,
+          "componentName": "Choices",
+          "file": "/home/user/src/router/batch02.js",
+          "line": 7,
+          "from": "../pages/forms/Choices.vue",
+          "to": "../com/Choices/Choicespage.vue"
+        },
+        {
+          "componentId": 53,
+          "componentName": "Choices",
+          "file": "/home/user/src/router/batch02.js",
+          "line": 12,
+          "from": "../pages/forms/Choices.vue",
+          "to": "../com/Choices/Choicespage.vue"
+        },
+        {
+          "componentId": 53,
+          "componentName": "Choices",
+          "file": "/home/user/src/router/batch02.js",
+          "line": 16,
+          "from": "../pages/forms/Choices.vue",
+          "to": "../com/Choices/Choicespage.vue"
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "name": "Combobox",
+      "original": "/home/user/src/pages/forms/Combobox.vue",
+      "compPage": "/home/user/src/com/Combobox/Comboboxpage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 54,
+          "componentName": "Combobox",
+          "file": "/home/user/src/router/batch02.js",
+          "line": 3,
+          "from": "../pages/forms/Combobox.vue",
+          "to": "../com/Combobox/Comboboxpage.vue"
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "name": "CustomForm",
+      "original": "/home/user/src/pages/forms/CustomForm.vue",
+      "compPage": "/home/user/src/com/CustomForm/CustomFormpage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 55,
+          "componentName": "CustomForm",
+          "file": "/home/user/src/router/batch02.js",
+          "line": 23,
+          "from": "../pages/forms/CustomForm.vue",
+          "to": "../com/CustomForm/CustomFormpage.vue"
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "name": "CustomInputs",
+      "original": "/home/user/src/pages/forms/CustomInputs.vue",
+      "compPage": "/home/user/src/com/CustomInputs/CustomInputspage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 56,
+          "componentName": "CustomInputs",
+          "file": "/home/user/src/router/batch02.js",
+          "line": 9,
+          "from": "../pages/forms/CustomInputs.vue",
+          "to": "../com/CustomInputs/CustomInputspage.vue"
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "name": "DateTime",
+      "original": "/home/user/src/pages/forms/DateTime.vue",
+      "compPage": "/home/user/src/com/DateTime/DateTimepage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 57,
+          "componentName": "DateTime",
+          "file": "/home/user/src/router/batch02.js",
+          "line": 13,
+          "from": "../pages/forms/DateTime.vue",
+          "to": "../com/DateTime/DateTimepage.vue"
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "name": "DirectionalForms",
+      "original": "/home/user/src/pages/forms/DirectionalForms.vue",
+      "compPage": "/home/user/src/com/DirectionalForms/DirectionalFormspage.vue",
+      "replacementCount": 2,
+      "locations": [
+        {
+          "componentId": 58,
+          "componentName": "DirectionalForms",
+          "file": "/home/user/src/router/batch02.js",
+          "line": 21,
+          "from": "../pages/forms/DirectionalForms.vue",
+          "to": "../com/DirectionalForms/DirectionalFormspage.vue"
+        },
+        {
+          "componentId": 58,
+          "componentName": "DirectionalForms",
+          "file": "/home/user/src/router/batch02.js",
+          "line": 22,
+          "from": "../pages/forms/DirectionalForms.vue",
+          "to": "../com/DirectionalForms/DirectionalFormspage.vue"
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "name": "Editor",
+      "original": "/home/user/src/pages/forms/Editor.vue",
+      "compPage": "/home/user/src/com/Editor/Editorpage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 59,
+          "componentName": "Editor",
+          "file": "/home/user/src/router/batch02.js",
+          "line": 25,
+          "from": "../pages/forms/Editor.vue",
+          "to": "../com/Editor/Editorpage.vue"
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "name": "FileInputs",
+      "original": "/home/user/src/pages/forms/FileInputs.vue",
+      "compPage": "/home/user/src/com/FileInputs/FileInputspage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 60,
+          "componentName": "FileInputs",
+          "file": "/home/user/src/router/batch02.js",
+          "line": 11,
+          "from": "../pages/forms/FileInputs.vue",
+          "to": "../com/FileInputs/FileInputspage.vue"
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "name": "FormLayouts",
+      "original": "/home/user/src/pages/forms/FormLayouts.vue",
+      "compPage": "/home/user/src/com/FormLayouts/FormLayoutspage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 61,
+          "componentName": "FormLayouts",
+          "file": "/home/user/src/router/batch02.js",
+          "line": 20,
+          "from": "../pages/forms/FormLayouts.vue",
+          "to": "../com/FormLayouts/FormLayoutspage.vue"
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "name": "Select",
+      "original": "/home/user/src/pages/forms/Select.vue",
+      "compPage": "/home/user/src/com/Select/Selectpage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 62,
+          "componentName": "Select",
+          "file": "/home/user/src/router/batch02.js",
+          "line": 14,
+          "from": "../pages/forms/Select.vue",
+          "to": "../com/Select/Selectpage.vue"
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "name": "Sliders",
+      "original": "/home/user/src/pages/forms/Sliders.vue",
+      "compPage": "/home/user/src/com/Sliders/Sliderspage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 63,
+          "componentName": "Sliders",
+          "file": "/home/user/src/router/batch02.js",
+          "line": 15,
+          "from": "../pages/forms/Sliders.vue",
+          "to": "../com/Sliders/Sliderspage.vue"
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "name": "Steppers",
+      "original": "/home/user/src/pages/forms/Steppers.vue",
+      "compPage": "/home/user/src/com/Steppers/Stepperspage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 64,
+          "componentName": "Steppers",
+          "file": "/home/user/src/router/batch02.js",
+          "line": 19,
+          "from": "../pages/forms/Steppers.vue",
+          "to": "../com/Steppers/Stepperspage.vue"
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "name": "TimePickers",
+      "original": "/home/user/src/pages/forms/TimePickers.vue",
+      "compPage": "/home/user/src/com/TimePickers/TimePickerspage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 65,
+          "componentName": "TimePickers",
+          "file": "/home/user/src/router/batch02.js",
+          "line": 18,
+          "from": "../pages/forms/TimePickers.vue",
+          "to": "../com/TimePickers/TimePickerspage.vue"
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "name": "Validation",
+      "original": "/home/user/src/pages/forms/Validation.vue",
+      "compPage": "/home/user/src/com/Validation/Validationpage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 66,
+          "componentName": "Validation",
+          "file": "/home/user/src/router/batch02.js",
+          "line": 24,
+          "from": "../pages/forms/Validation.vue",
+          "to": "../com/Validation/Validationpage.vue"
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "name": "ContactUs",
+      "original": "/home/user/src/pages/front/ContactUs.vue",
+      "compPage": "/home/user/src/com/ContactUs/ContactUspage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 67,
+          "componentName": "ContactUs",
+          "file": "/home/user/src/router/batch02.js",
+          "line": 26,
+          "from": "../pages/front/ContactUs.vue",
+          "to": "../com/ContactUs/ContactUspage.vue"
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "name": "Dashboard",
+      "original": "/home/user/src/components/Dashboard.vue",
+      "compPage": "/home/user/src/com/Dashboard/Dashboardpage.vue",
+      "replacementCount": 1,
+      "locations": [
+        {
+          "componentId": 68,
+          "componentName": "Dashboard",
+          "file": "/home/user/src/router/index.js",
+          "line": 15,
+          "from": "../components/Dashboard.vue",
+          "to": "../com/Dashboard/Dashboardpage.vue"
+        }
+      ]
+    }
+  ],
+  "postReplacementBuild": "passed",
+  "validationTiming": "One production build was run only after all 108 references had been replaced."
+}

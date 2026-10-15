@@ -1,0 +1,103 @@
+{
+  "file": "src/app/snipets/ProductDetailpage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires ProductDetail demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "product",
+    "detail"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "ref",
+        "computed"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/ProductDetail/ProductDetail.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ProductDetail/types",
+      "deps": [
+        "ProductDetailContext"
+      ]
+    },
+    {
+      "file": "vue-router",
+      "deps": [
+        "useRoute",
+        "useRouter"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/ui/WorkspacePage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ui/ProductCard.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../composables/useDemoStore",
+      "deps": [
+        "demo",
+        "money",
+        "addToCart"
+      ]
+    },
+    {
+      "file": "../../composables/useFeedback",
+      "deps": [
+        "notify"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [
+      {
+        "name": "add",
+        "params": [
+          {
+            "type": "boolean",
+            "name": "buy",
+            "opt": true
+          }
+        ],
+        "ret": "void"
+      }
+    ],
+    "classes": []
+  },
+  "rels": [],
+  "calls": [
+    {
+      "from": "add",
+      "to": "addToCart"
+    },
+    {
+      "from": "add",
+      "to": "notify"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "file": "src/com/Lists/Lists.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Reusable Lists presentation view driven by external props.",
+  "tags": [
+    "lists",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "../ui/UiPage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../ui/ExampleCard.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../ui/Icon.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "./types",
+      "deps": [
+        "ListsContext"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "ListsContext",
+        "name": "context"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

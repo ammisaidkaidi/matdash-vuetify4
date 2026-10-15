@@ -1,0 +1,70 @@
+{
+  "file": "src/app/snipets/Faqpage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires Faq demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "faq",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/Faq/Faq.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/Faq/types",
+      "deps": [
+        "FaqContext"
+      ]
+    },
+    {
+      "file": "../../com/ui/WorkspacePage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ui/FaqList.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../data/batch03",
+      "deps": [
+        "faq"
+      ]
+    },
+    {
+      "file": "../../data/app-seed",
+      "deps": [
+        "avatar"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

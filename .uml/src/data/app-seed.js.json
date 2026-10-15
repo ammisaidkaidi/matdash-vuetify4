@@ -1,0 +1,101 @@
+{
+  "file": "src/data/app-seed.js",
+  "lang": "js",
+  "kind": "module",
+  "summary": "Static app-seed demo data used by pages and widgets.",
+  "tags": [
+    "app",
+    "seed"
+  ],
+  "deps": [
+    {
+      "file": "./app-assets.json",
+      "deps": [
+        "default"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [
+      {
+        "name": "asset",
+        "params": [
+          {
+            "type": "any",
+            "name": "prefix"
+          }
+        ],
+        "ret": "any"
+      },
+      {
+        "name": "avatar",
+        "params": [
+          {
+            "type": "any",
+            "name": "n"
+          }
+        ],
+        "ret": "any"
+      }
+    ],
+    "props": [
+      {
+        "type": "any",
+        "name": "products"
+      },
+      {
+        "type": "any",
+        "name": "contacts"
+      },
+      {
+        "type": "any",
+        "name": "tickets"
+      },
+      {
+        "type": "any",
+        "name": "invoices"
+      },
+      {
+        "type": "any",
+        "name": "notes"
+      },
+      {
+        "type": "any",
+        "name": "tasks"
+      },
+      {
+        "type": "any",
+        "name": "events"
+      },
+      {
+        "type": "any",
+        "name": "mails"
+      },
+      {
+        "type": "any",
+        "name": "chatPeople"
+      },
+      {
+        "type": "any",
+        "name": "articles"
+      },
+      {
+        "type": "any",
+        "name": "posts"
+      },
+      {
+        "type": "any",
+        "name": "appSeed"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

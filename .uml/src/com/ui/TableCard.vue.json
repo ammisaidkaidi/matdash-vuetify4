@@ -1,0 +1,30 @@
+{
+  "file": "src/com/ui/TableCard.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Shared UI helper TableCard used across the demo pages.",
+  "tags": [
+    "table",
+    "card"
+  ],
+  "deps": [],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "string",
+        "name": "title",
+        "opt": true
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

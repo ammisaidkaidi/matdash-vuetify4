@@ -1,0 +1,226 @@
+{
+  "file": "src/App.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Application shell: navigation, theme, search, and account UI.",
+  "tags": [
+    "navigation",
+    "theme",
+    "search",
+    "account"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "ref",
+        "computed",
+        "watch",
+        "onMounted",
+        "onBeforeUnmount",
+        "nextTick"
+      ],
+      "ext": true
+    },
+    {
+      "file": "vuetify",
+      "deps": [
+        "useDisplay",
+        "useTheme"
+      ],
+      "ext": true
+    },
+    {
+      "file": "vue-router",
+      "deps": [
+        "useRoute",
+        "useRouter"
+      ],
+      "ext": true
+    },
+    {
+      "file": "./com/ui/AppFeedback.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "./com/ui/NavigationItem.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "./composables/useDemoAuth",
+      "deps": [
+        "demoSignedIn",
+        "clearDemoSession"
+      ]
+    },
+    {
+      "file": "./composables/useDemoStore",
+      "deps": [
+        "cartCount",
+        "cartTotal",
+        "money"
+      ]
+    },
+    {
+      "file": "../builtin/assets/AppSitemap.V2.json",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "./data/navigation",
+      "deps": [
+        "routeCatalog"
+      ]
+    },
+    {
+      "file": "./data/dashboard",
+      "deps": [
+        "productSets"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [
+      {
+        "name": "readStorage",
+        "params": [
+          {
+            "type": "any",
+            "name": "key"
+          }
+        ],
+        "ret": "any"
+      },
+      {
+        "name": "writeStorage",
+        "params": [
+          {
+            "type": "any",
+            "name": "key"
+          },
+          {
+            "type": "any",
+            "name": "value"
+          }
+        ],
+        "ret": "void"
+      },
+      {
+        "name": "readJson",
+        "params": [
+          {
+            "type": "any",
+            "name": "key"
+          }
+        ],
+        "ret": "any"
+      },
+      {
+        "name": "setDark",
+        "params": [
+          {
+            "type": "any",
+            "name": "value"
+          }
+        ],
+        "ret": "any"
+      },
+      {
+        "name": "demoLogout",
+        "params": [],
+        "ret": "void"
+      },
+      {
+        "name": "notice",
+        "params": [
+          {
+            "type": "any",
+            "name": "text"
+          }
+        ],
+        "ret": "void"
+      },
+      {
+        "name": "syncNavigation",
+        "params": [],
+        "ret": "void"
+      },
+      {
+        "name": "chooseCategory",
+        "params": [
+          {
+            "type": "any",
+            "name": "name"
+          }
+        ],
+        "ret": "any"
+      },
+      {
+        "name": "closeSidebarOnMobile",
+        "params": [],
+        "ret": "void"
+      },
+      {
+        "name": "jump",
+        "params": [
+          {
+            "type": "any",
+            "name": "item"
+          }
+        ],
+        "ret": "any",
+        "async": true
+      },
+      {
+        "name": "resetSettings",
+        "params": [],
+        "ret": "void"
+      },
+      {
+        "name": "csvCell",
+        "params": [
+          {
+            "type": "any",
+            "name": "value"
+          }
+        ],
+        "ret": "any"
+      },
+      {
+        "name": "exportReport",
+        "params": [],
+        "ret": "void"
+      },
+      {
+        "name": "onKeydown",
+        "params": [
+          {
+            "type": "any",
+            "name": "e"
+          }
+        ],
+        "ret": "void"
+      }
+    ],
+    "classes": []
+  },
+  "rels": [],
+  "calls": [
+    {
+      "from": "demoLogout",
+      "to": "clearDemoSession"
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "file": "src/app/snipets/AccountSettingspage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires AccountSettings demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "account",
+    "settings"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "computed",
+        "reactive",
+        "ref",
+        "onBeforeUnmount",
+        "onMounted"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/AccountSettings/AccountSettings.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/AccountSettings/types",
+      "deps": [
+        "AccountSettingsContext"
+      ]
+    },
+    {
+      "file": "vue-router",
+      "deps": [
+        "onBeforeRouteLeave",
+        "useRoute",
+        "useRouter"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/ui/PageHeader.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ui/SettingsField.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../composables/useAccountSettings",
+      "deps": [
+        "useAccountSettings",
+        "defaultAvatar"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [
+      {
+        "name": "notify",
+        "params": [
+          {
+            "type": "any",
+            "name": "text"
+          },
+          {
+            "type": "string",
+            "name": "color",
+            "opt": true
+          }
+        ],
+        "ret": "void"
+      },
+      {
+        "name": "askConfirmation",
+        "params": [
+          {
+            "type": "any",
+            "name": "title"
+          },
+          {
+            "type": "any",
+            "name": "text"
+          },
+          {
+            "type": "any",
+            "name": "action"
+          }
+        ],
+        "ret": "void"
+      },
+      {
+        "name": "confirmAction",
+        "params": [],
+        "ret": "void"
+      },
+      {
+        "name": "clearPasswords",
+        "params": [],
+        "ret": "void"
+      },
+      {
+        "name": "saveTab",
+        "params": [],
+        "ret": "any",
+        "async": true
+      },
+      {
+        "name": "cancelChanges",
+        "params": [],
+        "ret": "void"
+      },
+      {
+        "name": "readUpload",
+        "params": [
+          {
+            "type": "any",
+            "name": "event"
+          }
+        ],
+        "ret": "any"
+      },
+      {
+        "name": "openSetup",
+        "params": [
+          {
+            "type": "any",
+            "name": "mode"
+          }
+        ],
+        "ret": "void"
+      },
+      {
+        "name": "finishSetup",
+        "params": [],
+        "ret": "any"
+      },
+      {
+        "name": "respondToLeave",
+        "params": [
+          {
+            "type": "any",
+            "name": "leave"
+          }
+        ],
+        "ret": "void"
+      },
+      {
+        "name": "beforeUnload",
+        "params": [
+          {
+            "type": "any",
+            "name": "e"
+          }
+        ],
+        "ret": "void"
+      }
+    ],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

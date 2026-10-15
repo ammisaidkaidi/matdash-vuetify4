@@ -1,0 +1,54 @@
+{
+  "file": "src/com/Chips/Chips.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Reusable Chips presentation view driven by external props.",
+  "tags": [
+    "chips",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "../ui/UiPage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../ui/ExampleCard.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../ui/Icon.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "./types",
+      "deps": [
+        "ChipsContext"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "ChipsContext",
+        "name": "context"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

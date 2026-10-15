@@ -1,0 +1,82 @@
+{
+  "file": "src/app/router/batch03.js",
+  "lang": "js",
+  "kind": "config",
+  "summary": "Lazy route definitions for the batch03 page batch.",
+  "tags": [
+    "routing",
+    "batch03"
+  ],
+  "deps": [
+    {
+      "file": "../snipets/Dashboardspage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/Peoplepage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/Gallerypage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/Bannerspage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/CardWidgetspage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/ChartWidgetspage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/Faqpage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/Pricingpage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/Searchpage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/Treeviewpage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/Iconspage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/FrontMarketingpage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/FrontBlogpage.vue",
+      "deps": []
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "any",
+        "name": "batch03Loaders"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

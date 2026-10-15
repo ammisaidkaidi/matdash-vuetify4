@@ -1,0 +1,72 @@
+{
+  "file": "src/app/snipets/Chartspage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires Charts demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "charts",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "computed"
+      ],
+      "ext": true
+    },
+    {
+      "file": "vue-router",
+      "deps": [
+        "useRoute"
+      ],
+      "ext": true
+    },
+    {
+      "file": "vuetify",
+      "deps": [
+        "useTheme"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/ui/WorkspacePage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/Charts/Charts.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/Charts/types",
+      "deps": [
+        "ChartDataColumn",
+        "ChartDataRow",
+        "ChartOptions"
+      ]
+    },
+    {
+      "file": "../../data/chart-examples",
+      "deps": [
+        "chartExamples"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

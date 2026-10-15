@@ -1,0 +1,59 @@
+{
+  "file": "src/app/snipets/DateTimepage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires DateTime demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "date",
+    "time"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "ref"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/DateTime/DateTime.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/DateTime/types",
+      "deps": [
+        "DateTimeContext"
+      ]
+    },
+    {
+      "file": "../../com/ui/FormPage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ui/ExampleCard.vue",
+      "deps": [
+        "default"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

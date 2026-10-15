@@ -1,0 +1,83 @@
+{
+  "file": "src/app/snipets/Chipspage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires Chips demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "chips",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "ref"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/Chips/Chips.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/Chips/types",
+      "deps": [
+        "ChipsContext"
+      ]
+    },
+    {
+      "file": "@mdi/js",
+      "deps": [
+        "mdiCheck"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/ui/UiPage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ui/ExampleCard.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../data/app-seed",
+      "deps": [
+        "avatar"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [
+      {
+        "name": "remove",
+        "params": [
+          {
+            "type": "any",
+            "name": "id"
+          }
+        ],
+        "ret": "void"
+      }
+    ],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

@@ -1,0 +1,86 @@
+{
+  "file": "src/app/router/batch05.js",
+  "lang": "js",
+  "kind": "config",
+  "summary": "Lazy route definitions for the batch05 page batch.",
+  "tags": [
+    "routing",
+    "batch05"
+  ],
+  "deps": [
+    {
+      "file": "../snipets/CircularChartspage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/Alertspage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/Accordionpage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/Avatarspage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/Chipspage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/Dialogspage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/Listspage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/Menuspage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/Ratingspage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/Tabspage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/Tooltipspage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/Typographypage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/ErrorPagepage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/Authpage.vue",
+      "deps": []
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "any",
+        "name": "batch05Loaders"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

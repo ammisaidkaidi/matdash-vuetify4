@@ -1,0 +1,142 @@
+{
+  "file": "src/app/snipets/Emailpage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires Email demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "email",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "ref",
+        "computed"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/Email/Email.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/Email/types",
+      "deps": [
+        "EmailContext"
+      ]
+    },
+    {
+      "file": "../../com/ui/WorkspacePage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../composables/useDemoStore",
+      "deps": [
+        "demo",
+        "nextId"
+      ]
+    },
+    {
+      "file": "../../composables/useFeedback",
+      "deps": [
+        "required",
+        "validEmail",
+        "notify",
+        "confirmDemo"
+      ]
+    },
+    {
+      "file": "../../data/app-seed",
+      "deps": [
+        "avatar"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [
+      {
+        "name": "open",
+        "params": [
+          {
+            "type": "any",
+            "name": "m"
+          }
+        ],
+        "ret": "void"
+      },
+      {
+        "name": "compose",
+        "params": [
+          {
+            "type": "boolean",
+            "name": "reply",
+            "opt": true
+          },
+          {
+            "type": "boolean",
+            "name": "forward",
+            "opt": true
+          }
+        ],
+        "ret": "void"
+      },
+      {
+        "name": "savedMail",
+        "params": [
+          {
+            "type": "any",
+            "name": "target"
+          }
+        ],
+        "ret": "void"
+      },
+      {
+        "name": "send",
+        "params": [],
+        "ret": "void",
+        "async": true
+      },
+      {
+        "name": "remove",
+        "params": [],
+        "ret": "any",
+        "async": true
+      }
+    ],
+    "classes": []
+  },
+  "rels": [],
+  "calls": [
+    {
+      "from": "savedMail",
+      "to": "nextId"
+    },
+    {
+      "from": "savedMail",
+      "to": "notify"
+    },
+    {
+      "from": "remove",
+      "to": "confirmDemo"
+    },
+    {
+      "from": "remove",
+      "to": "notify"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "file": "src/com/ui/SampleTable.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Shared UI helper SampleTable used across the demo pages.",
+  "tags": [
+    "sample",
+    "table"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "ref",
+        "computed"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../data/table-seed",
+      "deps": [
+        "projectRows",
+        "customerRows",
+        "authors",
+        "budgetLabel",
+        "statusColor"
+      ]
+    },
+    {
+      "file": "../../data/app-seed",
+      "deps": [
+        "avatar"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "string",
+        "name": "kind",
+        "opt": true
+      },
+      {
+        "type": "boolean",
+        "name": "dark",
+        "opt": true
+      },
+      {
+        "type": "string",
+        "name": "density",
+        "opt": true
+      },
+      {
+        "type": "number|string",
+        "name": "height",
+        "opt": true
+      },
+      {
+        "type": "boolean",
+        "name": "fixed",
+        "opt": true
+      },
+      {
+        "type": "boolean",
+        "name": "full",
+        "opt": true
+      },
+      {
+        "type": "boolean",
+        "name": "actions",
+        "opt": true
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

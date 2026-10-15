@@ -1,0 +1,58 @@
+{
+  "file": "src/app/snipets/Typographypage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires Typography demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "typography",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/Typography/Typography.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/Typography/types",
+      "deps": [
+        "TypographyContext"
+      ]
+    },
+    {
+      "file": "../../com/ui/UiPage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ui/ExampleCard.vue",
+      "deps": [
+        "default"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

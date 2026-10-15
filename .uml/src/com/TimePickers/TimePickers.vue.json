@@ -1,0 +1,55 @@
+{
+  "file": "src/com/TimePickers/TimePickers.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Reusable TimePickers presentation view driven by external props.",
+  "tags": [
+    "time",
+    "pickers"
+  ],
+  "deps": [
+    {
+      "file": "vuetify/components",
+      "deps": [
+        "VTimePicker"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../ui/FormPage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../ui/ExampleCard.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "./types",
+      "deps": [
+        "TimePickersContext"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "TimePickersContext",
+        "name": "context"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

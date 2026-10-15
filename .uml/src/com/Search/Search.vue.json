@@ -1,0 +1,55 @@
+{
+  "file": "src/com/Search/Search.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Reusable Search presentation view driven by external props.",
+  "tags": [
+    "search",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "vuetify/components",
+      "deps": [
+        "VPagination"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../ui/WorkspacePage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../ui/Icon.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "./types",
+      "deps": [
+        "SearchContext"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "SearchContext",
+        "name": "context"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

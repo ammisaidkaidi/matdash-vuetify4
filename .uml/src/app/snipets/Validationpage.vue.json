@@ -1,0 +1,103 @@
+{
+  "file": "src/app/snipets/Validationpage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires Validation demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "validation",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "reactive",
+        "ref"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/Validation/Validation.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/Validation/types",
+      "deps": [
+        "ValidationContext"
+      ]
+    },
+    {
+      "file": "../../com/ui/FormPage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ui/ExampleCard.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../composables/useFeedback",
+      "deps": [
+        "required",
+        "validEmail",
+        "notify"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [
+      {
+        "name": "submit",
+        "params": [
+          {
+            "type": "any",
+            "name": "form"
+          },
+          {
+            "type": "any",
+            "name": "model"
+          }
+        ],
+        "ret": "void",
+        "async": true
+      },
+      {
+        "name": "submitChoices",
+        "params": [
+          {
+            "type": "any",
+            "name": "radio"
+          }
+        ],
+        "ret": "void"
+      }
+    ],
+    "classes": []
+  },
+  "rels": [],
+  "calls": [
+    {
+      "from": "submit",
+      "to": "notify"
+    },
+    {
+      "from": "submitChoices",
+      "to": "notify"
+    }
+  ]
+}

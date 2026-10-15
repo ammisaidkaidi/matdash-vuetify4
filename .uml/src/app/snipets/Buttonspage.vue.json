@@ -1,0 +1,65 @@
+{
+  "file": "src/app/snipets/Buttonspage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires Buttons demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "buttons",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "ref"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/Buttons/Buttons.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/Buttons/types",
+      "deps": [
+        "ButtonsContext"
+      ]
+    },
+    {
+      "file": "../../com/ui/FormPage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ui/ExampleCard.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../composables/useFeedback",
+      "deps": [
+        "notify"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

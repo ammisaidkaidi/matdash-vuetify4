@@ -1,0 +1,94 @@
+{
+  "file": "src/com/Editable/Editable.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Reusable Editable presentation view driven by external props.",
+  "tags": [
+    "editable",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "ref"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../CrudTable/Crudtable.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "./types",
+      "deps": [
+        "CrudField",
+        "CrudLabels",
+        "EditableHandle"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "CrudField<T>[]",
+        "name": "fields"
+      },
+      {
+        "type": "string",
+        "name": "title",
+        "opt": true
+      },
+      {
+        "type": "string",
+        "name": "entity",
+        "opt": true
+      },
+      {
+        "type": "string",
+        "name": "entityPlural",
+        "opt": true
+      },
+      {
+        "type": "Extract<keyof T, string>",
+        "name": "itemKey",
+        "opt": true
+      },
+      {
+        "type": "Extract<keyof T, string> | ((item: T) => string)",
+        "name": "itemLabel",
+        "opt": true
+      },
+      {
+        "type": "Partial<CrudLabels>",
+        "name": "labels",
+        "opt": true
+      }
+    ],
+    "emits": [
+      {
+        "name": "create",
+        "payload": ""
+      },
+      {
+        "name": "update",
+        "payload": ""
+      },
+      {
+        "name": "delete",
+        "payload": ""
+      }
+    ],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

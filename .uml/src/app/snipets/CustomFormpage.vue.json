@@ -1,0 +1,81 @@
+{
+  "file": "src/app/snipets/CustomFormpage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires CustomForm demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "custom",
+    "form"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "reactive",
+        "ref"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/CustomForm/CustomForm.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/CustomForm/types",
+      "deps": [
+        "CustomFormContext"
+      ]
+    },
+    {
+      "file": "vuetify/components",
+      "deps": [
+        "VSlider",
+        "VRangeSlider"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/ui/FormPage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ui/ExampleCard.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../composables/useFeedback",
+      "deps": [
+        "required"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [
+      {
+        "name": "add",
+        "params": [],
+        "ret": "void",
+        "async": true
+      }
+    ],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

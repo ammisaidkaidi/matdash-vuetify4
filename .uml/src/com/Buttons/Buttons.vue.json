@@ -1,0 +1,54 @@
+{
+  "file": "src/com/Buttons/Buttons.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Reusable Buttons presentation view driven by external props.",
+  "tags": [
+    "buttons",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "../ui/FormPage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../ui/ExampleCard.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../ui/Icon.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "./types",
+      "deps": [
+        "ButtonsContext"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "ButtonsContext",
+        "name": "context"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

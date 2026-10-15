@@ -1,0 +1,52 @@
+{
+  "file": "src/app/snipets/ErrorPagepage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires ErrorPage demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "error",
+    "page"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/ErrorPage/ErrorPage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ErrorPage/types",
+      "deps": [
+        "ErrorPageContext"
+      ]
+    },
+    {
+      "file": "../../data/app-seed",
+      "deps": [
+        "asset"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

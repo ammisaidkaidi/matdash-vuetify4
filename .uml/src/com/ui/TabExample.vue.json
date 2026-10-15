@@ -1,0 +1,53 @@
+{
+  "file": "src/com/ui/TabExample.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Shared UI helper TabExample used across the demo pages.",
+  "tags": [
+    "tab",
+    "example"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "ref",
+        "computed"
+      ],
+      "ext": true
+    },
+    {
+      "file": "@mdi/js",
+      "deps": [
+        "mdiArrowLeftBold",
+        "mdiArrowRightBold"
+      ],
+      "ext": true
+    },
+    {
+      "file": "./ExampleCard.vue",
+      "deps": [
+        "default"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "string",
+        "name": "title",
+        "opt": true
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

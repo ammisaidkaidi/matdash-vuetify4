@@ -1,0 +1,53 @@
+{
+  "file": "vite.config.js",
+  "lang": "js",
+  "kind": "config",
+  "summary": "Vite config enabling the Vue plugin, devtools, and LAN hosting.",
+  "tags": [
+    "build",
+    "dev-server",
+    "config"
+  ],
+  "deps": [
+    {
+      "file": "vite",
+      "deps": [
+        "defineConfig"
+      ],
+      "ext": true
+    },
+    {
+      "file": "@vitejs/plugin-vue",
+      "deps": [
+        "default"
+      ],
+      "ext": true
+    },
+    {
+      "file": "vite-plugin-vue-devtools",
+      "deps": [
+        "default"
+      ],
+      "ext": true
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "any",
+        "name": "default",
+        "default": true
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

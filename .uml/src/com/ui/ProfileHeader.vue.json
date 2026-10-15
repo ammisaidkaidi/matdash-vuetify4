@@ -1,0 +1,78 @@
+{
+  "file": "src/com/ui/ProfileHeader.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Shared UI helper ProfileHeader used across the demo pages.",
+  "tags": [
+    "profile",
+    "header"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "ref"
+      ],
+      "ext": true
+    },
+    {
+      "file": "vue-router",
+      "deps": [
+        "useRoute"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../data/app-seed",
+      "deps": [
+        "asset",
+        "avatar"
+      ]
+    },
+    {
+      "file": "../../composables/useDemoStore",
+      "deps": [
+        "demo",
+        "nextId"
+      ]
+    },
+    {
+      "file": "../../composables/useFeedback",
+      "deps": [
+        "notify"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [
+      {
+        "name": "share",
+        "params": [],
+        "ret": "void"
+      }
+    ],
+    "classes": []
+  },
+  "rels": [],
+  "calls": [
+    {
+      "from": "share",
+      "to": "nextId"
+    },
+    {
+      "from": "share",
+      "to": "avatar"
+    },
+    {
+      "from": "share",
+      "to": "notify"
+    }
+  ]
+}

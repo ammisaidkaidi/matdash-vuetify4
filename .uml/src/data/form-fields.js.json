@@ -1,0 +1,45 @@
+{
+  "file": "src/data/form-fields.js",
+  "lang": "js",
+  "kind": "module",
+  "summary": "Static form-fields demo data used by pages and widgets.",
+  "tags": [
+    "form",
+    "fields"
+  ],
+  "deps": [],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "any",
+        "name": "countries"
+      },
+      {
+        "type": "any",
+        "name": "basicFields"
+      },
+      {
+        "type": "any",
+        "name": "accountFields"
+      },
+      {
+        "type": "any",
+        "name": "personalFields"
+      },
+      {
+        "type": "any",
+        "name": "addressFields"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

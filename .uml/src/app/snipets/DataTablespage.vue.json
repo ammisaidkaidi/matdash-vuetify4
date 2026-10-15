@@ -1,0 +1,87 @@
+{
+  "file": "src/app/snipets/DataTablespage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires DataTables demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "data",
+    "tables"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "computed"
+      ],
+      "ext": true
+    },
+    {
+      "file": "vue-router",
+      "deps": [
+        "useRoute"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/ui/Icon.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ui/WorkspacePage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/DataTables/DataTables.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/DataTables/types",
+      "deps": [
+        "DataTableColumn",
+        "DataTableFilter",
+        "DataTableSelectStrategy",
+        "DataTableSort"
+      ]
+    },
+    {
+      "file": "../../data/table-seed",
+      "deps": [
+        "projectRows",
+        "projectHeaders",
+        "budgetLabel",
+        "statusColor",
+        "gpuRows"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [
+      {
+        "name": "propsFor",
+        "params": [
+          {
+            "type": "ProjectExample",
+            "name": "example"
+          }
+        ],
+        "ret": "any"
+      }
+    ],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

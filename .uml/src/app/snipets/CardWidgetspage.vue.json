@@ -1,0 +1,117 @@
+{
+  "file": "src/app/snipets/CardWidgetspage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires CardWidgets demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "card",
+    "widgets"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "ref"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/CardWidgets/CardWidgets.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/CardWidgets/types",
+      "deps": [
+        "CardWidgetsContext"
+      ]
+    },
+    {
+      "file": "vuetify/components",
+      "deps": [
+        "VSlider"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/ui/WorkspacePage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ui/Activities.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../data/app-seed",
+      "deps": [
+        "articles",
+        "avatar",
+        "asset"
+      ]
+    },
+    {
+      "file": "../../composables/useDemoStore",
+      "deps": [
+        "demo",
+        "addToCart",
+        "money"
+      ]
+    },
+    {
+      "file": "../../composables/usePageDemos",
+      "deps": [
+        "pageDemos",
+        "toggleFollow"
+      ]
+    },
+    {
+      "file": "../../composables/useFeedback",
+      "deps": [
+        "notify",
+        "confirmDemo"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [
+      {
+        "name": "gift",
+        "params": [
+          {
+            "type": "any",
+            "name": "name"
+          }
+        ],
+        "ret": "void",
+        "async": true
+      }
+    ],
+    "classes": []
+  },
+  "rels": [],
+  "calls": [
+    {
+      "from": "gift",
+      "to": "confirmDemo"
+    },
+    {
+      "from": "gift",
+      "to": "notify"
+    }
+  ]
+}

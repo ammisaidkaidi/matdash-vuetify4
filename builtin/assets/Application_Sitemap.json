@@ -1,0 +1,112 @@
+{
+  "hanout": {
+    "name": "HANOUT",
+    "title_ar": "تنظيم الحانوت",
+    "modules": [
+      {
+        "id": 1,
+        "name": "Tableau de bord",
+        "submodules": [
+          "Ventes du jour / semaine / mois",
+          "Alertes stock (rupture, seuil minimum)",
+          "Créances et dettes en cours",
+          "Solde de caisse"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Ventes",
+        "submodules": [
+          "Point de vente (caisse)",
+          "Devis",
+          "Commandes clients",
+          "Bons de livraison",
+          "Factures de vente",
+          "Retours et avoirs clients",
+          "Encaissements (crédit client / ardoise)"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Achats",
+        "submodules": [
+          "Demandes de prix",
+          "Commandes fournisseurs",
+          "Bons de réception",
+          "Factures d'achat",
+          "Retours fournisseurs",
+          "Paiements fournisseurs"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Produits",
+        "submodules": {
+          "catalogue": [
+            "Articles (codes-barres, variantes)",
+            "Catégories et marques",
+            "Unités (pièce, kg, carton...)",
+            "Prix et tarifs (détail / gros)"
+          ],
+          "stock": [
+            "Niveaux de stock",
+            "Mouvements (entrées / sorties)",
+            "Inventaire",
+            "Dépôts / emplacements",
+            "Lots et dates de péremption"
+          ]
+        }
+      },
+      {
+        "id": 5,
+        "name": "Contacts",
+        "submodules": [
+          "Clients",
+          "Fournisseurs",
+          "Agents (commerciaux, livreurs)",
+          "Employés",
+          "Autres (banques, transporteurs...)"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Comptabilité",
+        "submodules": [
+          "Caisse",
+          "Banque",
+          "Dépenses et charges",
+          "Paiements (reçus / émis)",
+          "Créances clients",
+          "Dettes fournisseurs",
+          "Journal et plan comptable",
+          "TVA et taxes",
+          "Bilan et résultats"
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Rapports",
+        "submodules": [
+          "Ventes par produit / client / agent",
+          "Achats par fournisseur",
+          "Marge et bénéfice",
+          "Valeur du stock",
+          "Export (PDF / Excel)"
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Paramètres",
+        "submodules": [
+          "Société (nom, logo, adresse, NIF/RC)",
+          "Utilisateurs et rôles",
+          "Devises et taxes",
+          "Numérotation des documents",
+          "Modèles d'impression (facture, ticket)",
+          "Langue (AR / FR)",
+          "Sauvegarde et restauration"
+        ]
+      }
+    ]
+  }
+}

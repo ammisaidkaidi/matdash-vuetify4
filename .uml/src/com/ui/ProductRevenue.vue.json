@@ -1,0 +1,39 @@
+{
+  "file": "src/com/ui/ProductRevenue.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Shared UI helper ProductRevenue used across the demo pages.",
+  "tags": [
+    "product",
+    "revenue"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "ref",
+        "computed"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../data/dashboard",
+      "deps": [
+        "productSets"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

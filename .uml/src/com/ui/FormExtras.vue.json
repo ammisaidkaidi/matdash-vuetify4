@@ -1,0 +1,67 @@
+{
+  "file": "src/com/ui/FormExtras.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Shared UI helper FormExtras used across the demo pages.",
+  "tags": [
+    "form",
+    "extras"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "ref"
+      ],
+      "ext": true
+    },
+    {
+      "file": "vuetify/components",
+      "deps": [
+        "VExpansionPanels",
+        "VExpansionPanel",
+        "VExpansionPanelTitle",
+        "VExpansionPanelText"
+      ],
+      "ext": true
+    },
+    {
+      "file": "./ExampleCard.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "./DemoForm.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../data/form-fields",
+      "deps": [
+        "personalFields",
+        "addressFields"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "boolean",
+        "name": "horizontal",
+        "opt": true
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

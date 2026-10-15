@@ -1,0 +1,23 @@
+export const batch03Loaders = {
+  "/dashboards/dashboard2": () => import("../snipets/Dashboardspage.vue"),
+  "/dashboards/dashboard3": () => import("../snipets/Dashboardspage.vue"),
+  "/apps/user/profile/followers": () => import("../snipets/Peoplepage.vue"),
+  "/apps/user/profile/friends": () => import("../snipets/Peoplepage.vue"),
+  "/apps/user/profile/gallery": () => import("../snipets/Gallerypage.vue"),
+  "/widgets/banners": () => import("../snipets/Bannerspage.vue"),
+  "/widgets/cards": () => import("../snipets/CardWidgetspage.vue"),
+  "/widgets/charts": () => import("../snipets/ChartWidgetspage.vue"),
+  "/pages/faq": () => import("../snipets/Faqpage.vue"),
+  "/pages/gallery-lightbox": () => import("../snipets/Gallerypage.vue"),
+  "/pages/pricing": () => import("../snipets/Pricingpage.vue"),
+  "/pages/search-results": () => import("../snipets/Searchpage.vue"),
+  "/pages/social-media-contacts": () => import("../snipets/Peoplepage.vue"),
+  "/pages/treeview": () => import("../snipets/Treeviewpage.vue"),
+  "/icons/tabler": () => import("../snipets/Iconspage.vue"),
+  "/icons/solar": () => import("../snipets/Iconspage.vue"),
+  "/front-page/homepage": () => import("../snipets/FrontMarketingpage.vue"),
+  "/front-page/about-us": () => import("../snipets/FrontMarketingpage.vue"),
+  "/front-page/blog/posts": () => import("../snipets/FrontBlogpage.vue"),
+  "/front-page/blog/early-black-friday-amazon-deals-cheap-tvs-headphones": () =>
+    import("../snipets/FrontBlogpage.vue"),
+};

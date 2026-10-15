@@ -1,0 +1,133 @@
+{
+  "file": "src/app/snipets/Kanbanpage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires Kanban demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "kanban",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "ref"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/Kanban/Kanban.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/Kanban/types",
+      "deps": [
+        "KanbanContext"
+      ]
+    },
+    {
+      "file": "../../com/ui/WorkspacePage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ui/RecordDialog.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../composables/useDemoStore",
+      "deps": [
+        "demo",
+        "nextId"
+      ]
+    },
+    {
+      "file": "../../composables/useFeedback",
+      "deps": [
+        "confirmDemo",
+        "notify"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [
+      {
+        "name": "edit",
+        "params": [
+          {
+            "type": "any",
+            "name": "task"
+          },
+          {
+            "type": "string",
+            "name": "column",
+            "opt": true
+          }
+        ],
+        "ret": "void"
+      },
+      {
+        "name": "save",
+        "params": [
+          {
+            "type": "any",
+            "name": "task"
+          }
+        ],
+        "ret": "void"
+      },
+      {
+        "name": "drop",
+        "params": [
+          {
+            "type": "any",
+            "name": "column"
+          }
+        ],
+        "ret": "void"
+      },
+      {
+        "name": "remove",
+        "params": [
+          {
+            "type": "any",
+            "name": "task"
+          }
+        ],
+        "ret": "void",
+        "async": true
+      }
+    ],
+    "classes": []
+  },
+  "rels": [],
+  "calls": [
+    {
+      "from": "save",
+      "to": "nextId"
+    },
+    {
+      "from": "save",
+      "to": "notify"
+    },
+    {
+      "from": "remove",
+      "to": "confirmDemo"
+    }
+  ]
+}

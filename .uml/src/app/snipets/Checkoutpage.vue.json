@@ -1,0 +1,99 @@
+{
+  "file": "src/app/snipets/Checkoutpage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires Checkout demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "checkout",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "ref",
+        "reactive"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/Checkout/Checkout.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/Checkout/types",
+      "deps": [
+        "CheckoutContext"
+      ]
+    },
+    {
+      "file": "../../com/ui/WorkspacePage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../composables/useDemoStore",
+      "deps": [
+        "demo",
+        "cartLines",
+        "cartTotal",
+        "money",
+        "nextId"
+      ]
+    },
+    {
+      "file": "../../composables/useFeedback",
+      "deps": [
+        "required",
+        "validEmail",
+        "notify"
+      ]
+    },
+    {
+      "file": "../../data/app-seed",
+      "deps": [
+        "asset"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [
+      {
+        "name": "next",
+        "params": [],
+        "ret": "any",
+        "async": true
+      },
+      {
+        "name": "place",
+        "params": [],
+        "ret": "any"
+      }
+    ],
+    "classes": []
+  },
+  "rels": [],
+  "calls": [
+    {
+      "from": "place",
+      "to": "nextId"
+    },
+    {
+      "from": "place",
+      "to": "notify"
+    }
+  ]
+}

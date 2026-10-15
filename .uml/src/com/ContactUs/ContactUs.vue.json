@@ -1,0 +1,42 @@
+{
+  "file": "src/com/ContactUs/ContactUs.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Reusable ContactUs presentation view driven by external props.",
+  "tags": [
+    "contact",
+    "us"
+  ],
+  "deps": [
+    {
+      "file": "../ui/Icon.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "./types",
+      "deps": [
+        "ContactUsContext"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "ContactUsContext",
+        "name": "context"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

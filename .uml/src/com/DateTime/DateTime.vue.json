@@ -1,0 +1,48 @@
+{
+  "file": "src/com/DateTime/DateTime.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Reusable DateTime presentation view driven by external props.",
+  "tags": [
+    "date",
+    "time"
+  ],
+  "deps": [
+    {
+      "file": "../ui/FormPage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../ui/ExampleCard.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "./types",
+      "deps": [
+        "DateTimeContext"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "DateTimeContext",
+        "name": "context"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

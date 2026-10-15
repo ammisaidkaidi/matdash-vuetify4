@@ -1,0 +1,29 @@
+{
+  "file": "src/data/dashboard.js",
+  "lang": "js",
+  "kind": "module",
+  "summary": "Static dashboard demo data used by pages and widgets.",
+  "tags": [
+    "dashboard",
+    "demo"
+  ],
+  "deps": [],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "any",
+        "name": "productSets"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

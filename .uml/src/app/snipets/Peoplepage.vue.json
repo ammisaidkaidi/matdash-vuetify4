@@ -1,0 +1,88 @@
+{
+  "file": "src/app/snipets/Peoplepage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires People demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "people",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "ref",
+        "computed"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/People/People.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/People/types",
+      "deps": [
+        "PeopleContext"
+      ]
+    },
+    {
+      "file": "vue-router",
+      "deps": [
+        "useRoute"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/ui/WorkspacePage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ui/ProfileHeader.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../data/batch03",
+      "deps": [
+        "followers",
+        "friends",
+        "social"
+      ]
+    },
+    {
+      "file": "../../composables/usePageDemos",
+      "deps": [
+        "pageDemos",
+        "toggleFollow"
+      ]
+    },
+    {
+      "file": "../../composables/useFeedback",
+      "deps": [
+        "notify"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

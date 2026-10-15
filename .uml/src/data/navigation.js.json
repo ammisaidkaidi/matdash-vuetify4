@@ -1,0 +1,33 @@
+{
+  "file": "src/data/navigation.js",
+  "lang": "js",
+  "kind": "module",
+  "summary": "Static navigation demo data used by pages and widgets.",
+  "tags": [
+    "navigation",
+    "demo"
+  ],
+  "deps": [],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "any",
+        "name": "groups"
+      },
+      {
+        "type": "any",
+        "name": "routeCatalog"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

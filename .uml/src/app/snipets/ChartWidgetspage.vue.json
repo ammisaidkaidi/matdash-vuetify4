@@ -1,0 +1,60 @@
+{
+  "file": "src/app/snipets/ChartWidgetspage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires ChartWidgets demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "chart",
+    "widgets"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "ref",
+        "computed"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/ChartWidgets/ChartWidgets.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ChartWidgets/types",
+      "deps": [
+        "ChartWidgetsContext"
+      ]
+    },
+    {
+      "file": "../../com/ui/WorkspacePage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ui/MiniChart.vue",
+      "deps": [
+        "default"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

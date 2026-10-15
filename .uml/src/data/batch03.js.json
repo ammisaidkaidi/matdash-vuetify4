@@ -1,0 +1,61 @@
+{
+  "file": "src/data/batch03.js",
+  "lang": "js",
+  "kind": "module",
+  "summary": "Static batch03 demo data used by pages and widgets.",
+  "tags": [
+    "batch03",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "./app-seed",
+      "deps": [
+        "asset",
+        "avatar"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "any",
+        "name": "followers"
+      },
+      {
+        "type": "any",
+        "name": "friends"
+      },
+      {
+        "type": "any",
+        "name": "social"
+      },
+      {
+        "type": "any",
+        "name": "gallery"
+      },
+      {
+        "type": "any",
+        "name": "faq"
+      },
+      {
+        "type": "any",
+        "name": "frontFaq"
+      },
+      {
+        "type": "any",
+        "name": "activities"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

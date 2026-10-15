@@ -1,0 +1,62 @@
+{
+  "file": "src/app/snipets/ContactUspage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires ContactUs demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "contact",
+    "us"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "ref",
+        "reactive"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/ContactUs/ContactUs.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ContactUs/types",
+      "deps": [
+        "ContactUsContext"
+      ]
+    },
+    {
+      "file": "../../composables/useFeedback",
+      "deps": [
+        "required",
+        "validEmail"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [
+      {
+        "name": "submit",
+        "params": [],
+        "ret": "void",
+        "async": true
+      }
+    ],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

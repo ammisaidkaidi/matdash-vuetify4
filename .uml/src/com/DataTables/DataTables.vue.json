@@ -1,0 +1,269 @@
+{
+  "file": "src/com/DataTables/DataTables.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Reusable DataTables presentation view driven by external props.",
+  "tags": [
+    "data",
+    "tables"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "computed",
+        "ref",
+        "useSlots",
+        "watch"
+      ],
+      "ext": true
+    },
+    {
+      "file": "vuetify/components",
+      "deps": [
+        "VPagination"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../ui/Icon.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../ui/TableCard.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "./types",
+      "deps": [
+        "DataTableColumn",
+        "DataTableDensity",
+        "DataTableFilter",
+        "DataTableGroup",
+        "DataTableItemLabel",
+        "DataTableItemSelectable",
+        "DataTableKey",
+        "DataTableLabels",
+        "DataTableOptions",
+        "DataTablePageSizeOption",
+        "DataTableSelectStrategy",
+        "DataTableSort"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "T[]",
+        "name": "items"
+      },
+      {
+        "type": "DataTableColumn<T>[]",
+        "name": "columns"
+      },
+      {
+        "type": "string",
+        "name": "title",
+        "opt": true
+      },
+      {
+        "type": "Extract<keyof T, string>",
+        "name": "itemKey",
+        "opt": true
+      },
+      {
+        "type": "DataTableItemLabel<T>",
+        "name": "itemLabel",
+        "opt": true
+      },
+      {
+        "type": "boolean",
+        "name": "selection",
+        "opt": true
+      },
+      {
+        "type": "DataTableItemSelectable<T>",
+        "name": "itemSelectable",
+        "opt": true
+      },
+      {
+        "type": "DataTableSelectStrategy",
+        "name": "selectStrategy",
+        "opt": true
+      },
+      {
+        "type": "DataTableSelectStrategy[]",
+        "name": "strategyOptions",
+        "opt": true
+      },
+      {
+        "type": "boolean",
+        "name": "showSelectionSummary",
+        "opt": true
+      },
+      {
+        "type": "boolean",
+        "name": "showSelectedValues",
+        "opt": true
+      },
+      {
+        "type": "(item: T) => unknown",
+        "name": "selectedValue",
+        "opt": true
+      },
+      {
+        "type": "string",
+        "name": "selectionHint",
+        "opt": true
+      },
+      {
+        "type": "DataTableSort[]",
+        "name": "sortBy",
+        "opt": true
+      },
+      {
+        "type": "boolean",
+        "name": "multiSort",
+        "opt": true
+      },
+      {
+        "type": "boolean",
+        "name": "showSortValues",
+        "opt": true
+      },
+      {
+        "type": "DataTableDensity",
+        "name": "density",
+        "opt": true
+      },
+      {
+        "type": "boolean",
+        "name": "expandable",
+        "opt": true
+      },
+      {
+        "type": "DataTableGroup[]",
+        "name": "groupBy",
+        "opt": true
+      },
+      {
+        "type": "boolean",
+        "name": "searchable",
+        "opt": true
+      },
+      {
+        "type": "string",
+        "name": "initialSearch",
+        "opt": true
+      },
+      {
+        "type": "DataTableFilter",
+        "name": "customFilter",
+        "opt": true
+      },
+      {
+        "type": "string[]",
+        "name": "filterKeys",
+        "opt": true
+      },
+      {
+        "type": "string",
+        "name": "filterHint",
+        "opt": true
+      },
+      {
+        "type": "number",
+        "name": "pageSize",
+        "opt": true
+      },
+      {
+        "type": "DataTablePageSizeOption[]",
+        "name": "pageSizeOptions",
+        "opt": true
+      },
+      {
+        "type": "boolean",
+        "name": "externalPagination",
+        "opt": true
+      },
+      {
+        "type": "DataTablePageSizeOption[]",
+        "name": "externalPageSizeOptions",
+        "opt": true
+      },
+      {
+        "type": "Partial<DataTableLabels>",
+        "name": "labels",
+        "opt": true
+      },
+      {
+        "type": "Record<string, unknown>",
+        "name": "tableProps",
+        "opt": true
+      }
+    ],
+    "emits": [
+      {
+        "name": "selection-change",
+        "payload": ""
+      },
+      {
+        "name": "expansion-change",
+        "payload": ""
+      },
+      {
+        "name": "options-change",
+        "payload": ""
+      }
+    ],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [
+      {
+        "name": "labelOf",
+        "params": [
+          {
+            "type": "T",
+            "name": "item"
+          }
+        ],
+        "ret": "string"
+      },
+      {
+        "name": "setSearch",
+        "params": [
+          {
+            "type": "unknown",
+            "name": "value"
+          }
+        ],
+        "ret": "void"
+      },
+      {
+        "name": "clearSelection",
+        "params": [],
+        "ret": "void"
+      },
+      {
+        "name": "resetSearch",
+        "params": [],
+        "ret": "void"
+      },
+      {
+        "name": "clampPage",
+        "params": [],
+        "ret": "void"
+      }
+    ],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

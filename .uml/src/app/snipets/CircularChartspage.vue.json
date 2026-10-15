@@ -1,0 +1,102 @@
+{
+  "file": "src/app/snipets/CircularChartspage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires CircularCharts demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "circular",
+    "charts"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "computed",
+        "ref"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/CircularCharts/CircularCharts.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/CircularCharts/types",
+      "deps": [
+        "CircularChartsContext"
+      ]
+    },
+    {
+      "file": "vue-router",
+      "deps": [
+        "useRoute"
+      ],
+      "ext": true
+    },
+    {
+      "file": "vuetify",
+      "deps": [
+        "useTheme"
+      ],
+      "ext": true
+    },
+    {
+      "file": "vue3-apexcharts",
+      "deps": [
+        "default"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/ui/WorkspacePage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ui/TableCard.vue",
+      "deps": [
+        "default"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [
+      {
+        "name": "values",
+        "params": [
+          {
+            "type": "any",
+            "name": "c"
+          }
+        ],
+        "ret": "any"
+      },
+      {
+        "name": "download",
+        "params": [
+          {
+            "type": "any",
+            "name": "c"
+          }
+        ],
+        "ret": "void"
+      }
+    ],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

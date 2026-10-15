@@ -1,0 +1,78 @@
+{
+  "file": "src/data/table-seed.js",
+  "lang": "js",
+  "kind": "module",
+  "summary": "Static table-seed demo data used by pages and widgets.",
+  "tags": [
+    "table",
+    "seed"
+  ],
+  "deps": [
+    {
+      "file": "./app-seed",
+      "deps": [
+        "avatar",
+        "asset"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [
+      {
+        "name": "budgetLabel",
+        "params": [
+          {
+            "type": "any",
+            "name": "n"
+          }
+        ],
+        "ret": "any"
+      },
+      {
+        "name": "statusColor",
+        "params": [
+          {
+            "type": "any",
+            "name": "s"
+          }
+        ],
+        "ret": "any"
+      }
+    ],
+    "props": [
+      {
+        "type": "any",
+        "name": "projectRows"
+      },
+      {
+        "type": "any",
+        "name": "projectHeaders"
+      },
+      {
+        "type": "any",
+        "name": "customerRows"
+      },
+      {
+        "type": "any",
+        "name": "authors"
+      },
+      {
+        "type": "any",
+        "name": "gpuRows"
+      },
+      {
+        "type": "any",
+        "name": "dessertSeed"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

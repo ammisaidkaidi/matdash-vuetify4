@@ -1,0 +1,42 @@
+{
+  "file": "src/com/ChartWidgets/ChartWidgets.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Reusable ChartWidgets presentation view driven by external props.",
+  "tags": [
+    "chart",
+    "widgets"
+  ],
+  "deps": [
+    {
+      "file": "../ui/WorkspacePage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "./types",
+      "deps": [
+        "ChartWidgetsContext"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "ChartWidgetsContext",
+        "name": "context"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

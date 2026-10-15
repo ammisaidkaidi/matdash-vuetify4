@@ -1,0 +1,59 @@
+{
+  "file": "src/app/snipets/Tooltipspage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires Tooltips demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "tooltips",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "ref"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/Tooltips/Tooltips.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/Tooltips/types",
+      "deps": [
+        "TooltipsContext"
+      ]
+    },
+    {
+      "file": "../../com/ui/UiPage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ui/ExampleCard.vue",
+      "deps": [
+        "default"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

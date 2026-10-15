@@ -1,0 +1,58 @@
+{
+  "file": "src/app/snipets/Tabspage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires Tabs demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "tabs",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/Tabs/Tabs.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/Tabs/types",
+      "deps": [
+        "TabsContext"
+      ]
+    },
+    {
+      "file": "../../com/ui/UiPage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ui/TabExample.vue",
+      "deps": [
+        "default"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

@@ -1,0 +1,50 @@
+{
+  "file": "src/composables/useTableDemos.js",
+  "lang": "js",
+  "kind": "composable",
+  "summary": "Composable exposing useTableDemos reactive state and actions for the demo.",
+  "tags": [
+    "use",
+    "table",
+    "demos"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "reactive",
+        "watch",
+        "ref"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../data/table-seed",
+      "deps": [
+        "dessertSeed"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "any",
+        "name": "tableDemos"
+      },
+      {
+        "type": "any",
+        "name": "tableStorageError"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

@@ -1,0 +1,83 @@
+{
+  "file": "src/com/ui/SettingsField.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Shared UI helper SettingsField used across the demo pages.",
+  "tags": [
+    "settings",
+    "field"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "ref"
+      ],
+      "ext": true
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "string|number",
+        "name": "modelValue",
+        "opt": true
+      },
+      {
+        "type": "string",
+        "name": "label",
+        "opt": true
+      },
+      {
+        "type": "string",
+        "name": "id",
+        "opt": true
+      },
+      {
+        "type": "unknown[]",
+        "name": "items",
+        "opt": true
+      },
+      {
+        "type": "unknown[]",
+        "name": "rules",
+        "opt": true
+      },
+      {
+        "type": "boolean",
+        "name": "password",
+        "opt": true
+      },
+      {
+        "type": "string",
+        "name": "type",
+        "opt": true
+      },
+      {
+        "type": "string",
+        "name": "hint",
+        "opt": true
+      },
+      {
+        "type": "string",
+        "name": "placeholder",
+        "opt": true
+      }
+    ],
+    "emits": [
+      {
+        "name": "update:modelValue",
+        "payload": ""
+      }
+    ],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

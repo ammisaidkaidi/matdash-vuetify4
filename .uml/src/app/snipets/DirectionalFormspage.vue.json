@@ -1,0 +1,85 @@
+{
+  "file": "src/app/snipets/DirectionalFormspage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires DirectionalForms demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "directional",
+    "forms"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/DirectionalForms/DirectionalForms.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/DirectionalForms/types",
+      "deps": [
+        "DirectionalFormsContext"
+      ]
+    },
+    {
+      "file": "vue-router",
+      "deps": [
+        "useRoute"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/ui/FormPage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ui/ExampleCard.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ui/DemoForm.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ui/FormExtras.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../data/form-fields",
+      "deps": [
+        "basicFields",
+        "accountFields",
+        "personalFields"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

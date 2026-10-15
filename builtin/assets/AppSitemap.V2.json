@@ -1,0 +1,427 @@
+{
+  "Tableau de bord": [
+    {
+      "title": "TABLEAU DE BORD",
+      "items": [
+        {
+          "name": "Ventes",
+          "title": "Ventes du jour / semaine / mois",
+          "icon": "chart",
+          "path1": "/tableau-de-bord/ventes",
+          "path": "/dashboards/dashboard1"
+        },
+        {
+          "name": "Alertes stock",
+          "title": "Alertes stock (rupture, seuil minimum)",
+          "icon": "bell",
+          "path1": "/tableau-de-bord/alertes-stock",
+          "path": "/dashboards/dashboard2"
+        },
+        {
+          "name": "Créances et dettes",
+          "title": "Créances et dettes en cours",
+          "icon": "invoice",
+          "path1": "/tableau-de-bord/creances-et-dettes",
+          "path": "/dashboards/dashboard3"
+        },
+        {
+          "name": "Solde de caisse",
+          "title": "Solde de caisse",
+          "icon": "creditcard",
+          "path1": "/tableau-de-bord/solde-de-caisse",
+          "path": "/front-page/homepage"
+        }
+      ]
+    }
+  ],
+  "Ventes": [
+    {
+      "title": "VENTES",
+      "items": [
+        {
+          "name": "Point de vente",
+          "title": "Point de vente (caisse)",
+          "icon": "store",
+          "path1": "/ventes/point-de-vente",
+          "path": "/front-page/about-us"
+        },
+        {
+          "name": "Devis",
+          "title": "Devis",
+          "icon": "file",
+          "path1": "/ventes/devis",
+          "path": "/front-page/blog/posts"
+        },
+        {
+          "name": "Commandes",
+          "title": "Commandes clients",
+          "icon": "cart",
+          "path1": "/ventes/commandes-clients",
+          "path": "/front-page/blog/early-black-friday-amazon-deals-cheap-tvs-headphones"
+        },
+        {
+          "name": "Livraisons",
+          "title": "Bons de livraison",
+          "icon": "truck",
+          "path1": "/ventes/bons-de-livraison",
+          "path": "/front-page/contact-us"
+        },
+        {
+          "name": "Factures",
+          "title": "Factures de vente",
+          "icon": "invoice",
+          "path1": "/ventes/factures-de-vente",
+          "path": "/front-page/portfolio"
+        },
+        {
+          "name": "Retours et avoirs",
+          "title": "Retours et avoirs clients",
+          "icon": "back",
+          "path1": "/ventes/retours-et-avoirs-clients",
+          "path": "/front-page/pricing"
+        },
+        {
+          "name": "Encaissements",
+          "title": "Encaissements (crédit client / ardoise)",
+          "icon": "creditcard",
+          "path1": "/ventes/encaissements",
+          "path": "/ecommerce/products"
+        }
+      ]
+    }
+  ],
+  "Achats": [
+    {
+      "title": "ACHATS",
+      "items": [
+        {
+          "name": "Demandes de prix",
+          "title": "Demandes de prix",
+          "icon": "file",
+          "path1": "/achats/demandes-de-prix",
+          "path": "/ecommerce/product/detail/1"
+        },
+        {
+          "name": "Commandes",
+          "title": "Commandes fournisseurs",
+          "icon": "basket",
+          "path1": "/achats/commandes-fournisseurs",
+          "path": "/ecommerce/productlist"
+        },
+        {
+          "name": "Réceptions",
+          "title": "Bons de réception",
+          "icon": "package",
+          "path1": "/achats/bons-de-reception",
+          "path": "/ecommerce/checkout"
+        },
+        {
+          "name": "Factures",
+          "title": "Factures d'achat",
+          "icon": "invoice",
+          "path1": "/achats/factures-achat",
+          "path": "/ecommerce/add-product"
+        },
+        {
+          "name": "Retours",
+          "title": "Retours fournisseurs",
+          "icon": "back",
+          "path1": "/achats/retours-fournisseurs",
+          "path": "/ecommerce/edit-product"
+        },
+        {
+          "name": "Paiements",
+          "title": "Paiements fournisseurs",
+          "icon": "creditcard",
+          "path1": "/achats/paiements-fournisseurs",
+          "path": "/apps/blog/posts"
+        }
+      ]
+    }
+  ],
+  "Produits": [
+    {
+      "title": "CATALOGUE",
+      "items": [
+        {
+          "name": "Articles",
+          "title": "Articles (codes-barres, variantes)",
+          "icon": "package",
+          "path1": "/produits/catalogue/articles",
+          "path": "/apps/blog/early-black-friday-amazon-deals-cheap-tvs-headphones"
+        },
+        {
+          "name": "Catégories & marques",
+          "title": "Catégories et marques",
+          "icon": "shapes",
+          "path1": "/produits/catalogue/categories-et-marques",
+          "path": "/apps/user/profile"
+        },
+        {
+          "name": "Unités",
+          "title": "Unités (pièce, kg, carton...)",
+          "icon": "layers",
+          "path1": "/produits/catalogue/unites",
+          "path": "/apps/user/profile/followers"
+        },
+        {
+          "name": "Prix et tarifs",
+          "title": "Prix et tarifs (détail / gros)",
+          "icon": "invoice",
+          "path1": "/produits/catalogue/prix-et-tarifs",
+          "path": "/apps/user/profile/friends"
+        }
+      ]
+    },
+    {
+      "title": "STOCK",
+      "items": [
+        {
+          "name": "Niveaux de stock",
+          "title": "Niveaux de stock",
+          "icon": "package",
+          "path1": "/produits/stock/niveaux-de-stock",
+          "path": "/apps/user/profile/gallery"
+        },
+        {
+          "name": "Mouvements",
+          "title": "Mouvements (entrées / sorties)",
+          "icon": "arrow",
+          "path1": "/produits/stock/mouvements",
+          "path": "/apps/invoice"
+        },
+        {
+          "name": "Inventaire",
+          "title": "Inventaire",
+          "icon": "checks",
+          "path1": "/produits/stock/inventaire",
+          "path": "/apps/invoice/details/102"
+        },
+        {
+          "name": "Dépôts",
+          "title": "Dépôts / emplacements",
+          "icon": "store",
+          "path1": "/produits/stock/depots-et-emplacements",
+          "path": "/apps/invoice/create"
+        },
+        {
+          "name": "Lots et péremption",
+          "title": "Lots et dates de péremption",
+          "icon": "calendar",
+          "path1": "/produits/stock/lots-et-peremption",
+          "path": "/apps/invoice/edit/102"
+        }
+      ]
+    }
+  ],
+  "Contacts": [
+    {
+      "title": "CONTACTS",
+      "items": [
+        {
+          "name": "Clients",
+          "title": "Clients",
+          "icon": "user",
+          "path1": "/contacts/clients",
+          "path": "/apps/calendar"
+        },
+        {
+          "name": "Fournisseurs",
+          "title": "Fournisseurs",
+          "icon": "basket",
+          "path1": "/contacts/fournisseurs",
+          "path": "/apps/email"
+        },
+        {
+          "name": "Agents",
+          "title": "Agents (commerciaux, livreurs)",
+          "icon": "truck",
+          "path1": "/contacts/agents",
+          "path": "/apps/chats"
+        },
+        {
+          "name": "Employés",
+          "title": "Employés",
+          "icon": "profile",
+          "path1": "/contacts/employes",
+          "path": "/apps/notes"
+        },
+        {
+          "name": "Autres",
+          "title": "Autres (banques, transporteurs...)",
+          "icon": "phone",
+          "path1": "/contacts/autres",
+          "path": "/apps/kanban"
+        }
+      ]
+    }
+  ],
+  "Comptabilité": [
+    {
+      "title": "COMPTABILITÉ",
+      "items": [
+        {
+          "name": "Caisse",
+          "title": "Caisse",
+          "icon": "store",
+          "path1": "/comptabilite/caisse",
+          "path": "/apps/contacts"
+        },
+        {
+          "name": "Banque",
+          "title": "Banque",
+          "icon": "creditcard",
+          "path1": "/comptabilite/banque",
+          "path": "/apps/tickets"
+        },
+        {
+          "name": "Dépenses",
+          "title": "Dépenses et charges",
+          "icon": "invoice",
+          "path1": "/comptabilite/depenses-et-charges",
+          "path": "/pages/account-settings"
+        },
+        {
+          "name": "Paiements",
+          "title": "Paiements (reçus / émis)",
+          "icon": "creditcard",
+          "path1": "/comptabilite/paiements",
+          "path": "/widgets/banners"
+        },
+        {
+          "name": "Créances",
+          "title": "Créances clients",
+          "icon": "file",
+          "path1": "/comptabilite/creances-clients",
+          "path": "/widgets/cards"
+        },
+        {
+          "name": "Dettes",
+          "title": "Dettes fournisseurs",
+          "icon": "file",
+          "path1": "/comptabilite/dettes-fournisseurs",
+          "path": "/widgets/charts"
+        },
+        {
+          "name": "Journal et plan",
+          "title": "Journal et plan comptable",
+          "icon": "notes",
+          "path1": "/comptabilite/journal-et-plan-comptable",
+          "path": "/pages/faq"
+        },
+        {
+          "name": "TVA et taxes",
+          "title": "TVA et taxes",
+          "icon": "calculator",
+          "path1": "/comptabilite/tva-et-taxes",
+          "path": "/pages/gallery-lightbox"
+        },
+        {
+          "name": "Bilan et résultats",
+          "title": "Bilan et résultats",
+          "icon": "chart",
+          "path1": "/comptabilite/bilan-et-resultats",
+          "path": "/front-page/homepage"
+        }
+      ]
+    }
+  ],
+  "Rapports": [
+    {
+      "title": "RAPPORTS",
+      "items": [
+        {
+          "name": "Ventes",
+          "title": "Ventes par produit / client / agent",
+          "icon": "chart",
+          "path1": "/rapports/ventes",
+          "path": "/pages/pricing"
+        },
+        {
+          "name": "Achats",
+          "title": "Achats par fournisseur",
+          "icon": "basket",
+          "path1": "/rapports/achats",
+          "path": "/pages/search-results"
+        },
+        {
+          "name": "Marge et bénéfice",
+          "title": "Marge et bénéfice",
+          "icon": "trending",
+          "path1": "/rapports/marge-et-benefice",
+          "path": "/pages/social-media-contacts"
+        },
+        {
+          "name": "Valeur du stock",
+          "title": "Valeur du stock",
+          "icon": "package",
+          "path1": "/rapports/valeur-du-stock",
+          "path": "/pages/treeview"
+        },
+        {
+          "name": "Export",
+          "title": "Export (PDF / Excel)",
+          "icon": "download",
+          "path1": "/rapports/export",
+          "path": "/icons/tabler"
+        }
+      ]
+    }
+  ],
+  "Paramètres": [
+    {
+      "title": "PARAMÈTRES",
+      "items": [
+        {
+          "name": "Société",
+          "title": "Société (nom, logo, adresse, NIF/RC)",
+          "icon": "home",
+          "path1": "/parametres/societe",
+          "path": "/icons/solar"
+        },
+        {
+          "name": "Utilisateurs et rôles",
+          "title": "Utilisateurs et rôles",
+          "icon": "shield",
+          "path1": "/parametres/utilisateurs-et-roles",
+          "path": "/pages/route-directory"
+        },
+        {
+          "name": "Devises et taxes",
+          "title": "Devises et taxes",
+          "icon": "calculator",
+          "path1": "/parametres/devises-et-taxes",
+          "path": "/forms/form-elements/autocomplete"
+        },
+        {
+          "name": "Numérotation",
+          "title": "Numérotation des documents",
+          "icon": "file",
+          "path1": "/parametres/numerotation-des-documents",
+          "path": "/forms/form-elements/combobox"
+        },
+        {
+          "name": "Modèles d'impression",
+          "title": "Modèles d'impression (facture, ticket)",
+          "icon": "invoice",
+          "path1": "/parametres/modeles-impression",
+          "path": "/forms/form-elements/button"
+        },
+        {
+          "name": "Langue",
+          "title": "Langue (AR / FR)",
+          "icon": "globe",
+          "path1": "/parametres/langue",
+          "path": "/forms/form-elements/checkbox"
+        },
+        {
+          "name": "Sauvegarde",
+          "title": "Sauvegarde et restauration",
+          "icon": "download",
+          "path1": "/parametres/sauvegarde-et-restauration",
+          "path": "/forms/form-elements/custominputs"
+        }
+      ]
+    }
+  ]
+}

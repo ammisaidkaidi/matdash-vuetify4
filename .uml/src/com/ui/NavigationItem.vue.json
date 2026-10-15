@@ -1,0 +1,58 @@
+{
+  "file": "src/com/ui/NavigationItem.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Shared UI helper NavigationItem used across the demo pages.",
+  "tags": [
+    "navigation",
+    "item"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "computed"
+      ],
+      "ext": true
+    },
+    {
+      "file": "vue-router",
+      "deps": [
+        "useRoute"
+      ],
+      "ext": true
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "any",
+        "name": "item"
+      },
+      {
+        "type": "number",
+        "name": "level",
+        "opt": true
+      }
+    ],
+    "emits": [
+      {
+        "name": "navigate",
+        "payload": ""
+      },
+      {
+        "name": "category",
+        "payload": ""
+      }
+    ],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

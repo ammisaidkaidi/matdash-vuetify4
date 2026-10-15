@@ -1,0 +1,107 @@
+{
+  "file": "src/app/snipets/Chatspage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires Chats demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "chats",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "ref",
+        "computed",
+        "nextTick"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/Chats/Chats.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/Chats/types",
+      "deps": [
+        "ChatsContext"
+      ]
+    },
+    {
+      "file": "../../com/ui/WorkspacePage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../composables/useDemoStore",
+      "deps": [
+        "demo",
+        "nextId"
+      ]
+    },
+    {
+      "file": "../../composables/useFeedback",
+      "deps": [
+        "notify"
+      ]
+    },
+    {
+      "file": "../../data/app-seed",
+      "deps": [
+        "avatar",
+        "asset"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [
+      {
+        "name": "send",
+        "params": [
+          {
+            "type": "string",
+            "name": "image",
+            "opt": true
+          }
+        ],
+        "ret": "any",
+        "async": true
+      },
+      {
+        "name": "upload",
+        "params": [
+          {
+            "type": "any",
+            "name": "e"
+          }
+        ],
+        "ret": "any"
+      }
+    ],
+    "classes": []
+  },
+  "rels": [],
+  "calls": [
+    {
+      "from": "send",
+      "to": "nextId"
+    },
+    {
+      "from": "upload",
+      "to": "notify"
+    }
+  ]
+}

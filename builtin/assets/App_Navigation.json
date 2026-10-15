@@ -1,0 +1,722 @@
+{
+  "Dashboards": [
+    {
+      "title": "DASHBOARDS",
+      "items": [
+        {
+          "name": "Dashboard1",
+          "icon": "dashboard",
+          "path": "/dashboards/dashboard1"
+        },
+        {
+          "name": "Dashboard2",
+          "icon": "chart",
+          "path": "/dashboards/dashboard2"
+        },
+        {
+          "name": "Dashboard3",
+          "icon": "monitor",
+          "path": "/dashboards/dashboard3"
+        },
+        {
+          "name": "Front Pages",
+          "icon": "home",
+          "children": [
+            {
+              "name": "Homepage",
+              "icon": "layers",
+              "path": "/front-page/homepage"
+            },
+            {
+              "name": "About Us",
+              "icon": "layers",
+              "path": "/front-page/about-us"
+            },
+            {
+              "name": "Blog",
+              "icon": "grid",
+              "path": "/front-page/blog/posts"
+            },
+            {
+              "name": "Blog Details",
+              "icon": "layers",
+              "path": "/front-page/blog/early-black-friday-amazon-deals-cheap-tvs-headphones"
+            },
+            {
+              "name": "Contact Us",
+              "icon": "layers",
+              "path": "/front-page/contact-us"
+            },
+            {
+              "name": "Portfolio",
+              "icon": "layers",
+              "path": "/front-page/portfolio"
+            },
+            {
+              "name": "Pricing",
+              "icon": "invoice",
+              "path": "/front-page/pricing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "APPS",
+      "items": [
+        {
+          "name": "ECommerce",
+          "icon": "basket",
+          "children": [
+            {
+              "name": "Shop",
+              "icon": "layers",
+              "path": "/ecommerce/products"
+            },
+            {
+              "name": "Detail",
+              "icon": "layers",
+              "path": "/ecommerce/product/detail/1"
+            },
+            {
+              "name": "List",
+              "icon": "layers",
+              "path": "/ecommerce/productlist"
+            },
+            {
+              "name": "Checkout",
+              "icon": "layers",
+              "path": "/ecommerce/checkout"
+            },
+            {
+              "name": "Add Product",
+              "icon": "layers",
+              "path": "/ecommerce/add-product"
+            },
+            {
+              "name": "Edit Product",
+              "icon": "layers",
+              "path": "/ecommerce/edit-product"
+            }
+          ]
+        },
+        {
+          "name": "Blog",
+          "icon": "grid",
+          "children": [
+            {
+              "name": "Blog Posts",
+              "icon": "layers",
+              "path": "/apps/blog/posts"
+            },
+            {
+              "name": "Blog Details",
+              "icon": "layers",
+              "path": "/apps/blog/early-black-friday-amazon-deals-cheap-tvs-headphones"
+            }
+          ]
+        },
+        {
+          "name": "User Profile",
+          "icon": "profile",
+          "children": [
+            {
+              "name": "Profile",
+              "icon": "layers",
+              "path": "/apps/user/profile"
+            },
+            {
+              "name": "Followers",
+              "icon": "layers",
+              "path": "/apps/user/profile/followers"
+            },
+            {
+              "name": "Friends",
+              "icon": "layers",
+              "path": "/apps/user/profile/friends"
+            },
+            {
+              "name": "Gallery",
+              "icon": "layers",
+              "path": "/apps/user/profile/gallery"
+            }
+          ]
+        },
+        {
+          "name": "Invoice",
+          "icon": "invoice",
+          "children": [
+            {
+              "name": "List",
+              "icon": "layers",
+              "path": "/apps/invoice"
+            },
+            {
+              "name": "Details",
+              "icon": "layers",
+              "path": "/apps/invoice/details/102"
+            },
+            {
+              "name": "Create",
+              "icon": "layers",
+              "path": "/apps/invoice/create"
+            },
+            {
+              "name": "Edit",
+              "icon": "layers",
+              "path": "/apps/invoice/edit/102"
+            }
+          ]
+        },
+        {
+          "name": "Calendar",
+          "icon": "calendar",
+          "path": "/apps/calendar"
+        },
+        {
+          "name": "Email",
+          "icon": "email",
+          "path": "/apps/email"
+        },
+        {
+          "name": "Chats",
+          "icon": "chats",
+          "path": "/apps/chats"
+        },
+        {
+          "name": "Notes",
+          "icon": "notes",
+          "path": "/apps/notes"
+        },
+        {
+          "name": "Kanban",
+          "icon": "kanban",
+          "path": "/apps/kanban"
+        },
+        {
+          "name": "Contact",
+          "icon": "phone",
+          "path": "/apps/contacts"
+        },
+        {
+          "name": "Tickets",
+          "icon": "ticket",
+          "path": "/apps/tickets"
+        }
+      ]
+    }
+  ],
+  "Pages": [
+    {
+      "title": "PAGES",
+      "items": [
+        {
+          "name": "Account Settings",
+          "icon": "settings",
+          "path": "/pages/account-settings"
+        },
+        {
+          "name": "Banners Widgets",
+          "icon": "panel",
+          "path": "/widgets/banners"
+        },
+        {
+          "name": "Cards Widgets",
+          "icon": "creditcard",
+          "path": "/widgets/cards"
+        },
+        {
+          "name": "Charts Widgets",
+          "icon": "chart",
+          "path": "/widgets/charts"
+        },
+        {
+          "name": "FAQ",
+          "icon": "help",
+          "path": "/pages/faq"
+        },
+        {
+          "name": "Gallery Lightbox",
+          "icon": "grid",
+          "path": "/pages/gallery-lightbox"
+        },
+        {
+          "name": "Landing Page",
+          "icon": "home",
+          "path": "/front-page/homepage"
+        },
+        {
+          "name": "Pricing",
+          "icon": "invoice",
+          "path": "/pages/pricing"
+        },
+        {
+          "name": "Search Results",
+          "icon": "search",
+          "path": "/pages/search-results"
+        },
+        {
+          "name": "Social Contacts",
+          "icon": "chats",
+          "path": "/pages/social-media-contacts"
+        },
+        {
+          "name": "Treeview",
+          "icon": "layers",
+          "path": "/pages/treeview"
+        }
+      ]
+    },
+    {
+      "title": "ICONS",
+      "items": [
+        {
+          "name": "Tabler Icons",
+          "icon": "palette",
+          "path": "/icons/tabler"
+        },
+        {
+          "name": "Solar Icons",
+          "icon": "shapes",
+          "path": "/icons/solar"
+        }
+      ]
+    },
+    {
+      "title": "PROJECT",
+      "items": [
+        {
+          "name": "Route Directory",
+          "icon": "folder",
+          "path": "/pages/route-directory"
+        }
+      ]
+    }
+  ],
+  "Forms": [
+    {
+      "title": "FORMS",
+      "items": [
+        {
+          "name": "Form Elements",
+          "icon": "palette",
+          "children": [
+            {
+              "name": "Autocomplete",
+              "icon": "palette",
+              "path": "/forms/form-elements/autocomplete"
+            },
+            {
+              "name": "Combobox",
+              "icon": "palette",
+              "path": "/forms/form-elements/combobox"
+            },
+            {
+              "name": "Button",
+              "icon": "palette",
+              "path": "/forms/form-elements/button"
+            },
+            {
+              "name": "Checkbox",
+              "icon": "palette",
+              "path": "/forms/form-elements/checkbox"
+            },
+            {
+              "name": "Custom Inputs",
+              "icon": "palette",
+              "path": "/forms/form-elements/custominputs"
+            },
+            {
+              "name": "File Inputs",
+              "icon": "palette",
+              "path": "/forms/form-elements/fileinputs"
+            },
+            {
+              "name": "Radio",
+              "icon": "palette",
+              "path": "/forms/form-elements/radio"
+            },
+            {
+              "name": "Date Time",
+              "icon": "palette",
+              "path": "/forms/form-elements/date-time"
+            },
+            {
+              "name": "Select",
+              "icon": "palette",
+              "path": "/forms/form-elements/select"
+            },
+            {
+              "name": "Slider",
+              "icon": "palette",
+              "path": "/forms/form-elements/slider"
+            },
+            {
+              "name": "Switch",
+              "icon": "palette",
+              "path": "/forms/form-elements/switch"
+            },
+            {
+              "name": "Time Picker",
+              "icon": "palette",
+              "path": "/forms/form-elements/time-picker"
+            },
+            {
+              "name": "Stepper",
+              "icon": "palette",
+              "path": "/forms/form-elements/stepper"
+            }
+          ]
+        },
+        {
+          "name": "Form Layout",
+          "icon": "palette",
+          "path": "/forms/form-layouts"
+        },
+        {
+          "name": "Form Horizontal",
+          "icon": "palette",
+          "path": "/forms/form-horizontal"
+        },
+        {
+          "name": "Form Vertical",
+          "icon": "palette",
+          "path": "/forms/form-vertical"
+        },
+        {
+          "name": "Form Custom",
+          "icon": "palette",
+          "path": "/forms/form-custom"
+        },
+        {
+          "name": "Form Validation",
+          "icon": "palette",
+          "path": "/forms/form-validation"
+        },
+        {
+          "name": "Editor",
+          "icon": "palette",
+          "path": "/forms/editor"
+        }
+      ]
+    }
+  ],
+  "Tables": [
+    {
+      "title": "TABLES",
+      "items": [
+        {
+          "name": "Basic Table",
+          "icon": "table",
+          "path": "/tables/basic"
+        },
+        {
+          "name": "Dark Table",
+          "icon": "table",
+          "path": "/tables/dark"
+        },
+        {
+          "name": "Density Table",
+          "icon": "table",
+          "path": "/tables/density"
+        },
+        {
+          "name": "Fixed Header Table",
+          "icon": "table",
+          "path": "/tables/fixed-header"
+        },
+        {
+          "name": "Height Table",
+          "icon": "table",
+          "path": "/tables/height"
+        },
+        {
+          "name": "Editable Table",
+          "icon": "table",
+          "path": "/tables/editable"
+        }
+      ]
+    },
+    {
+      "title": "DATATABLES",
+      "items": [
+        {
+          "name": "Basic Table",
+          "icon": "table",
+          "path": "/tables/datatables/basic"
+        },
+        {
+          "name": "Header Table",
+          "icon": "table",
+          "path": "/tables/datatables/header"
+        },
+        {
+          "name": "Selection Table",
+          "icon": "table",
+          "path": "/tables/datatables/selection"
+        },
+        {
+          "name": "Sorting Table",
+          "icon": "table",
+          "path": "/tables/datatables/sorting"
+        },
+        {
+          "name": "Pagination Table",
+          "icon": "table",
+          "path": "/tables/datatables/pagination"
+        },
+        {
+          "name": "Filtering Table",
+          "icon": "table",
+          "path": "/tables/datatables/filtering"
+        },
+        {
+          "name": "Grouping Table",
+          "icon": "table",
+          "path": "/tables/datatables/grouping"
+        },
+        {
+          "name": "Table Slots",
+          "icon": "table",
+          "path": "/tables/datatables/slots"
+        },
+        {
+          "name": "CRUD Table",
+          "icon": "table",
+          "path": "/tables/datatables/crudtable"
+        }
+      ]
+    }
+  ],
+  "Charts": [
+    {
+      "title": "CHARTS",
+      "items": [
+        {
+          "name": "Line",
+          "icon": "chart",
+          "path": "/charts/line-chart"
+        },
+        {
+          "name": "Gredient",
+          "icon": "chart",
+          "path": "/charts/gredient-chart"
+        },
+        {
+          "name": "Area",
+          "icon": "chart",
+          "path": "/charts/area-chart"
+        },
+        {
+          "name": "Candlestick",
+          "icon": "chart",
+          "path": "/charts/candlestick-chart"
+        },
+        {
+          "name": "Column",
+          "icon": "chart",
+          "path": "/charts/column-chart"
+        },
+        {
+          "name": "Doughnut & Pie",
+          "icon": "chart",
+          "path": "/charts/doughnut-pie-chart"
+        },
+        {
+          "name": "Radialbar & Radar",
+          "icon": "chart",
+          "path": "/charts/radialbar-chart"
+        }
+      ]
+    }
+  ],
+  "UI Components": [
+    {
+      "title": "UI",
+      "items": [
+        {
+          "name": "Alert",
+          "icon": "grid",
+          "path": "/ui-components/alert"
+        },
+        {
+          "name": "Accordion",
+          "icon": "grid",
+          "path": "/ui-components/accordion"
+        },
+        {
+          "name": "Avatar",
+          "icon": "grid",
+          "path": "/ui-components/avatar"
+        },
+        {
+          "name": "Chip",
+          "icon": "grid",
+          "path": "/ui-components/chip"
+        },
+        {
+          "name": "Dialog",
+          "icon": "grid",
+          "path": "/ui-components/dialogs"
+        },
+        {
+          "name": "List",
+          "icon": "grid",
+          "path": "/ui-components/list"
+        },
+        {
+          "name": "Menus",
+          "icon": "grid",
+          "path": "/ui-components/menus"
+        },
+        {
+          "name": "Rating",
+          "icon": "grid",
+          "path": "/ui-components/rating"
+        },
+        {
+          "name": "Tabs",
+          "icon": "grid",
+          "path": "/ui-components/tabs"
+        },
+        {
+          "name": "Tooltip",
+          "icon": "grid",
+          "path": "/ui-components/tooltip"
+        },
+        {
+          "name": "Typography",
+          "icon": "grid",
+          "path": "/ui-components/typography"
+        }
+      ]
+    }
+  ],
+  "Authentication": [
+    {
+      "title": "AUTH",
+      "items": [
+        {
+          "name": "Error",
+          "icon": "lock",
+          "path": "/auth/404"
+        },
+        {
+          "name": "Side Login",
+          "icon": "lock",
+          "path": "/auth/login"
+        },
+        {
+          "name": "Boxed Login",
+          "icon": "lock",
+          "path": "/auth/login2"
+        },
+        {
+          "name": "Side Register",
+          "icon": "lock",
+          "path": "/auth/register"
+        },
+        {
+          "name": "Boxed Register",
+          "icon": "lock",
+          "path": "/auth/register2"
+        },
+        {
+          "name": "Side Forgot Pwd",
+          "icon": "lock",
+          "path": "/auth/forgot-password"
+        },
+        {
+          "name": "Boxed Forgot Pwd",
+          "icon": "lock",
+          "path": "/auth/forgot-password2"
+        },
+        {
+          "name": "Side Two Steps",
+          "icon": "lock",
+          "path": "/auth/two-step"
+        },
+        {
+          "name": "Boxed Two Steps",
+          "icon": "lock",
+          "path": "/auth/two-step2"
+        },
+        {
+          "name": "Maintenance",
+          "icon": "lock",
+          "path": "/auth/maintenance"
+        }
+      ]
+    }
+  ],
+  "Others": [
+    {
+      "title": "MULTI LEVEL",
+      "items": [
+        {
+          "name": "Menu Level",
+          "icon": "folder",
+          "children": [
+            {
+              "name": "Level 1",
+              "icon": "folder",
+              "path": "/level1"
+            },
+            {
+              "name": "Level 1",
+              "icon": "folder",
+              "children": [
+                {
+                  "name": "Level 2",
+                  "icon": "folder",
+                  "path": "/barry"
+                },
+                {
+                  "name": "Level 2",
+                  "icon": "folder",
+                  "children": [
+                    {
+                      "name": "Level 3",
+                      "icon": "folder",
+                      "path": "/barry"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "MORE OPTIONS",
+      "items": [
+        {
+          "name": "Applications",
+          "icon": "folder",
+          "category": "Dashboards"
+        },
+        {
+          "name": "Form Options",
+          "icon": "folder",
+          "category": "Forms"
+        },
+        {
+          "name": "Table Variations",
+          "icon": "folder",
+          "category": "Tables"
+        },
+        {
+          "name": "Charts Selection",
+          "icon": "folder",
+          "category": "Charts"
+        },
+        {
+          "name": "Widgets",
+          "icon": "folder",
+          "category": "Pages"
+        }
+      ]
+    }
+  ]
+}

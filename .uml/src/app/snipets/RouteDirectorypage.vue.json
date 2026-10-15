@@ -1,0 +1,60 @@
+{
+  "file": "src/app/snipets/RouteDirectorypage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires RouteDirectory demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "route",
+    "directory"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "computed",
+        "ref"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/RouteDirectory/RouteDirectory.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/RouteDirectory/types",
+      "deps": [
+        "RouteDirectoryContext"
+      ]
+    },
+    {
+      "file": "../../data/navigation",
+      "deps": [
+        "routeCatalog"
+      ]
+    },
+    {
+      "file": "../../com/ui/PageHeader.vue",
+      "deps": [
+        "default"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

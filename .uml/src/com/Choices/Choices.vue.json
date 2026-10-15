@@ -1,0 +1,48 @@
+{
+  "file": "src/com/Choices/Choices.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Reusable Choices presentation view driven by external props.",
+  "tags": [
+    "choices",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "../ui/FormPage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../ui/ExampleCard.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "./types",
+      "deps": [
+        "ChoicesContext"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "ChoicesContext",
+        "name": "context"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

@@ -1,0 +1,56 @@
+{
+  "file": "src/com/ui/GalleryGrid.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Shared UI helper GalleryGrid used across the demo pages.",
+  "tags": [
+    "gallery",
+    "grid"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "ref",
+        "computed"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../data/batch03",
+      "deps": [
+        "gallery"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "boolean",
+        "name": "searchable",
+        "opt": true
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [
+      {
+        "name": "move",
+        "params": [
+          {
+            "type": "any",
+            "name": "n"
+          }
+        ],
+        "ret": "void"
+      }
+    ],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

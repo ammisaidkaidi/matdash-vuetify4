@@ -1,0 +1,48 @@
+{
+  "file": "src/com/ui/FaqList.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Shared UI helper FaqList used across the demo pages.",
+  "tags": [
+    "faq",
+    "list"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "ref"
+      ],
+      "ext": true
+    },
+    {
+      "file": "vuetify/components",
+      "deps": [
+        "VExpansionPanels",
+        "VExpansionPanel",
+        "VExpansionPanelTitle",
+        "VExpansionPanelText"
+      ],
+      "ext": true
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "unknown[]",
+        "name": "items",
+        "opt": true
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

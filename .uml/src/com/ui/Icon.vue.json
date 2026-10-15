@@ -1,0 +1,121 @@
+{
+  "file": "src/com/ui/Icon.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Shared UI helper Icon used across the demo pages.",
+  "tags": [
+    "icon",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "computed"
+      ],
+      "ext": true
+    },
+    {
+      "file": "@lucide/vue",
+      "deps": [
+        "Star",
+        "Heart",
+        "Send",
+        "Paperclip",
+        "Clock3",
+        "Truck",
+        "CreditCard",
+        "Plus",
+        "Pencil",
+        "MoreVertical",
+        "Trash2",
+        "ShieldCheck",
+        "Eye",
+        "EyeOff",
+        "Laptop",
+        "Upload",
+        "ArrowLeft",
+        "Menu",
+        "Layers",
+        "PanelsTopLeft",
+        "ChartNoAxesCombined",
+        "Monitor",
+        "House",
+        "ShoppingBasket",
+        "LayoutGrid",
+        "ContactRound",
+        "ReceiptText",
+        "CalendarDays",
+        "Mail",
+        "MessagesSquare",
+        "StickyNote",
+        "Columns3",
+        "Smartphone",
+        "Ticket",
+        "Search",
+        "Moon",
+        "Sun",
+        "ShoppingCart",
+        "Bell",
+        "Settings",
+        "ChevronDown",
+        "ChevronRight",
+        "X",
+        "ArrowUpRight",
+        "TrendingUp",
+        "Package",
+        "Store",
+        "Shapes",
+        "Pill",
+        "Calculator",
+        "FolderOpen",
+        "Palette",
+        "ListFilter",
+        "LockKeyhole",
+        "PanelLeftClose",
+        "FileText",
+        "CircleHelp",
+        "LogOut",
+        "Download",
+        "UserRound",
+        "Check",
+        "CheckCheck",
+        "Globe",
+        "ExternalLink",
+        "Circle",
+        "Info",
+        "SlidersHorizontal"
+      ],
+      "ext": true
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "string",
+        "name": "name",
+        "opt": true
+      },
+      {
+        "type": "number|string",
+        "name": "size",
+        "opt": true
+      },
+      {
+        "type": "number",
+        "name": "strokeWidth",
+        "opt": true
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

@@ -1,0 +1,56 @@
+{
+  "file": "src/composables/usePageDemos.js",
+  "lang": "js",
+  "kind": "composable",
+  "summary": "Composable exposing usePageDemos reactive state and actions for the demo.",
+  "tags": [
+    "use",
+    "page",
+    "demos"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "reactive",
+        "watch"
+      ],
+      "ext": true
+    },
+    {
+      "file": "./useFeedback",
+      "deps": [
+        "notify"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [
+      {
+        "name": "toggleFollow",
+        "params": [
+          {
+            "type": "any",
+            "name": "id"
+          }
+        ],
+        "ret": "void"
+      }
+    ],
+    "props": [
+      {
+        "type": "any",
+        "name": "pageDemos"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

@@ -1,0 +1,66 @@
+{
+  "file": "src/app/snipets/TimePickerspage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires TimePickers demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "time",
+    "pickers"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "reactive"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/TimePickers/TimePickers.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/TimePickers/types",
+      "deps": [
+        "TimePickersContext"
+      ]
+    },
+    {
+      "file": "vuetify/components",
+      "deps": [
+        "VTimePicker"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/ui/FormPage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ui/ExampleCard.vue",
+      "deps": [
+        "default"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

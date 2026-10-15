@@ -1,0 +1,103 @@
+{
+  "file": "src/com/ui/RecordDialog.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Shared UI helper RecordDialog used across the demo pages.",
+  "tags": [
+    "record",
+    "dialog"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "ref",
+        "watch"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../composables/useDemoStore",
+      "deps": [
+        "clone"
+      ]
+    },
+    {
+      "file": "../../composables/useFeedback",
+      "deps": [
+        "required",
+        "validEmail"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "boolean",
+        "name": "modelValue",
+        "opt": true
+      },
+      {
+        "type": "string",
+        "name": "title",
+        "opt": true
+      },
+      {
+        "type": "any",
+        "name": "record",
+        "opt": true
+      },
+      {
+        "type": "unknown[]",
+        "name": "fields",
+        "opt": true
+      },
+      {
+        "type": "string",
+        "name": "saveLabel",
+        "opt": true
+      }
+    ],
+    "emits": [
+      {
+        "name": "update:modelValue",
+        "payload": ""
+      },
+      {
+        "name": "save",
+        "payload": ""
+      }
+    ],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [
+      {
+        "name": "submit",
+        "params": [],
+        "ret": "void",
+        "async": true
+      },
+      {
+        "name": "rules",
+        "params": [
+          {
+            "type": "any",
+            "name": "field"
+          }
+        ],
+        "ret": "any"
+      }
+    ],
+    "classes": []
+  },
+  "rels": [],
+  "calls": [
+    {
+      "from": "submit",
+      "to": "clone"
+    }
+  ]
+}

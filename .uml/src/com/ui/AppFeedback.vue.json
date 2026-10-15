@@ -1,0 +1,32 @@
+{
+  "file": "src/com/ui/AppFeedback.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Shared UI helper AppFeedback used across the demo pages.",
+  "tags": [
+    "app",
+    "feedback"
+  ],
+  "deps": [
+    {
+      "file": "../../composables/useFeedback",
+      "deps": [
+        "feedback",
+        "answerConfirm"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

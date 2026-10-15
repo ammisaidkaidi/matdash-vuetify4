@@ -1,0 +1,62 @@
+{
+  "file": "src/com/CustomForm/CustomForm.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Reusable CustomForm presentation view driven by external props.",
+  "tags": [
+    "custom",
+    "form"
+  ],
+  "deps": [
+    {
+      "file": "vuetify/components",
+      "deps": [
+        "VSlider",
+        "VRangeSlider"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../ui/FormPage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../ui/ExampleCard.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../ui/Icon.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "./types",
+      "deps": [
+        "CustomFormContext"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "CustomFormContext",
+        "name": "context"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

@@ -1,0 +1,36 @@
+{
+  "file": "src/com/NotFound/NotFound.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Reusable NotFound presentation view driven by external props.",
+  "tags": [
+    "not",
+    "found"
+  ],
+  "deps": [
+    {
+      "file": "./types",
+      "deps": [
+        "NotFoundContext"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "NotFoundContext",
+        "name": "context"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

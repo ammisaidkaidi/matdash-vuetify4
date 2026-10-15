@@ -1,0 +1,39 @@
+{
+  "file": "src/com/ui/FrontLayout.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Shared UI helper FrontLayout used across the demo pages.",
+  "tags": [
+    "front",
+    "layout"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "ref"
+      ],
+      "ext": true
+    },
+    {
+      "file": "vue-router",
+      "deps": [
+        "useRoute"
+      ],
+      "ext": true
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

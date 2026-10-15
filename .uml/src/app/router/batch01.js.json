@@ -1,0 +1,86 @@
+{
+  "file": "src/app/router/batch01.js",
+  "lang": "js",
+  "kind": "config",
+  "summary": "Lazy route definitions for the batch01 page batch.",
+  "tags": [
+    "routing",
+    "batch01"
+  ],
+  "deps": [
+    {
+      "file": "../snipets/Productspage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/ProductDetailpage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/ProductEditorpage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/Checkoutpage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/Invoicespage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/Calendarpage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/Emailpage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/Chatspage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/Notespage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/Kanbanpage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/Contactspage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/Ticketspage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/Blogpage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/Profilepage.vue",
+      "deps": []
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "any",
+        "name": "batch01Loaders"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

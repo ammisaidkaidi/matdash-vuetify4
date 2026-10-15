@@ -1,0 +1,54 @@
+{
+  "file": "src/com/Alerts/Alerts.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Reusable Alerts presentation view driven by external props.",
+  "tags": [
+    "alerts",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "../ui/UiPage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../ui/ExampleCard.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../ui/Icon.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "./types",
+      "deps": [
+        "AlertsContext"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "AlertsContext",
+        "name": "context"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

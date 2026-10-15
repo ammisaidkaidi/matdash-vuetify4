@@ -1,0 +1,54 @@
+{
+  "file": "src/composables/useDemoAuth.js",
+  "lang": "js",
+  "kind": "composable",
+  "summary": "Composable exposing useDemoAuth reactive state and actions for the demo.",
+  "tags": [
+    "use",
+    "demo",
+    "auth"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "ref"
+      ],
+      "ext": true
+    }
+  ],
+  "export": {
+    "fns": [
+      {
+        "name": "beginDemoSession",
+        "params": [
+          {
+            "type": "any",
+            "name": "remember"
+          }
+        ],
+        "ret": "any"
+      },
+      {
+        "name": "clearDemoSession",
+        "params": [],
+        "ret": "void"
+      }
+    ],
+    "props": [
+      {
+        "type": "any",
+        "name": "demoSignedIn"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

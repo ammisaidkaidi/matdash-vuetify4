@@ -1,0 +1,713 @@
+<script setup>
+import {
+  ref,
+  computed,
+  watch,
+  onMounted,
+  onBeforeUnmount,
+  nextTick,
+} from "vue";
+import { useDisplay, useTheme } from "vuetify";
+import { useRoute, useRouter } from "vue-router";
+import AppFeedback from "./components/apps/AppFeedback.vue";
+import { demoSignedIn, clearDemoSession } from "./composables/useDemoAuth";
+import { cartCount, cartTotal, money } from "./composables/useDemoStore";
+import NavigationItem from "./components/NavigationItem.vue";
+import groups from "../builtin/assets/AppSitemap.V2.json";
+import { routeCatalog } from "./data/navigation";
+import { productSets } from "./data/dashboard";
+const { mdAndUp } = useDisplay();
+const theme = useTheme();
+const route = useRoute(),
+  router = useRouter();
+const openedGroups = ref([]);
+const isFrontPage = computed(
+  () =>
+    [
+      "/front-page/contact-us",
+      "/front-page/homepage",
+      "/front-page/about-us",
+    ].includes(route.path) || route.path.startsWith("/front-page/blog/"),
+);
+const isAuthPage = computed(
+  () => route.path.startsWith("/auth/") && route.meta.status === "ready",
+);
+const standalone = computed(() => isFrontPage.value || isAuthPage.value);
+function demoLogout() {
+  clearDemoSession();
+  router.push("/auth/login");
+}
+const accountProfile = ref({
+  name: "David",
+  avatar: "/assets/user-1-4oeL4QIr.jpg",
+});
+function updateProfile(event) {
+  accountProfile.value = event.detail;
+}
+const categoryNames = Object.keys(groups);
+const defaultCategory = categoryNames[0] || "";
+const sidebar = ref(true),
+  category = ref(defaultCategory),
+  searchOpen = ref(false),
+  search = ref(""),
+  settingsOpen = ref(false);
+const dashboard = ref(null),
+  compact = ref(false),
+  bordered = ref(false),
+  unread = ref(true),
+  snack = ref(false),
+  snackText = ref(""),
+  accent = ref("#635bff");
+const dark = computed(() => theme.current.value.dark);
+// The JSON controls category names/order and every sidebar group/item.
+// It has no rail-specific icons, so retain the existing presentation presets.
+const categoryIcons = {
+  Dashboards: "layers",
+  Pages: "notes",
+  Forms: "palette",
+  Tables: "table",
+  Charts: "chart",
+  "UI Components": "grid",
+  Authentication: "lock",
+  Others: "panel",
+};
+const categories = categoryNames.map((name) => [
+  name,
+  categoryIcons[name] || groups[name]?.[0]?.items?.[0]?.icon || "folder",
+]);
+const sections = [
+  { name: "Revenue Forecast", id: "revenue", icon: "layers" },
+  { name: "Your Performance", id: "performance", icon: "store" },
+  { name: "Customers", id: "customers", icon: "chart" },
+  { name: "Sales Overview", id: "sales", icon: "trending" },
+  { name: "Revenue by Product", id: "products", icon: "grid" },
+  { name: "Total settlements", id: "settlements", icon: "package" },
+];
+const searchResults = computed(() => {
+  const pages = routeCatalog.map((p) => ({
+    name: p.title,
+    path: p.path,
+    icon: p.icon,
+    status: p.status,
+  }));
+  if (!search.value.trim())
+    return [
+      pages.find((p) => p.path === "/pages/account-settings"),
+      pages.find((p) => p.path === "/pages/route-directory"),
+      ...sections,
+    ];
+  return [
+    ...pages,
+    ...sections,
+    ...Object.keys(productSets).map((name) => ({
+      name: name + " projects",
+      id: "products",
+      icon: "folder",
+      tab: name,
+    })),
+  ]
+    .filter(
+      (i) =>
+        i.name.toLowerCase().includes(search.value.toLowerCase()) ||
+        i.path?.toLowerCase().includes(search.value.toLowerCase()),
+    )
+    .slice(0, 30);
+});
+const notifications = ref([
+  {
+    title: "Your weekly report is ready",
+    text: "Revenue is up 26.5% from last week.",
+    icon: "chart",
+    time: "5 minutes ago",
+  },
+  {
+    title: "64 new orders received",
+    text: "Your latest orders are being processed.",
+    icon: "store",
+    time: "18 minutes ago",
+  },
+  {
+    title: "Settlement completed",
+    text: "Your account balance has been updated.",
+    icon: "package",
+    time: "1 hour ago",
+  },
+]);
+const notice = (text) => {
+  snackText.value = text;
+  snack.value = true;
+};
+function toggleTheme() {
+  theme.change(dark.value ? "light" : "dark");
+  try {
+    localStorage.setItem("matdash-theme", theme.global.name.value);
+  } catch {}
+}
+function chooseCategory(name) {
+  if (!categoryNames.includes(name)) return;
+  category.value = name;
+  sidebar.value = true;
+}
+async function jump(item) {
+  searchOpen.value = false;
+  if (item.path) {
+    await router.push(item.path);
+    return;
+  }
+  if (route.path !== "/dashboards/dashboard1") {
+    const failure = await router.push("/dashboards/dashboard1");
+    if (failure) return;
+    await nextTick();
+  }
+  if (item.tab) dashboard.value?.selectTab(item.tab);
+  else
+    document
+      .getElementById(item.id)
+      ?.scrollIntoView({ behavior: "smooth", block: "center" });
+}
+function syncNavigation() {
+  const ancestors = [];
+  function find(items, trail = [], level = 0) {
+    for (const item of items) {
+      if (item.children) {
+        if (find(item.children, [...trail, item.name + "-" + level], level + 1))
+          return true;
+      } else if (
+        item.path &&
+        (item.path === route.path || item.path === route.meta.path)
+      ) {
+        ancestors.push(...trail);
+        return true;
+      }
+    }
+    return false;
+  }
+  // Resolve the category and expanded ancestors from the JSON hierarchy.
+  // Route metadata only breaks ties when a path appears in multiple categories.
+  const preferredCategory = route.meta.category;
+  const hasPreferredCategory = categoryNames.includes(preferredCategory);
+  const candidates = hasPreferredCategory
+    ? [
+        preferredCategory,
+        ...categoryNames.filter((name) => name !== preferredCategory),
+      ]
+    : categoryNames;
+  const matchedCategory = candidates.find((name) =>
+    groups[name].some((group) => find(group.items)),
+  );
+  category.value =
+    matchedCategory ||
+    (hasPreferredCategory ? preferredCategory : defaultCategory);
+  openedGroups.value = ancestors;
+  if (!mdAndUp.value) sidebar.value = false;
+}
+watch(() => route.path, syncNavigation, { immediate: true });
+function exportReport() {
+  const rows = [
+    "Product,Manager,Progress,Priority,Budget",
+    ...productSets.App.map(
+      (p) => `${p.name},${p.person},${p.progress}%,${p.priority},${p.budget}`,
+    ),
+  ];
+  const url = URL.createObjectURL(
+    new Blob([rows.join("\n")], { type: "text/csv" }),
+  );
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "matdash-revenue-sept-2025.csv";
+  a.click();
+  URL.revokeObjectURL(url);
+  notice("Revenue report downloaded");
+}
+function keyboard(e) {
+  if ((e.metaKey || e.ctrlKey) && e.key === "k") {
+    e.preventDefault();
+    searchOpen.value = !searchOpen.value;
+  }
+}
+watch(mdAndUp, (value) => (sidebar.value = value), { immediate: true });
+watch(accent, (value) => {
+  theme.themes.value.light.colors.primary = value;
+  theme.themes.value.dark.colors.primary = value;
+});
+onMounted(() => {
+  document.addEventListener("keydown", keyboard);
+  window.addEventListener("matdash-profile-updated", updateProfile);
+  try {
+    const stored = JSON.parse(
+      localStorage.getItem("matdash-account-settings-v1") || "null",
+    );
+    if (stored?.data?.account) accountProfile.value = stored.data.account;
+  } catch {}
+  try {
+    if (localStorage.getItem("matdash-theme") === "dark") theme.change("dark");
+  } catch {}
+});
+onBeforeUnmount(() => {
+  document.removeEventListener("keydown", keyboard);
+  window.removeEventListener("matdash-profile-updated", updateProfile);
+});
+</script>
+<template>
+  <v-app :class="{ 'compact-layout': compact, 'bordered-cards': bordered }">
+    <v-navigation-drawer
+      v-if="mdAndUp && !standalone"
+      permanent
+      :width="80"
+      class="icon-rail"
+      color="rail"
+      :border="false"
+    >
+      <div class="rail-menu">
+        <v-btn
+          icon
+          variant="text"
+          aria-label="Toggle sidebar"
+          @click="sidebar = !sidebar"
+          ><Icon name="menu" :size="24"
+        /></v-btn>
+      </div>
+      <div class="rail-items">
+        <template v-for="([name, icon], index) in categories" :key="name"
+          ><v-divider
+            v-if="index === 3 || index === 6"
+            class="rail-divider" /><v-tooltip :text="name" location="right"
+            ><template #activator="{ props }"
+              ><v-btn
+                v-bind="props"
+                icon
+                rounded="lg"
+                :variant="category === name ? 'flat' : 'text'"
+                :color="category === name ? 'primary' : undefined"
+                :aria-label="name"
+                :aria-pressed="category === name"
+                @click="chooseCategory(name)"
+                ><Icon :name="icon" :size="25" /></v-btn></template></v-tooltip
+        ></template>
+      </div>
+    </v-navigation-drawer>
+    <v-navigation-drawer
+      v-if="!standalone"
+      v-model="sidebar"
+      :permanent="mdAndUp && sidebar"
+      :temporary="!mdAndUp"
+      :width="240"
+      class="main-sidebar"
+      :border="false"
+    >
+      <router-link
+        to="/dashboards/dashboard1"
+        class="brand"
+        aria-label="MatDash home"
+        ><img src="/assets/logo-Dq6uoD-m.svg" alt="MatDash"
+      /></router-link>
+      <div v-if="!mdAndUp" class="mobile-categories">
+        <v-select
+          v-model="category"
+          :items="categoryNames"
+          aria-label="Navigation category"
+        />
+      </div>
+      <v-list
+        v-model:opened="openedGroups"
+        class="side-list"
+        nav
+        bg-color="transparent"
+        density="comfortable"
+      >
+        <template v-for="group in groups[category] || []" :key="group.title">
+          <div class="nav-section-title">{{ group.title }}</div>
+          <NavigationItem
+            v-for="(item, index) in group.items"
+            :key="item.name + index"
+            :item="item"
+            @navigate="!mdAndUp && (sidebar = false)"
+            @category="chooseCategory"
+          />
+        </template>
+      </v-list>
+    </v-navigation-drawer>
+    <v-app-bar v-if="!standalone" :height="70" elevation="0" class="topbar">
+      <v-btn
+        v-if="!mdAndUp"
+        icon
+        variant="text"
+        aria-label="Open navigation"
+        @click="sidebar = !sidebar"
+        ><Icon name="menu"
+      /></v-btn>
+      <v-tooltip text="Search dashboard · Ctrl K"
+        ><template #activator="{ props }"
+          ><v-btn
+            v-bind="props"
+            icon
+            variant="text"
+            aria-label="Search dashboard"
+            @click="searchOpen = true"
+            ><Icon name="search" :size="23" /></v-btn></template
+      ></v-tooltip>
+      <v-menu location="bottom start" :offset="10"
+        ><template #activator="{ props }"
+          ><v-btn
+            v-bind="props"
+            icon
+            variant="text"
+            aria-label="Dashboard shortcuts"
+            ><Icon name="grid" :size="22" /></v-btn></template
+        ><v-card width="330" class="pa-5 dropdown-card"
+          ><h3 class="mb-4">Your workspace</h3>
+          <div class="shortcut-grid">
+            <v-btn
+              v-for="section in sections"
+              :key="section.id"
+              variant="tonal"
+              color="primary"
+              class="shortcut"
+              @click="jump(section)"
+              ><Icon :name="section.icon" :size="23" /><span>{{
+                section.name
+              }}</span></v-btn
+            >
+          </div></v-card
+        ></v-menu
+      >
+      <v-spacer />
+      <v-tooltip :text="dark ? 'Switch to light mode' : 'Switch to dark mode'"
+        ><template #activator="{ props }"
+          ><v-btn
+            v-bind="props"
+            icon
+            variant="text"
+            :aria-label="dark ? 'Switch to light mode' : 'Switch to dark mode'"
+            @click="toggleTheme"
+            ><Icon :name="dark ? 'sun' : 'moon'" :size="23" /></v-btn></template
+      ></v-tooltip>
+      <v-tooltip text="Language: English"
+        ><template #activator="{ props }"
+          ><span
+            v-bind="props"
+            class="language-flag"
+            role="img"
+            aria-label="English language"
+            ><svg viewBox="0 0 60 60" width="22" height="22">
+              <defs>
+                <clipPath id="flag-clip">
+                  <circle cx="30" cy="30" r="30" />
+                </clipPath>
+              </defs>
+              <g clip-path="url(#flag-clip)">
+                <path fill="#2435a2" d="M0 0h60v60H0z" />
+                <path
+                  stroke="#fff"
+                  stroke-width="12"
+                  d="m0 0 60 60M0 60 60 0"
+                />
+                <path
+                  stroke="#ee3264"
+                  stroke-width="5"
+                  d="m0 0 60 60M0 60 60 0"
+                />
+                <path stroke="#fff" stroke-width="20" d="M30 0v60M0 30h60" />
+                <path stroke="#ee3264" stroke-width="12" d="M30 0v60M0 30h60" />
+              </g></svg></span></template
+      ></v-tooltip>
+      <v-menu location="bottom end" :offset="10"
+        ><template #activator="{ props }"
+          ><v-btn v-bind="props" icon variant="text" aria-label="Shopping cart"
+            ><v-badge :content="cartCount" color="error" floating
+              ><Icon name="cart" :size="22" /></v-badge></v-btn></template
+        ><v-card width="310" class="pa-7 text-center dropdown-card"
+          ><v-avatar color="lightprimary" size="64" class="mb-4"
+            ><Icon name="cart" :size="30" class="text-primary"
+          /></v-avatar>
+          <h3>
+            {{
+              cartCount
+                ? cartCount + " items in your cart"
+                : "Your cart is empty"
+            }}
+          </h3>
+          <p class="muted mt-2 mb-5">
+            {{
+              cartCount
+                ? "Subtotal: " + money(cartTotal)
+                : "Products you add will appear here."
+            }}
+          </p>
+          <v-btn
+            color="primary"
+            :to="cartCount ? '/ecommerce/checkout' : '/ecommerce/products'"
+            >{{ cartCount ? "View Cart" : "Browse Shop" }}
+            <Icon name="external" :size="15" class="ml-2" /></v-btn></v-card
+      ></v-menu>
+      <v-menu location="bottom end" :offset="10" :close-on-content-click="false"
+        ><template #activator="{ props }"
+          ><v-btn v-bind="props" icon variant="text" aria-label="Notifications"
+            ><v-badge :model-value="unread" dot color="primary"
+              ><Icon name="bell" :size="22" /></v-badge></v-btn></template
+        ><v-card width="360" max-width="94vw" class="dropdown-card"
+          ><div class="pa-5 d-flex justify-space-between align-center">
+            <h3>Notifications</h3>
+            <v-chip v-if="unread" size="small" color="primary">3 new</v-chip>
+          </div>
+          <v-divider />
+          <div
+            v-for="note in notifications"
+            :key="note.title"
+            class="notification-item"
+          >
+            <v-avatar size="40" color="lightprimary" rounded="lg"
+              ><Icon :name="note.icon" class="text-primary"
+            /></v-avatar>
+            <div>
+              <h4>{{ note.title }}</h4>
+              <p>{{ note.text }}</p>
+              <small>{{ note.time }}</small>
+            </div>
+          </div>
+          <div class="pa-4 pt-0">
+            <v-btn block variant="tonal" color="primary" @click="unread = false"
+              ><Icon name="checks" :size="18" class="mr-2" />{{
+                unread ? "Mark all as read" : "All caught up"
+              }}</v-btn
+            >
+          </div></v-card
+        ></v-menu
+      >
+      <v-menu location="bottom end" :offset="10"
+        ><template #activator="{ props }"
+          ><v-btn
+            v-bind="props"
+            icon
+            variant="text"
+            aria-label="Account menu"
+            class="profile-button"
+            ><v-avatar size="35"
+              ><img
+                :src="accountProfile.avatar"
+                :alt="accountProfile.name"
+                width="35" /></v-avatar></v-btn></template
+        ><v-card width="280" class="pa-5 dropdown-card"
+          ><div class="d-flex align-center ga-3 mb-4">
+            <v-avatar size="48"
+              ><img
+                :src="accountProfile.avatar"
+                :alt="accountProfile.name"
+                width="48"
+            /></v-avatar>
+            <div>
+              <h3>{{ accountProfile.name }}</h3>
+              <p class="muted text-caption">Administrator · Demo account</p>
+            </div>
+          </div>
+          <v-divider class="mb-2" /><v-list density="compact"
+            ><v-list-item
+              v-if="demoSignedIn"
+              title="Sign out of demo"
+              @click="demoLogout"
+              ><template #prepend
+                ><Icon name="logout" class="mr-3" /></template></v-list-item
+            ><v-list-item v-else title="Demo sign in" to="/auth/login"
+              ><template #prepend
+                ><Icon name="user" class="mr-3" /></template></v-list-item
+            ><v-list-item title="Account Settings" to="/pages/account-settings"
+              ><template #prepend
+                ><Icon name="user" class="mr-3" /></template></v-list-item
+            ><v-list-item title="Download revenue report" @click="exportReport"
+              ><template #prepend
+                ><Icon name="download" class="mr-3" /></template></v-list-item
+            ><v-list-item
+              title="Dashboard settings"
+              @click="settingsOpen = true"
+              ><template #prepend
+                ><Icon
+                  name="settings"
+                  class="mr-3" /></template></v-list-item></v-list></v-card
+      ></v-menu>
+    </v-app-bar>
+    <v-main
+      ><div
+        :class="
+          standalone
+            ? 'front-canvas'
+            : [
+                'dashboard-canvas',
+                { 'page-canvas': route.path !== '/dashboards/dashboard1' },
+              ]
+        "
+      >
+        <router-view v-slot="{ Component }"
+          ><component
+            :is="Component"
+            ref="dashboard"
+            :key="route.path + (route.query.id || '')"
+        /></router-view></div
+    ></v-main>
+    <v-tooltip v-if="!standalone" text="Customize dashboard" location="left"
+      ><template #activator="{ props }"
+        ><v-btn
+          v-bind="props"
+          class="settings-fab"
+          icon
+          color="primary"
+          size="56"
+          aria-label="Customize dashboard"
+          @click="settingsOpen = true"
+          ><Icon name="settings" :size="24" /></v-btn></template
+    ></v-tooltip>
+    <v-navigation-drawer
+      v-model="settingsOpen"
+      temporary
+      location="right"
+      width="340"
+      class="settings-drawer"
+      ><div class="pa-6">
+        <div class="d-flex justify-space-between align-center mb-7">
+          <h2>Dashboard settings</h2>
+          <v-btn
+            icon
+            variant="text"
+            size="small"
+            aria-label="Close settings"
+            @click="settingsOpen = false"
+            ><Icon name="close"
+          /></v-btn>
+        </div>
+        <p class="muted mb-6">Make your workspace feel like you.</p>
+        <h3 class="mb-3">Appearance</h3>
+        <div class="appearance-options">
+          <v-btn
+            :variant="!dark ? 'tonal' : 'outlined'"
+            color="primary"
+            height="70"
+            @click="dark && toggleTheme()"
+            ><Icon name="sun" />Light</v-btn
+          ><v-btn
+            :variant="dark ? 'tonal' : 'outlined'"
+            color="primary"
+            height="70"
+            @click="!dark && toggleTheme()"
+            ><Icon name="moon" />Dark</v-btn
+          >
+        </div>
+        <h3 class="mt-7 mb-4">Accent colour</h3>
+        <div class="d-flex ga-3">
+          <v-btn
+            v-for="color in ['#635bff', '#0074ba', '#763ebd', '#008f84']"
+            :key="color"
+            :color="color"
+            icon
+            size="44"
+            :aria-label="'Use ' + color + ' accent'"
+            @click="accent = color"
+            ><Icon v-if="accent === color" name="check"
+          /></v-btn>
+        </div>
+        <v-divider class="my-7" />
+        <h3>Layout</h3>
+        <v-switch
+          v-model="compact"
+          color="primary"
+          label="Compact spacing"
+          hide-details
+          inset
+        /><v-switch
+          v-model="bordered"
+          color="primary"
+          label="Card borders"
+          hide-details
+          inset
+        /><v-switch
+          v-model="sidebar"
+          color="primary"
+          label="Show sidebar"
+          hide-details
+          inset
+        /><v-btn
+          variant="tonal"
+          color="primary"
+          block
+          class="mt-6"
+          @click="
+            compact = false;
+            bordered = false;
+            accent = '#635bff';
+            if (dark) toggleTheme();
+          "
+          >Reset to default</v-btn
+        >
+        <v-btn
+          to="/pages/route-directory"
+          variant="text"
+          color="primary"
+          block
+          class="mt-4"
+          @click="settingsOpen = false"
+          >View route directory</v-btn
+        >
+        <p class="text-caption muted mt-6">
+          Vue 3 · Vuetify 4.2.5<br />Recreated from the MatDash public demo.
+        </p>
+      </div></v-navigation-drawer
+    >
+    <v-dialog v-model="searchOpen" max-width="600"
+      ><v-card class="search-dialog" rounded="xl"
+        ><div class="pa-5 d-flex align-center ga-3">
+          <Icon name="search" :size="23" class="text-primary" /><v-text-field
+            v-model="search"
+            autofocus
+            placeholder="Search dashboard…"
+            variant="plain"
+            aria-label="Search dashboard sections"
+          /><v-btn
+            icon
+            variant="text"
+            size="small"
+            aria-label="Close search"
+            @click="searchOpen = false"
+            ><Icon name="close"
+          /></v-btn>
+        </div>
+        <v-divider />
+        <div class="pa-3">
+          <p class="text-caption muted px-3 py-2">PAGES & DASHBOARD</p>
+          <v-list v-if="searchResults.length"
+            ><v-list-item
+              v-for="result in searchResults"
+              :key="result.path || result.name"
+              :title="result.name"
+              rounded="lg"
+              @click="jump(result)"
+              ><template #prepend
+                ><Icon
+                  :name="result.icon"
+                  class="mr-4 text-primary" /></template
+              ><template #append
+                ><Icon name="arrow" :size="18" /></template></v-list-item
+          ></v-list>
+          <div v-else class="pa-8 text-center muted">
+            No matches for “{{ search }}”. Try revenue, customers, or projects.
+          </div>
+        </div>
+        <v-divider />
+        <div class="pa-4 text-caption muted">
+          Search your dashboard · Esc to close
+        </div></v-card
+      ></v-dialog
+    >
+    <AppFeedback />
+    <v-snackbar
+      v-model="snack"
+      color="primary"
+      location="top right"
+      :timeout="3500"
+      >{{ snackText
+      }}<template #actions
+        ><v-btn
+          variant="text"
+          @click="snack = false"
+          aria-label="Dismiss notification"
+          ><Icon name="close" /></v-btn></template
+    ></v-snackbar>
+  </v-app>
+</template>

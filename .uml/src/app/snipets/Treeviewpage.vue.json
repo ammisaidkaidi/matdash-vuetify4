@@ -1,0 +1,95 @@
+{
+  "file": "src/app/snipets/Treeviewpage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires Treeview demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "treeview",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "ref"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/Treeview/Treeview.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/Treeview/types",
+      "deps": [
+        "TreeviewContext"
+      ]
+    },
+    {
+      "file": "vuetify/components",
+      "deps": [
+        "VTreeview"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/ui/FormPage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ui/ExampleCard.vue",
+      "deps": [
+        "default"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [
+      {
+        "name": "node",
+        "params": [
+          {
+            "type": "any",
+            "name": "title"
+          },
+          {
+            "type": "any",
+            "name": "children"
+          }
+        ],
+        "ret": "any"
+      },
+      {
+        "name": "find",
+        "params": [
+          {
+            "type": "any",
+            "name": "nodes"
+          },
+          {
+            "type": "any",
+            "name": "key"
+          }
+        ],
+        "ret": "any"
+      }
+    ],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

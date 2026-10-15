@@ -1,0 +1,166 @@
+{
+  "file": "src/main.js",
+  "lang": "js",
+  "kind": "script",
+  "summary": "Bootstraps the Vue app with Vuetify and the router.",
+  "tags": [
+    "bootstrap",
+    "app"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "createApp"
+      ],
+      "ext": true
+    },
+    {
+      "file": "vuetify",
+      "deps": [
+        "createVuetify"
+      ],
+      "ext": true
+    },
+    {
+      "file": "vuetify/components",
+      "deps": [
+        "VApp",
+        "VAppBar",
+        "VAvatar",
+        "VBadge",
+        "VBtn",
+        "VCard",
+        "VChip",
+        "VDialog",
+        "VDivider",
+        "VList",
+        "VListGroup",
+        "VListItem",
+        "VMain",
+        "VMenu",
+        "VNavigationDrawer",
+        "VProgressLinear",
+        "VSelect",
+        "VSnackbar",
+        "VSpacer",
+        "VSwitch",
+        "VTab",
+        "VTable",
+        "VTabs",
+        "VTextField",
+        "VTooltip",
+        "VForm",
+        "VAlert",
+        "VTextarea",
+        "VCheckbox",
+        "VRadio",
+        "VRadioGroup",
+        "VDataTable",
+        "VRating",
+        "VBtnToggle",
+        "VDatePicker"
+      ],
+      "ext": true
+    },
+    {
+      "file": "vuetify/directives",
+      "deps": [
+        "Ripple"
+      ],
+      "ext": true
+    },
+    {
+      "file": "vuetify/iconsets/mdi-svg",
+      "deps": [
+        "aliases",
+        "mdi"
+      ],
+      "ext": true
+    },
+    {
+      "file": "vuetify/styles",
+      "deps": [],
+      "ext": true
+    },
+    {
+      "file": "@fontsource/manrope/latin-400.css",
+      "deps": [],
+      "ext": true
+    },
+    {
+      "file": "@fontsource/manrope/latin-500.css",
+      "deps": [],
+      "ext": true
+    },
+    {
+      "file": "@fontsource/manrope/latin-600.css",
+      "deps": [],
+      "ext": true
+    },
+    {
+      "file": "@fontsource/manrope/latin-700.css",
+      "deps": [],
+      "ext": true
+    },
+    {
+      "file": "./App.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "./app/router",
+      "deps": [
+        "router"
+      ]
+    },
+    {
+      "file": "./styles/pages.css",
+      "deps": []
+    },
+    {
+      "file": "./com/ui/Icon.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "./styles/style.css",
+      "deps": []
+    },
+    {
+      "file": "./styles/apps.css",
+      "deps": []
+    },
+    {
+      "file": "./styles/forms.css",
+      "deps": []
+    },
+    {
+      "file": "./styles/batch03.css",
+      "deps": []
+    },
+    {
+      "file": "./styles/batch04.css",
+      "deps": []
+    },
+    {
+      "file": "./styles/batch05.css",
+      "deps": []
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

@@ -1,0 +1,36 @@
+{
+  "file": "src/com/ErrorPage/ErrorPage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Reusable ErrorPage presentation view driven by external props.",
+  "tags": [
+    "error",
+    "page"
+  ],
+  "deps": [
+    {
+      "file": "./types",
+      "deps": [
+        "ErrorPageContext"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "ErrorPageContext",
+        "name": "context"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

@@ -1,0 +1,88 @@
+{
+  "file": "src/app/snipets/Stepperspage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires Steppers demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "steppers",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "reactive",
+        "ref"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/Steppers/Steppers.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/Steppers/types",
+      "deps": [
+        "SteppersContext"
+      ]
+    },
+    {
+      "file": "vuetify/components",
+      "deps": [
+        "VStepper",
+        "VStepperHeader",
+        "VStepperItem",
+        "VStepperWindow",
+        "VStepperWindowItem"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/ui/FormPage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ui/ExampleCard.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../composables/useFeedback",
+      "deps": [
+        "notify"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [
+      {
+        "name": "next",
+        "params": [],
+        "ret": "void"
+      }
+    ],
+    "classes": []
+  },
+  "rels": [],
+  "calls": [
+    {
+      "from": "next",
+      "to": "notify"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "file": "src/com/FrontMarketing/FrontMarketing.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Reusable FrontMarketing presentation view driven by external props.",
+  "tags": [
+    "front",
+    "marketing"
+  ],
+  "deps": [
+    {
+      "file": "../ui/FaqList.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../ui/Icon.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "./types",
+      "deps": [
+        "FrontMarketingContext"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "FrontMarketingContext",
+        "name": "context"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

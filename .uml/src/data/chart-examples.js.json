@@ -1,0 +1,33 @@
+{
+  "file": "src/data/chart-examples.js",
+  "lang": "js",
+  "kind": "module",
+  "summary": "Static chart-examples demo data used by pages and widgets.",
+  "tags": [
+    "chart",
+    "examples"
+  ],
+  "deps": [],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "any",
+        "name": "candles"
+      },
+      {
+        "type": "any",
+        "name": "chartExamples"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

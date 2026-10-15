@@ -1,0 +1,66 @@
+{
+  "file": "src/app/snipets/Choicespage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires Choices demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "choices",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "reactive"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/Choices/Choices.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/Choices/types",
+      "deps": [
+        "ChoicesContext"
+      ]
+    },
+    {
+      "file": "vue-router",
+      "deps": [
+        "useRoute"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/ui/FormPage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ui/ExampleCard.vue",
+      "deps": [
+        "default"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

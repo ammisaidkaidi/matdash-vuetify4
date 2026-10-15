@@ -1,0 +1,275 @@
+{
+  "file": "src/com/CrudTable/Crudtable.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Reusable Crudtable presentation view driven by external props.",
+  "tags": [
+    "crudtable",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "computed",
+        "ref",
+        "useSlots"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../ui/TableCard.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../composables/useFeedback",
+      "deps": [
+        "confirmDemo",
+        "notify",
+        "required"
+      ]
+    },
+    {
+      "file": "./types",
+      "deps": [
+        "CrudField",
+        "CrudId",
+        "CrudLabels",
+        "CrudMode",
+        "CrudRule"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "CrudField<T>[]",
+        "name": "fields"
+      },
+      {
+        "type": "string",
+        "name": "title",
+        "opt": true
+      },
+      {
+        "type": "string",
+        "name": "entity",
+        "opt": true
+      },
+      {
+        "type": "string",
+        "name": "entityPlural",
+        "opt": true
+      },
+      {
+        "type": "Extract<keyof T, string>",
+        "name": "itemKey",
+        "opt": true
+      },
+      {
+        "type": "Extract<keyof T, string> | ((item: T) => string)",
+        "name": "itemLabel",
+        "opt": true
+      },
+      {
+        "type": "Partial<CrudLabels>",
+        "name": "labels",
+        "opt": true
+      },
+      {
+        "type": "boolean",
+        "name": "searchable",
+        "opt": true
+      },
+      {
+        "type": "number",
+        "name": "pageSize",
+        "opt": true
+      },
+      {
+        "type": "Array<number | { value: number; title: string }>",
+        "name": "pageSizeOptions",
+        "opt": true
+      },
+      {
+        "type": "Array<{ key: string; order?: \"asc\" | \"desc\" }>",
+        "name": "sortBy",
+        "opt": true
+      },
+      {
+        "type": "boolean",
+        "name": "readonly",
+        "opt": true
+      },
+      {
+        "type": "(item: T) => boolean",
+        "name": "canEdit",
+        "opt": true
+      },
+      {
+        "type": "(item: T) => boolean",
+        "name": "canDelete",
+        "opt": true
+      },
+      {
+        "type": "(items: T[]) => CrudId",
+        "name": "createId",
+        "opt": true
+      },
+      {
+        "type": "(record: T, mode: CrudMode) => T | false | Promise<T | false>",
+        "name": "beforeSave",
+        "opt": true
+      },
+      {
+        "type": "(title: string, message: string) => boolean | Promise<boolean>",
+        "name": "confirm",
+        "opt": true
+      },
+      {
+        "type": "(message: string) => void",
+        "name": "notify",
+        "opt": true
+      },
+      {
+        "type": "string | null",
+        "name": "warning",
+        "opt": true
+      },
+      {
+        "type": "Record<string, unknown>",
+        "name": "tableProps",
+        "opt": true
+      }
+    ],
+    "emits": [
+      {
+        "name": "create",
+        "payload": ""
+      },
+      {
+        "name": "update",
+        "payload": ""
+      },
+      {
+        "name": "delete",
+        "payload": ""
+      }
+    ],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [
+      {
+        "name": "numberRule",
+        "params": [
+          {
+            "type": "CrudField<T>",
+            "name": "f"
+          }
+        ],
+        "ret": "CrudRule"
+      },
+      {
+        "name": "buildRules",
+        "params": [
+          {
+            "type": "CrudField<T>",
+            "name": "f"
+          }
+        ],
+        "ret": "CrudRule[]"
+      },
+      {
+        "name": "controlProps",
+        "params": [
+          {
+            "type": "CrudField<T>",
+            "name": "f"
+          }
+        ],
+        "ret": "any"
+      },
+      {
+        "name": "defaultFor",
+        "params": [
+          {
+            "type": "CrudField<T>",
+            "name": "f"
+          }
+        ],
+        "ret": "unknown"
+      },
+      {
+        "name": "labelOf",
+        "params": [
+          {
+            "type": "T",
+            "name": "item"
+          }
+        ],
+        "ret": "string"
+      },
+      {
+        "name": "nextId",
+        "params": [
+          {
+            "type": "T[]",
+            "name": "list"
+          }
+        ],
+        "ret": "CrudId"
+      },
+      {
+        "name": "normalize",
+        "params": [
+          {
+            "type": "Record<string, any>",
+            "name": "src"
+          }
+        ],
+        "ret": "T"
+      },
+      {
+        "name": "clampPage",
+        "params": [],
+        "ret": "void"
+      },
+      {
+        "name": "openEditor",
+        "params": [
+          {
+            "type": "T",
+            "name": "item",
+            "opt": true
+          }
+        ],
+        "ret": "void"
+      },
+      {
+        "name": "save",
+        "params": [],
+        "ret": "any",
+        "async": true
+      },
+      {
+        "name": "remove",
+        "params": [
+          {
+            "type": "T",
+            "name": "item"
+          }
+        ],
+        "ret": "any",
+        "async": true
+      }
+    ],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

@@ -1,0 +1,750 @@
+[
+  {
+    "id": 1,
+    "AccountSettings": {
+      "orginal": "/home/user/src/pages/AccountSettings.vue",
+      "new": {
+        "comp": "/home/user/src/com/AccountSettings/AccountSettings.vue",
+        "compPage": "/home/user/src/app/snipets/AccountSettingspage.vue",
+        "type": "/home/user/src/com/AccountSettings/types.ts"
+      }
+    }
+  },
+  {
+    "id": 2,
+    "NotFound": {
+      "orginal": "/home/user/src/pages/NotFound.vue",
+      "new": {
+        "comp": "/home/user/src/com/NotFound/NotFound.vue",
+        "compPage": "/home/user/src/app/snipets/NotFoundpage.vue",
+        "type": "/home/user/src/com/NotFound/types.ts"
+      }
+    }
+  },
+  {
+    "id": 3,
+    "QueuedPage": {
+      "orginal": "/home/user/src/pages/QueuedPage.vue",
+      "new": {
+        "comp": "/home/user/src/com/QueuedPage/QueuedPage.vue",
+        "compPage": "/home/user/src/app/snipets/QueuedPagepage.vue",
+        "type": "/home/user/src/com/QueuedPage/types.ts"
+      }
+    }
+  },
+  {
+    "id": 4,
+    "RouteDirectory": {
+      "orginal": "/home/user/src/pages/RouteDirectory.vue",
+      "new": {
+        "comp": "/home/user/src/com/RouteDirectory/RouteDirectory.vue",
+        "compPage": "/home/user/src/app/snipets/RouteDirectorypage.vue",
+        "type": "/home/user/src/com/RouteDirectory/types.ts"
+      }
+    }
+  },
+  {
+    "id": 5,
+    "Blog": {
+      "orginal": "/home/user/src/pages/apps/Blog.vue",
+      "new": {
+        "comp": "/home/user/src/com/Blog/Blog.vue",
+        "compPage": "/home/user/src/app/snipets/Blogpage.vue",
+        "type": "/home/user/src/com/Blog/types.ts"
+      }
+    }
+  },
+  {
+    "id": 6,
+    "Calendar": {
+      "orginal": "/home/user/src/pages/apps/Calendar.vue",
+      "new": {
+        "comp": "/home/user/src/com/Calendar/Calendar.vue",
+        "compPage": "/home/user/src/app/snipets/Calendarpage.vue",
+        "type": "/home/user/src/com/Calendar/types.ts"
+      }
+    }
+  },
+  {
+    "id": 7,
+    "Chats": {
+      "orginal": "/home/user/src/pages/apps/Chats.vue",
+      "new": {
+        "comp": "/home/user/src/com/Chats/Chats.vue",
+        "compPage": "/home/user/src/app/snipets/Chatspage.vue",
+        "type": "/home/user/src/com/Chats/types.ts"
+      }
+    }
+  },
+  {
+    "id": 8,
+    "Checkout": {
+      "orginal": "/home/user/src/pages/apps/Checkout.vue",
+      "new": {
+        "comp": "/home/user/src/com/Checkout/Checkout.vue",
+        "compPage": "/home/user/src/app/snipets/Checkoutpage.vue",
+        "type": "/home/user/src/com/Checkout/types.ts"
+      }
+    }
+  },
+  {
+    "id": 9,
+    "Contacts": {
+      "orginal": "/home/user/src/pages/apps/Contacts.vue",
+      "new": {
+        "comp": "/home/user/src/com/Contacts/Contacts.vue",
+        "compPage": "/home/user/src/app/snipets/Contactspage.vue",
+        "type": "/home/user/src/com/Contacts/types.ts"
+      }
+    }
+  },
+  {
+    "id": 10,
+    "Email": {
+      "orginal": "/home/user/src/pages/apps/Email.vue",
+      "new": {
+        "comp": "/home/user/src/com/Email/Email.vue",
+        "compPage": "/home/user/src/app/snipets/Emailpage.vue",
+        "type": "/home/user/src/com/Email/types.ts"
+      }
+    }
+  },
+  {
+    "id": 11,
+    "Invoices": {
+      "orginal": "/home/user/src/pages/apps/Invoices.vue",
+      "new": {
+        "comp": "/home/user/src/com/Invoices/Invoices.vue",
+        "compPage": "/home/user/src/app/snipets/Invoicespage.vue",
+        "type": "/home/user/src/com/Invoices/types.ts"
+      }
+    }
+  },
+  {
+    "id": 12,
+    "Kanban": {
+      "orginal": "/home/user/src/pages/apps/Kanban.vue",
+      "new": {
+        "comp": "/home/user/src/com/Kanban/Kanban.vue",
+        "compPage": "/home/user/src/app/snipets/Kanbanpage.vue",
+        "type": "/home/user/src/com/Kanban/types.ts"
+      }
+    }
+  },
+  {
+    "id": 13,
+    "Notes": {
+      "orginal": "/home/user/src/pages/apps/Notes.vue",
+      "new": {
+        "comp": "/home/user/src/com/Notes/Notes.vue",
+        "compPage": "/home/user/src/app/snipets/Notespage.vue",
+        "type": "/home/user/src/com/Notes/types.ts"
+      }
+    }
+  },
+  {
+    "id": 14,
+    "ProductDetail": {
+      "orginal": "/home/user/src/pages/apps/ProductDetail.vue",
+      "new": {
+        "comp": "/home/user/src/com/ProductDetail/ProductDetail.vue",
+        "compPage": "/home/user/src/app/snipets/ProductDetailpage.vue",
+        "type": "/home/user/src/com/ProductDetail/types.ts"
+      }
+    }
+  },
+  {
+    "id": 15,
+    "ProductEditor": {
+      "orginal": "/home/user/src/pages/apps/ProductEditor.vue",
+      "new": {
+        "comp": "/home/user/src/com/ProductEditor/ProductEditor.vue",
+        "compPage": "/home/user/src/app/snipets/ProductEditorpage.vue",
+        "type": "/home/user/src/com/ProductEditor/types.ts"
+      }
+    }
+  },
+  {
+    "id": 16,
+    "Products": {
+      "orginal": "/home/user/src/pages/apps/Products.vue",
+      "new": {
+        "comp": "/home/user/src/com/Products/Products.vue",
+        "compPage": "/home/user/src/app/snipets/Productspage.vue",
+        "type": "/home/user/src/com/Products/types.ts"
+      }
+    }
+  },
+  {
+    "id": 17,
+    "Profile": {
+      "orginal": "/home/user/src/pages/apps/Profile.vue",
+      "new": {
+        "comp": "/home/user/src/com/Profile/Profile.vue",
+        "compPage": "/home/user/src/app/snipets/Profilepage.vue",
+        "type": "/home/user/src/com/Profile/types.ts"
+      }
+    }
+  },
+  {
+    "id": 18,
+    "Tickets": {
+      "orginal": "/home/user/src/pages/apps/Tickets.vue",
+      "new": {
+        "comp": "/home/user/src/com/Tickets/Tickets.vue",
+        "compPage": "/home/user/src/app/snipets/Ticketspage.vue",
+        "type": "/home/user/src/com/Tickets/types.ts"
+      }
+    }
+  },
+  {
+    "id": 19,
+    "Banners": {
+      "orginal": "/home/user/src/pages/batch03/Banners.vue",
+      "new": {
+        "comp": "/home/user/src/com/Banners/Banners.vue",
+        "compPage": "/home/user/src/app/snipets/Bannerspage.vue",
+        "type": "/home/user/src/com/Banners/types.ts"
+      }
+    }
+  },
+  {
+    "id": 20,
+    "CardWidgets": {
+      "orginal": "/home/user/src/pages/batch03/CardWidgets.vue",
+      "new": {
+        "comp": "/home/user/src/com/CardWidgets/CardWidgets.vue",
+        "compPage": "/home/user/src/app/snipets/CardWidgetspage.vue",
+        "type": "/home/user/src/com/CardWidgets/types.ts"
+      }
+    }
+  },
+  {
+    "id": 21,
+    "ChartWidgets": {
+      "orginal": "/home/user/src/pages/batch03/ChartWidgets.vue",
+      "new": {
+        "comp": "/home/user/src/com/ChartWidgets/ChartWidgets.vue",
+        "compPage": "/home/user/src/app/snipets/ChartWidgetspage.vue",
+        "type": "/home/user/src/com/ChartWidgets/types.ts"
+      }
+    }
+  },
+  {
+    "id": 22,
+    "Dashboards": {
+      "orginal": "/home/user/src/pages/batch03/Dashboards.vue",
+      "new": {
+        "comp": "/home/user/src/com/Dashboards/Dashboards.vue",
+        "compPage": "/home/user/src/app/snipets/Dashboardspage.vue",
+        "type": "/home/user/src/com/Dashboards/types.ts"
+      }
+    }
+  },
+  {
+    "id": 23,
+    "Faq": {
+      "orginal": "/home/user/src/pages/batch03/Faq.vue",
+      "new": {
+        "comp": "/home/user/src/com/Faq/Faq.vue",
+        "compPage": "/home/user/src/app/snipets/Faqpage.vue",
+        "type": "/home/user/src/com/Faq/types.ts"
+      }
+    }
+  },
+  {
+    "id": 24,
+    "FrontBlog": {
+      "orginal": "/home/user/src/pages/batch03/FrontBlog.vue",
+      "new": {
+        "comp": "/home/user/src/com/FrontBlog/FrontBlog.vue",
+        "compPage": "/home/user/src/app/snipets/FrontBlogpage.vue",
+        "type": "/home/user/src/com/FrontBlog/types.ts"
+      }
+    }
+  },
+  {
+    "id": 25,
+    "FrontMarketing": {
+      "orginal": "/home/user/src/pages/batch03/FrontMarketing.vue",
+      "new": {
+        "comp": "/home/user/src/com/FrontMarketing/FrontMarketing.vue",
+        "compPage": "/home/user/src/app/snipets/FrontMarketingpage.vue",
+        "type": "/home/user/src/com/FrontMarketing/types.ts"
+      }
+    }
+  },
+  {
+    "id": 26,
+    "Gallery": {
+      "orginal": "/home/user/src/pages/batch03/Gallery.vue",
+      "new": {
+        "comp": "/home/user/src/com/Gallery/Gallery.vue",
+        "compPage": "/home/user/src/app/snipets/Gallerypage.vue",
+        "type": "/home/user/src/com/Gallery/types.ts"
+      }
+    }
+  },
+  {
+    "id": 27,
+    "Icons": {
+      "orginal": "/home/user/src/pages/batch03/Icons.vue",
+      "new": {
+        "comp": "/home/user/src/com/Icons/Icons.vue",
+        "compPage": "/home/user/src/app/snipets/Iconspage.vue",
+        "type": "/home/user/src/com/Icons/types.ts"
+      }
+    }
+  },
+  {
+    "id": 28,
+    "People": {
+      "orginal": "/home/user/src/pages/batch03/People.vue",
+      "new": {
+        "comp": "/home/user/src/com/People/People.vue",
+        "compPage": "/home/user/src/app/snipets/Peoplepage.vue",
+        "type": "/home/user/src/com/People/types.ts"
+      }
+    }
+  },
+  {
+    "id": 29,
+    "Pricing": {
+      "orginal": "/home/user/src/pages/batch03/Pricing.vue",
+      "new": {
+        "comp": "/home/user/src/com/Pricing/Pricing.vue",
+        "compPage": "/home/user/src/app/snipets/Pricingpage.vue",
+        "type": "/home/user/src/com/Pricing/types.ts"
+      }
+    }
+  },
+  {
+    "id": 30,
+    "Search": {
+      "orginal": "/home/user/src/pages/batch03/Search.vue",
+      "new": {
+        "comp": "/home/user/src/com/Search/Search.vue",
+        "compPage": "/home/user/src/app/snipets/Searchpage.vue",
+        "type": "/home/user/src/com/Search/types.ts"
+      }
+    }
+  },
+  {
+    "id": 31,
+    "Treeview": {
+      "orginal": "/home/user/src/pages/batch03/Treeview.vue",
+      "new": {
+        "comp": "/home/user/src/com/Treeview/Treeview.vue",
+        "compPage": "/home/user/src/app/snipets/Treeviewpage.vue",
+        "type": "/home/user/src/com/Treeview/types.ts"
+      }
+    }
+  },
+  {
+    "id": 32,
+    "Charts": {
+      "orginal": "/home/user/src/pages/batch04/Charts.vue",
+      "new": {
+        "comp": "/home/user/src/com/Charts/Charts.vue",
+        "compPage": "/home/user/src/app/snipets/Chartspage.vue",
+        "type": "/home/user/src/com/Charts/types.ts"
+      }
+    }
+  },
+  {
+    "id": 33,
+    "CrudTable": {
+      "orginal": "/home/user/src/pages/batch04/CrudTable.vue",
+      "new": {
+        "comp": "/home/user/src/com/CrudTable/Crudtable.vue",
+        "compPage": "/home/user/src/app/snipets/Crudtablepage.vue",
+        "type": "/home/user/src/com/CrudTable/types.ts"
+      }
+    }
+  },
+  {
+    "id": 34,
+    "DataTables": {
+      "orginal": "/home/user/src/pages/batch04/DataTables.vue",
+      "new": {
+        "comp": "/home/user/src/com/DataTables/DataTables.vue",
+        "compPage": "/home/user/src/app/snipets/DataTablespage.vue",
+        "type": "/home/user/src/com/DataTables/types.ts"
+      }
+    }
+  },
+  {
+    "id": 35,
+    "Editable": {
+      "orginal": "/home/user/src/pages/batch04/Editable.vue",
+      "new": {
+        "comp": "/home/user/src/com/Editable/Editable.vue",
+        "compPage": "/home/user/src/app/snipets/Editablepage.vue",
+        "type": "/home/user/src/com/Editable/types.ts"
+      }
+    }
+  },
+  {
+    "id": 36,
+    "PlainTables": {
+      "orginal": "/home/user/src/pages/batch04/PlainTables.vue",
+      "new": {
+        "comp": "/home/user/src/com/PlainTables/PlainTables.vue",
+        "compPage": "/home/user/src/app/snipets/PlainTablespage.vue",
+        "type": "/home/user/src/com/PlainTables/types.ts"
+      }
+    }
+  },
+  {
+    "id": 37,
+    "Accordion": {
+      "orginal": "/home/user/src/pages/batch05/Accordion.vue",
+      "new": {
+        "comp": "/home/user/src/com/Accordion/Accordion.vue",
+        "compPage": "/home/user/src/app/snipets/Accordionpage.vue",
+        "type": "/home/user/src/com/Accordion/types.ts"
+      }
+    }
+  },
+  {
+    "id": 38,
+    "Alerts": {
+      "orginal": "/home/user/src/pages/batch05/Alerts.vue",
+      "new": {
+        "comp": "/home/user/src/com/Alerts/Alerts.vue",
+        "compPage": "/home/user/src/app/snipets/Alertspage.vue",
+        "type": "/home/user/src/com/Alerts/types.ts"
+      }
+    }
+  },
+  {
+    "id": 39,
+    "Auth": {
+      "orginal": "/home/user/src/pages/batch05/Auth.vue",
+      "new": {
+        "comp": "/home/user/src/com/Auth/Auth.vue",
+        "compPage": "/home/user/src/app/snipets/Authpage.vue",
+        "type": "/home/user/src/com/Auth/types.ts"
+      }
+    }
+  },
+  {
+    "id": 40,
+    "Avatars": {
+      "orginal": "/home/user/src/pages/batch05/Avatars.vue",
+      "new": {
+        "comp": "/home/user/src/com/Avatars/Avatars.vue",
+        "compPage": "/home/user/src/app/snipets/Avatarspage.vue",
+        "type": "/home/user/src/com/Avatars/types.ts"
+      }
+    }
+  },
+  {
+    "id": 41,
+    "Chips": {
+      "orginal": "/home/user/src/pages/batch05/Chips.vue",
+      "new": {
+        "comp": "/home/user/src/com/Chips/Chips.vue",
+        "compPage": "/home/user/src/app/snipets/Chipspage.vue",
+        "type": "/home/user/src/com/Chips/types.ts"
+      }
+    }
+  },
+  {
+    "id": 42,
+    "CircularCharts": {
+      "orginal": "/home/user/src/pages/batch05/CircularCharts.vue",
+      "new": {
+        "comp": "/home/user/src/com/CircularCharts/CircularCharts.vue",
+        "compPage": "/home/user/src/app/snipets/CircularChartspage.vue",
+        "type": "/home/user/src/com/CircularCharts/types.ts"
+      }
+    }
+  },
+  {
+    "id": 43,
+    "Dialogs": {
+      "orginal": "/home/user/src/pages/batch05/Dialogs.vue",
+      "new": {
+        "comp": "/home/user/src/com/Dialogs/Dialogs.vue",
+        "compPage": "/home/user/src/app/snipets/Dialogspage.vue",
+        "type": "/home/user/src/com/Dialogs/types.ts"
+      }
+    }
+  },
+  {
+    "id": 44,
+    "ErrorPage": {
+      "orginal": "/home/user/src/pages/batch05/ErrorPage.vue",
+      "new": {
+        "comp": "/home/user/src/com/ErrorPage/ErrorPage.vue",
+        "compPage": "/home/user/src/app/snipets/ErrorPagepage.vue",
+        "type": "/home/user/src/com/ErrorPage/types.ts"
+      }
+    }
+  },
+  {
+    "id": 45,
+    "Lists": {
+      "orginal": "/home/user/src/pages/batch05/Lists.vue",
+      "new": {
+        "comp": "/home/user/src/com/Lists/Lists.vue",
+        "compPage": "/home/user/src/app/snipets/Listspage.vue",
+        "type": "/home/user/src/com/Lists/types.ts"
+      }
+    }
+  },
+  {
+    "id": 46,
+    "Menus": {
+      "orginal": "/home/user/src/pages/batch05/Menus.vue",
+      "new": {
+        "comp": "/home/user/src/com/Menus/Menus.vue",
+        "compPage": "/home/user/src/app/snipets/Menuspage.vue",
+        "type": "/home/user/src/com/Menus/types.ts"
+      }
+    }
+  },
+  {
+    "id": 47,
+    "Ratings": {
+      "orginal": "/home/user/src/pages/batch05/Ratings.vue",
+      "new": {
+        "comp": "/home/user/src/com/Ratings/Ratings.vue",
+        "compPage": "/home/user/src/app/snipets/Ratingspage.vue",
+        "type": "/home/user/src/com/Ratings/types.ts"
+      }
+    }
+  },
+  {
+    "id": 48,
+    "Tabs": {
+      "orginal": "/home/user/src/pages/batch05/Tabs.vue",
+      "new": {
+        "comp": "/home/user/src/com/Tabs/Tabs.vue",
+        "compPage": "/home/user/src/app/snipets/Tabspage.vue",
+        "type": "/home/user/src/com/Tabs/types.ts"
+      }
+    }
+  },
+  {
+    "id": 49,
+    "Tooltips": {
+      "orginal": "/home/user/src/pages/batch05/Tooltips.vue",
+      "new": {
+        "comp": "/home/user/src/com/Tooltips/Tooltips.vue",
+        "compPage": "/home/user/src/app/snipets/Tooltipspage.vue",
+        "type": "/home/user/src/com/Tooltips/types.ts"
+      }
+    }
+  },
+  {
+    "id": 50,
+    "Typography": {
+      "orginal": "/home/user/src/pages/batch05/Typography.vue",
+      "new": {
+        "comp": "/home/user/src/com/Typography/Typography.vue",
+        "compPage": "/home/user/src/app/snipets/Typographypage.vue",
+        "type": "/home/user/src/com/Typography/types.ts"
+      }
+    }
+  },
+  {
+    "id": 51,
+    "Autocomplete": {
+      "orginal": "/home/user/src/pages/forms/Autocomplete.vue",
+      "new": {
+        "comp": "/home/user/src/com/Autocomplete/Autocomplete.vue",
+        "compPage": "/home/user/src/app/snipets/Autocompletepage.vue",
+        "type": "/home/user/src/com/Autocomplete/types.ts"
+      }
+    }
+  },
+  {
+    "id": 52,
+    "Buttons": {
+      "orginal": "/home/user/src/pages/forms/Buttons.vue",
+      "new": {
+        "comp": "/home/user/src/com/Buttons/Buttons.vue",
+        "compPage": "/home/user/src/app/snipets/Buttonspage.vue",
+        "type": "/home/user/src/com/Buttons/types.ts"
+      }
+    }
+  },
+  {
+    "id": 53,
+    "Choices": {
+      "orginal": "/home/user/src/pages/forms/Choices.vue",
+      "new": {
+        "comp": "/home/user/src/com/Choices/Choices.vue",
+        "compPage": "/home/user/src/app/snipets/Choicespage.vue",
+        "type": "/home/user/src/com/Choices/types.ts"
+      }
+    }
+  },
+  {
+    "id": 54,
+    "Combobox": {
+      "orginal": "/home/user/src/pages/forms/Combobox.vue",
+      "new": {
+        "comp": "/home/user/src/com/Combobox/Combobox.vue",
+        "compPage": "/home/user/src/app/snipets/Comboboxpage.vue",
+        "type": "/home/user/src/com/Combobox/types.ts"
+      }
+    }
+  },
+  {
+    "id": 55,
+    "CustomForm": {
+      "orginal": "/home/user/src/pages/forms/CustomForm.vue",
+      "new": {
+        "comp": "/home/user/src/com/CustomForm/CustomForm.vue",
+        "compPage": "/home/user/src/app/snipets/CustomFormpage.vue",
+        "type": "/home/user/src/com/CustomForm/types.ts"
+      }
+    }
+  },
+  {
+    "id": 56,
+    "CustomInputs": {
+      "orginal": "/home/user/src/pages/forms/CustomInputs.vue",
+      "new": {
+        "comp": "/home/user/src/com/CustomInputs/CustomInputs.vue",
+        "compPage": "/home/user/src/app/snipets/CustomInputspage.vue",
+        "type": "/home/user/src/com/CustomInputs/types.ts"
+      }
+    }
+  },
+  {
+    "id": 57,
+    "DateTime": {
+      "orginal": "/home/user/src/pages/forms/DateTime.vue",
+      "new": {
+        "comp": "/home/user/src/com/DateTime/DateTime.vue",
+        "compPage": "/home/user/src/app/snipets/DateTimepage.vue",
+        "type": "/home/user/src/com/DateTime/types.ts"
+      }
+    }
+  },
+  {
+    "id": 58,
+    "DirectionalForms": {
+      "orginal": "/home/user/src/pages/forms/DirectionalForms.vue",
+      "new": {
+        "comp": "/home/user/src/com/DirectionalForms/DirectionalForms.vue",
+        "compPage": "/home/user/src/app/snipets/DirectionalFormspage.vue",
+        "type": "/home/user/src/com/DirectionalForms/types.ts"
+      }
+    }
+  },
+  {
+    "id": 59,
+    "Editor": {
+      "orginal": "/home/user/src/pages/forms/Editor.vue",
+      "new": {
+        "comp": "/home/user/src/com/Editor/Editor.vue",
+        "compPage": "/home/user/src/app/snipets/Editorpage.vue",
+        "type": "/home/user/src/com/Editor/types.ts"
+      }
+    }
+  },
+  {
+    "id": 60,
+    "FileInputs": {
+      "orginal": "/home/user/src/pages/forms/FileInputs.vue",
+      "new": {
+        "comp": "/home/user/src/com/FileInputs/FileInputs.vue",
+        "compPage": "/home/user/src/app/snipets/FileInputspage.vue",
+        "type": "/home/user/src/com/FileInputs/types.ts"
+      }
+    }
+  },
+  {
+    "id": 61,
+    "FormLayouts": {
+      "orginal": "/home/user/src/pages/forms/FormLayouts.vue",
+      "new": {
+        "comp": "/home/user/src/com/FormLayouts/FormLayouts.vue",
+        "compPage": "/home/user/src/app/snipets/FormLayoutspage.vue",
+        "type": "/home/user/src/com/FormLayouts/types.ts"
+      }
+    }
+  },
+  {
+    "id": 62,
+    "Select": {
+      "orginal": "/home/user/src/pages/forms/Select.vue",
+      "new": {
+        "comp": "/home/user/src/com/Select/Select.vue",
+        "compPage": "/home/user/src/app/snipets/Selectpage.vue",
+        "type": "/home/user/src/com/Select/types.ts"
+      }
+    }
+  },
+  {
+    "id": 63,
+    "Sliders": {
+      "orginal": "/home/user/src/pages/forms/Sliders.vue",
+      "new": {
+        "comp": "/home/user/src/com/Sliders/Sliders.vue",
+        "compPage": "/home/user/src/app/snipets/Sliderspage.vue",
+        "type": "/home/user/src/com/Sliders/types.ts"
+      }
+    }
+  },
+  {
+    "id": 64,
+    "Steppers": {
+      "orginal": "/home/user/src/pages/forms/Steppers.vue",
+      "new": {
+        "comp": "/home/user/src/com/Steppers/Steppers.vue",
+        "compPage": "/home/user/src/app/snipets/Stepperspage.vue",
+        "type": "/home/user/src/com/Steppers/types.ts"
+      }
+    }
+  },
+  {
+    "id": 65,
+    "TimePickers": {
+      "orginal": "/home/user/src/pages/forms/TimePickers.vue",
+      "new": {
+        "comp": "/home/user/src/com/TimePickers/TimePickers.vue",
+        "compPage": "/home/user/src/app/snipets/TimePickerspage.vue",
+        "type": "/home/user/src/com/TimePickers/types.ts"
+      }
+    }
+  },
+  {
+    "id": 66,
+    "Validation": {
+      "orginal": "/home/user/src/pages/forms/Validation.vue",
+      "new": {
+        "comp": "/home/user/src/com/Validation/Validation.vue",
+        "compPage": "/home/user/src/app/snipets/Validationpage.vue",
+        "type": "/home/user/src/com/Validation/types.ts"
+      }
+    }
+  },
+  {
+    "id": 67,
+    "ContactUs": {
+      "orginal": "/home/user/src/pages/front/ContactUs.vue",
+      "new": {
+        "comp": "/home/user/src/com/ContactUs/ContactUs.vue",
+        "compPage": "/home/user/src/app/snipets/ContactUspage.vue",
+        "type": "/home/user/src/com/ContactUs/types.ts"
+      }
+    }
+  },
+  {
+    "id": 68,
+    "Dashboard": {
+      "orginal": "/home/user/src/components/Dashboard.vue",
+      "new": {
+        "comp": "/home/user/src/com/Dashboard/Dashboard.vue",
+        "compPage": "/home/user/src/app/snipets/Dashboardpage.vue",
+        "type": "/home/user/src/com/Dashboard/types.ts"
+      }
+    }
+  }
+]

@@ -1,0 +1,120 @@
+{
+  "file": "src/app/snipets/ProductEditorpage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires ProductEditor demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "product",
+    "editor"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "ref"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/ProductEditor/ProductEditor.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ProductEditor/types",
+      "deps": [
+        "ProductEditorContext"
+      ]
+    },
+    {
+      "file": "vue-router",
+      "deps": [
+        "useRoute",
+        "useRouter",
+        "onBeforeRouteLeave"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/ui/WorkspacePage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../composables/useDemoStore",
+      "deps": [
+        "demo",
+        "nextId",
+        "clone",
+        "money"
+      ]
+    },
+    {
+      "file": "../../composables/useFeedback",
+      "deps": [
+        "notify",
+        "required",
+        "confirmDemo"
+      ]
+    },
+    {
+      "file": "../../data/app-seed",
+      "deps": [
+        "asset"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [
+      {
+        "name": "pick",
+        "params": [
+          {
+            "type": "any",
+            "name": "e"
+          }
+        ],
+        "ret": "any",
+        "async": true
+      },
+      {
+        "name": "save",
+        "params": [],
+        "ret": "any",
+        "async": true
+      }
+    ],
+    "classes": []
+  },
+  "rels": [],
+  "calls": [
+    {
+      "from": "pick",
+      "to": "notify"
+    },
+    {
+      "from": "save",
+      "to": "notify"
+    },
+    {
+      "from": "save",
+      "to": "clone"
+    },
+    {
+      "from": "save",
+      "to": "nextId"
+    }
+  ]
+}

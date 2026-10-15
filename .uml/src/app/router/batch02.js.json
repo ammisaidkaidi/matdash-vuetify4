@@ -1,0 +1,98 @@
+{
+  "file": "src/app/router/batch02.js",
+  "lang": "js",
+  "kind": "config",
+  "summary": "Lazy route definitions for the batch02 page batch.",
+  "tags": [
+    "routing",
+    "batch02"
+  ],
+  "deps": [
+    {
+      "file": "../snipets/Comboboxpage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/Autocompletepage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/Buttonspage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/Choicespage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/CustomInputspage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/FileInputspage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/DateTimepage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/Selectpage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/Sliderspage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/TimePickerspage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/Stepperspage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/FormLayoutspage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/DirectionalFormspage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/CustomFormpage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/Validationpage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/Editorpage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/ContactUspage.vue",
+      "deps": []
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "any",
+        "name": "batch02Loaders"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

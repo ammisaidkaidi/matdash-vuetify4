@@ -1,0 +1,48 @@
+{
+  "file": "src/com/FormLayouts/FormLayouts.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Reusable FormLayouts presentation view driven by external props.",
+  "tags": [
+    "form",
+    "layouts"
+  ],
+  "deps": [
+    {
+      "file": "../ui/FormPage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../ui/ExampleCard.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "./types",
+      "deps": [
+        "FormLayoutsContext"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "FormLayoutsContext",
+        "name": "context"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

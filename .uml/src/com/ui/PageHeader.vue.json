@@ -1,0 +1,35 @@
+{
+  "file": "src/com/ui/PageHeader.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Shared UI helper PageHeader used across the demo pages.",
+  "tags": [
+    "page",
+    "header"
+  ],
+  "deps": [],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "string",
+        "name": "title",
+        "opt": true
+      },
+      {
+        "type": "string",
+        "name": "category",
+        "opt": true
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

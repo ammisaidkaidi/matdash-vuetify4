@@ -1,0 +1,95 @@
+{
+  "file": "src/app/snipets/Authpage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires Auth demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "auth",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "ref",
+        "reactive",
+        "computed",
+        "nextTick",
+        "onBeforeUnmount"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/Auth/Auth.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/Auth/types",
+      "deps": [
+        "AuthContext"
+      ]
+    },
+    {
+      "file": "vue-router",
+      "deps": [
+        "useRoute",
+        "useRouter"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../data/app-seed",
+      "deps": [
+        "asset"
+      ]
+    },
+    {
+      "file": "../../composables/useFeedback",
+      "deps": [
+        "required",
+        "validEmail",
+        "notify"
+      ]
+    },
+    {
+      "file": "../../composables/useDemoAuth",
+      "deps": [
+        "beginDemoSession"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [
+      {
+        "name": "submit",
+        "params": [],
+        "ret": "any",
+        "async": true
+      }
+    ],
+    "classes": []
+  },
+  "rels": [],
+  "calls": [
+    {
+      "from": "submit",
+      "to": "beginDemoSession"
+    },
+    {
+      "from": "submit",
+      "to": "notify"
+    }
+  ]
+}

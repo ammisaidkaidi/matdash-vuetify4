@@ -1,0 +1,238 @@
+{
+  "file": "src/com/Charts/Charts.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Reusable Charts presentation view driven by external props.",
+  "tags": [
+    "charts",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "computed",
+        "ref",
+        "useSlots",
+        "watch"
+      ],
+      "ext": true
+    },
+    {
+      "file": "vue3-apexcharts",
+      "deps": [
+        "default"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../ui/TableCard.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "./types",
+      "deps": [
+        "ChartCsvPayload",
+        "ChartDataCell",
+        "ChartDataColumn",
+        "ChartDataRow",
+        "ChartHandle",
+        "ChartLabels",
+        "ChartOptions",
+        "ChartSeries",
+        "ChartType"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "ChartType",
+        "name": "type"
+      },
+      {
+        "type": "ChartSeries",
+        "name": "series"
+      },
+      {
+        "type": "ChartOptions",
+        "name": "options",
+        "opt": true
+      },
+      {
+        "type": "string",
+        "name": "title",
+        "opt": true
+      },
+      {
+        "type": "string | number",
+        "name": "height",
+        "opt": true
+      },
+      {
+        "type": "string | number",
+        "name": "width",
+        "opt": true
+      },
+      {
+        "type": "string",
+        "name": "description",
+        "opt": true
+      },
+      {
+        "type": "ChartDataColumn[]",
+        "name": "dataColumns",
+        "opt": true
+      },
+      {
+        "type": "ChartDataRow[]",
+        "name": "dataRows",
+        "opt": true
+      },
+      {
+        "type": "boolean",
+        "name": "showDataToggle",
+        "opt": true
+      },
+      {
+        "type": "boolean",
+        "name": "showExport",
+        "opt": true
+      },
+      {
+        "type": "boolean",
+        "name": "showReset",
+        "opt": true
+      },
+      {
+        "type": "string",
+        "name": "exportFileName",
+        "opt": true
+      },
+      {
+        "type": "string",
+        "name": "csvSeparator",
+        "opt": true
+      },
+      {
+        "type": "boolean",
+        "name": "csvBom",
+        "opt": true
+      },
+      {
+        "type": "boolean",
+        "name": "sanitizeCsv",
+        "opt": true
+      },
+      {
+        "type": "(payload: ChartCsvPayload) => void | Promise<void>",
+        "name": "exporter",
+        "opt": true
+      },
+      {
+        "type": "Partial<ChartLabels>",
+        "name": "labels",
+        "opt": true
+      },
+      {
+        "type": "Record<string, unknown>",
+        "name": "chartProps",
+        "opt": true
+      }
+    ],
+    "emits": [
+      {
+        "name": "export",
+        "payload": ""
+      },
+      {
+        "name": "reset",
+        "payload": ""
+      },
+      {
+        "name": "data-toggle",
+        "payload": ""
+      },
+      {
+        "name": "error",
+        "payload": ""
+      }
+    ],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [
+      {
+        "name": "toggleData",
+        "params": [],
+        "ret": "void"
+      },
+      {
+        "name": "reset",
+        "params": [],
+        "ret": "void",
+        "async": true
+      },
+      {
+        "name": "textOf",
+        "params": [
+          {
+            "type": "ChartDataCell",
+            "name": "value"
+          }
+        ],
+        "ret": "string"
+      },
+      {
+        "name": "displayCell",
+        "params": [
+          {
+            "type": "ChartDataColumn",
+            "name": "column"
+          },
+          {
+            "type": "ChartDataRow",
+            "name": "row"
+          },
+          {
+            "type": "number",
+            "name": "rowIndex"
+          },
+          {
+            "type": "number",
+            "name": "columnIndex"
+          }
+        ],
+        "ret": "any"
+      },
+      {
+        "name": "escapeCsv",
+        "params": [
+          {
+            "type": "ChartDataCell",
+            "name": "value"
+          }
+        ],
+        "ret": "string"
+      },
+      {
+        "name": "csvPayload",
+        "params": [],
+        "ret": "ChartCsvPayload"
+      },
+      {
+        "name": "downloadCsv",
+        "params": [],
+        "ret": "any",
+        "async": true
+      }
+    ],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

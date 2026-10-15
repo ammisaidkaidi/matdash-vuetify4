@@ -1,0 +1,102 @@
+{
+  "file": "src/app/snipets/Productspage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires Products demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "products",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "ref",
+        "computed"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/Products/Products.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/Products/types",
+      "deps": [
+        "ProductsContext"
+      ]
+    },
+    {
+      "file": "vue-router",
+      "deps": [
+        "useRoute"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/ui/WorkspacePage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ui/ProductCard.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../composables/useDemoStore",
+      "deps": [
+        "demo",
+        "money"
+      ]
+    },
+    {
+      "file": "../../composables/useFeedback",
+      "deps": [
+        "confirmDemo"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [
+      {
+        "name": "reset",
+        "params": [],
+        "ret": "void"
+      },
+      {
+        "name": "remove",
+        "params": [
+          {
+            "type": "any",
+            "name": "p"
+          }
+        ],
+        "ret": "void",
+        "async": true
+      }
+    ],
+    "classes": []
+  },
+  "rels": [],
+  "calls": [
+    {
+      "from": "remove",
+      "to": "confirmDemo"
+    }
+  ]
+}

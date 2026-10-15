@@ -1,0 +1,48 @@
+{
+  "file": "src/com/ProductEditor/ProductEditor.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Reusable ProductEditor presentation view driven by external props.",
+  "tags": [
+    "product",
+    "editor"
+  ],
+  "deps": [
+    {
+      "file": "../ui/WorkspacePage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../ui/Icon.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "./types",
+      "deps": [
+        "ProductEditorContext"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "ProductEditorContext",
+        "name": "context"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

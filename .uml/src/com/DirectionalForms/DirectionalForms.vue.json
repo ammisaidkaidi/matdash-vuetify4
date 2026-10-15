@@ -1,0 +1,48 @@
+{
+  "file": "src/com/DirectionalForms/DirectionalForms.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Reusable DirectionalForms presentation view driven by external props.",
+  "tags": [
+    "directional",
+    "forms"
+  ],
+  "deps": [
+    {
+      "file": "../ui/FormPage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../ui/ExampleCard.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "./types",
+      "deps": [
+        "DirectionalFormsContext"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "DirectionalFormsContext",
+        "name": "context"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

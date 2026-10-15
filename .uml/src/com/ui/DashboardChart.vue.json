@@ -1,0 +1,57 @@
+{
+  "file": "src/com/ui/DashboardChart.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Shared UI helper DashboardChart used across the demo pages.",
+  "tags": [
+    "dashboard",
+    "chart"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "computed"
+      ],
+      "ext": true
+    },
+    {
+      "file": "vuetify",
+      "deps": [
+        "useTheme"
+      ],
+      "ext": true
+    },
+    {
+      "file": "vue3-apexcharts",
+      "deps": [
+        "default"
+      ],
+      "ext": true
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "string",
+        "name": "kind",
+        "opt": true
+      },
+      {
+        "type": "number|string",
+        "name": "height",
+        "opt": true
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

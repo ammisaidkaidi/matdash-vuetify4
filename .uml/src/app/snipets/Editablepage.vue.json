@@ -1,0 +1,84 @@
+{
+  "file": "src/app/snipets/Editablepage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires Editable demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "editable",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "../../com/ui/WorkspacePage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/Editable/Editable.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/Editable/types",
+      "deps": [
+        "CrudField",
+        "CrudLabels",
+        "CrudMode"
+      ]
+    },
+    {
+      "file": "../../composables/useDemoStore",
+      "deps": [
+        "demo",
+        "nextId"
+      ]
+    },
+    {
+      "file": "../../composables/useFeedback",
+      "deps": [
+        "validEmail"
+      ]
+    },
+    {
+      "file": "../../data/app-seed",
+      "deps": [
+        "avatar"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [
+      {
+        "name": "prepareContact",
+        "params": [
+          {
+            "type": "Contact",
+            "name": "record"
+          },
+          {
+            "type": "CrudMode",
+            "name": "mode"
+          }
+        ],
+        "ret": "Contact"
+      }
+    ],
+    "classes": []
+  },
+  "rels": [],
+  "calls": [
+    {
+      "from": "prepareContact",
+      "to": "avatar"
+    }
+  ]
+}

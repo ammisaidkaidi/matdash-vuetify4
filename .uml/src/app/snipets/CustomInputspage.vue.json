@@ -1,0 +1,66 @@
+{
+  "file": "src/app/snipets/CustomInputspage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires CustomInputs demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "custom",
+    "inputs"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "reactive"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/CustomInputs/CustomInputs.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/CustomInputs/types",
+      "deps": [
+        "CustomInputsContext"
+      ]
+    },
+    {
+      "file": "../../com/ui/FormPage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ui/ExampleCard.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../composables/useFeedback",
+      "deps": [
+        "required",
+        "validEmail"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}

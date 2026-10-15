@@ -1,0 +1,139 @@
+{
+  "file": "src/app/snipets/Contactspage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires Contacts demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "contacts",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "ref"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/Contacts/Contacts.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/Contacts/types",
+      "deps": [
+        "ContactsContext"
+      ]
+    },
+    {
+      "file": "../../com/ui/WorkspacePage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ui/RecordDialog.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../composables/useDemoStore",
+      "deps": [
+        "demo",
+        "nextId"
+      ]
+    },
+    {
+      "file": "../../composables/useFeedback",
+      "deps": [
+        "confirmDemo",
+        "notify"
+      ]
+    },
+    {
+      "file": "../../data/app-seed",
+      "deps": [
+        "avatar"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "string",
+        "name": "title",
+        "opt": true
+      },
+      {
+        "type": "string",
+        "name": "heading",
+        "opt": true
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [
+      {
+        "name": "edit",
+        "params": [
+          {
+            "type": "any",
+            "name": "item"
+          }
+        ],
+        "ret": "void"
+      },
+      {
+        "name": "save",
+        "params": [
+          {
+            "type": "any",
+            "name": "item"
+          }
+        ],
+        "ret": "void"
+      },
+      {
+        "name": "remove",
+        "params": [
+          {
+            "type": "any",
+            "name": "item"
+          }
+        ],
+        "ret": "void",
+        "async": true
+      }
+    ],
+    "classes": []
+  },
+  "rels": [],
+  "calls": [
+    {
+      "from": "save",
+      "to": "nextId"
+    },
+    {
+      "from": "save",
+      "to": "avatar"
+    },
+    {
+      "from": "save",
+      "to": "notify"
+    },
+    {
+      "from": "remove",
+      "to": "confirmDemo"
+    }
+  ]
+}

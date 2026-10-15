@@ -1,0 +1,139 @@
+{
+  "file": "src/app/snipets/Calendarpage.vue",
+  "lang": "vue",
+  "kind": "component",
+  "summary": "Wires Calendar demo data, state, and actions onto its reusable view.",
+  "tags": [
+    "calendar",
+    "demo"
+  ],
+  "deps": [
+    {
+      "file": "vue",
+      "deps": [
+        "shallowReactive",
+        "unref",
+        "isRef",
+        "ref",
+        "computed"
+      ],
+      "ext": true
+    },
+    {
+      "file": "../../com/Calendar/Calendar.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/Calendar/types",
+      "deps": [
+        "CalendarContext"
+      ]
+    },
+    {
+      "file": "../../com/ui/WorkspacePage.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../com/ui/RecordDialog.vue",
+      "deps": [
+        "default"
+      ]
+    },
+    {
+      "file": "../../composables/useDemoStore",
+      "deps": [
+        "demo",
+        "nextId"
+      ]
+    },
+    {
+      "file": "../../composables/useFeedback",
+      "deps": [
+        "notify",
+        "confirmDemo"
+      ]
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "boolean",
+        "name": "embedded",
+        "opt": true
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [
+      {
+        "name": "edit",
+        "params": [
+          {
+            "type": "any",
+            "name": "event"
+          },
+          {
+            "type": "any",
+            "name": "date"
+          }
+        ],
+        "ret": "void"
+      },
+      {
+        "name": "save",
+        "params": [
+          {
+            "type": "any",
+            "name": "event"
+          }
+        ],
+        "ret": "any"
+      },
+      {
+        "name": "move",
+        "params": [
+          {
+            "type": "any",
+            "name": "n"
+          }
+        ],
+        "ret": "void"
+      },
+      {
+        "name": "remove",
+        "params": [
+          {
+            "type": "any",
+            "name": "event"
+          }
+        ],
+        "ret": "void",
+        "async": true
+      }
+    ],
+    "classes": []
+  },
+  "rels": [],
+  "calls": [
+    {
+      "from": "save",
+      "to": "notify"
+    },
+    {
+      "from": "save",
+      "to": "nextId"
+    },
+    {
+      "from": "remove",
+      "to": "confirmDemo"
+    }
+  ]
+}

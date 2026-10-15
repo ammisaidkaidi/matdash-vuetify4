@@ -1,0 +1,94 @@
+{
+  "file": "src/app/router/index.js",
+  "lang": "js",
+  "kind": "config",
+  "summary": "Creates the Vue Router with history and all demo page routes.",
+  "tags": [
+    "routing",
+    "router"
+  ],
+  "deps": [
+    {
+      "file": "vue-router",
+      "deps": [
+        "createRouter",
+        "createWebHistory"
+      ],
+      "ext": true
+    },
+    {
+      "file": "./batch01",
+      "deps": [
+        "batch01Loaders"
+      ]
+    },
+    {
+      "file": "./batch02",
+      "deps": [
+        "batch02Loaders"
+      ]
+    },
+    {
+      "file": "./batch03",
+      "deps": [
+        "batch03Loaders"
+      ]
+    },
+    {
+      "file": "./batch04",
+      "deps": [
+        "batch04Loaders"
+      ]
+    },
+    {
+      "file": "./batch05",
+      "deps": [
+        "batch05Loaders"
+      ]
+    },
+    {
+      "file": "../../data/navigation",
+      "deps": [
+        "routeCatalog"
+      ]
+    },
+    {
+      "file": "../snipets/Dashboardpage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/AccountSettingspage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/RouteDirectorypage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/QueuedPagepage.vue",
+      "deps": []
+    },
+    {
+      "file": "../snipets/NotFoundpage.vue",
+      "deps": []
+    }
+  ],
+  "export": {
+    "fns": [],
+    "props": [
+      {
+        "type": "any",
+        "name": "router"
+      }
+    ],
+    "emits": [],
+    "classes": [],
+    "types": []
+  },
+  "internal": {
+    "fns": [],
+    "classes": []
+  },
+  "rels": [],
+  "calls": []
+}
